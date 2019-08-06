@@ -1,0 +1,25 @@
+---
+subnavigation:
+      -
+        name: suche
+        icon: suche
+      -
+        name: merkliste
+        icon: merkliste
+      -
+        name: login
+        icon: login
+      -
+        name: werde Vermieter
+        icon: vermieter
+navigation:
+      -
+        name: Buchen
+      -
+        name: Kurzfristig frei
+      -
+        name: Inspiration
+      -
+        name: Momente
+      -
+        name: CH-Index

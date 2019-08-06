@@ -1,0 +1,21 @@
+.Hero-slide {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Hero-wrapContent {
+  padding-bottom: 220px;
+}
+
+.Hero-subline {
+  font-size: 20px;
+  letter-spacing: 2px;
+  max-width: 640px;
+}
+
+.Hero-headline {
+  font-size: 55px;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+}

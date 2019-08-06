@@ -1,0 +1,23 @@
+.Discover {
+  padding-top: 80px;
+}
+
+.Discover-wrapItems {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Discover-regionHideaway .Teaser--m {
+  padding: 0;
+}
+
+@media screen and (min-width: 569px){
+  .Discover-regionHideaway .Teaser--m {
+    max-width: 100%;
+  }
+}
+
+.Discover-regionHideaway {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}

@@ -1,0 +1,16 @@
+.Button {
+  padding-left: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+  border-radius: 20px;
+  font-size: 10px;
+  background: #F5F1E5;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.Button--big {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}

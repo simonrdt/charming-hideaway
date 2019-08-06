@@ -1,0 +1,65 @@
+:root {
+  --color-white: #ffffff;
+  --color-lightGrey: #F9F9F9;
+  --color-black: #000000;
+  --color-yellow: #F6A800;
+  --color-blueLight: #5EA9B5;
+  --color-petrol: #0A3A3D;
+  --color-creme: #F5F1E5;
+};
+
+.u-c-lightGrey {
+  color: var(--color-lightGrey);
+}
+
+.u-c-black {
+  color: var(--color-black);
+}
+
+.u-c-creme {
+  color: var(--color-creme);
+}
+
+.u-c-white {
+  color: var(--color-white);
+}
+
+.u-c-yellow {
+  color: var(--color-yellow);
+}
+
+.u-c-blueLight {
+  color: var(--color-blueLight);
+}
+
+.u-c-petrol {
+  color: var(--color-petrol);
+}
+
+.u-bg-white {
+  background-color: var(--color-white);
+}
+
+.u-bg-lightGrey {
+  background-color: var(--color-lightGrey);
+}
+
+.u-bg-black {
+  background-color: var(--color-black);
+}
+
+.u-bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+.u-bg-blueLight {
+  background-color: var(--color-blueLight);
+}
+
+.u-bg-petrol {
+  background-color: var(--color-petrol);
+}
+
+.u-bg-creme {
+  background-color: var(--color-creme);
+}

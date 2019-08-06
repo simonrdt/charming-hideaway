@@ -1,0 +1,30 @@
+.Navigation--sub {
+  padding-top: 5px;
+  padding-bottom: 7px;  
+}
+
+.link-withIcon {
+  margin-left: 16px;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  line-height: 1.2;
+}
+
+.Navigation-item {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.Navigation {
+  padding-top: 23px;
+  padding-bottom: 28px;
+}
+
+.link-image {
+  height: 10px;
+  width: auto;
+  padding-right: 4px;
+}

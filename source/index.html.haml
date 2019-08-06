@@ -1,0 +1,208 @@
+= partial "navigation"
+
+.Hero.Hero--slider
+  - data.frontpage.hero.each_with_index do | item, index | 
+    .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "hero/#{item.image}.jpg"})"}
+      .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+        %h1.Hero-headline.u-c-white.u-ff-didot
+          = "#{item.headline}"
+        %h2.Hero-subline.u-ff-lato.u-fw-light.u-c-white
+          = "#{item.subline}"
+
+= partial "searchsmall"
+
+.Kooperation.u-pl-1.u-pr-1
+  %h1.Kooperation-headline.u-ta-center.u-c-petrol.u-ff-didot
+    = "Unser Lesetipp:<br>Atemberaubendes Bayern"
+  %img.Kooperation-image(src="/images/kooperation/Opener Bild.jpg")
+  .Kooperation-wrapDescription.u-flex.u-alignEnd
+    .Koopertation-wrapText
+      %p.Kooperation-text.u-ff-lato.u-c-petrol.u-fw-light.u-mb-2
+        = "Urig, idyllisch, vielfältig – es gibt viele Begriffe, die den Chiemgau beschreiben. Hier finden sich gastfreundliche Einheimische, idyllische Landschaften und das Bayerische Meer. Umrahmt von der wunderschönen Bergkulisse der Chiemgauer Alpen liegt der Chiemsee. Hier lässt es sich im Sommer segeln, surfen, kiten, kanu- und kajakfahren, raften, …"
+      .Button.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol
+        = "Ganzen Artikel lesen"
+    %img.Kooperation-cover(src="/images/kooperation/Kooperation.jpg")
+
+.Teaser.u-pl-1.u-pr-1
+  %h1.Teaser-headline.u-ta-center.u-c-petrol.u-mh-Auto.u-ff-didot
+    = "Unsere Hideaways in Bayern"
+  .Teaser-wrapItems.u-flex.u-flexWrap--row
+    - data.frontpage.kooperation_teaser.each_with_index do | item, index | 
+      .Teaser--m
+        .Teaser-wrapContent.u-flex.u-flexWrap--row
+          %img.Teaser-image(src="/images/teaser/#{item.image}.jpg")
+          .Teaser-wrapDescription.u-flex
+            .Teaser-description.u-bg-lightGrey
+              .Teaser-infos.u-flex
+                .Teaser-left.u-width1of2
+                  .Teaser-title.u-ff-didot.u-c-petrol
+                    = "#{item.title}"
+                  .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+                    = "#{item.region}"              
+                .Teaser-right.u-width1of2
+                  .Teaser-price.u-ff-lato.u-fw-light.u-c-petrol
+                    = "ab #{item.price} € / Nacht"
+              .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol
+                = "#{item.description}"
+            .Teaser-index
+              %img(src="/images/index.svg")
+              .Teaser-wrapPercent
+                .index-count.u-ff-didot.u-ta-center
+                  = "#{item.percent}%"
+  .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+    = "entdecke mehr"
+
+.Inspiration.u-bg-lightGrey.u-mb-Section.u-pl-1.u-pr-1
+  .Inspiration-wrapContent.u-max-width12of12.u-mh-Auto.u-flex
+    .Inspiration-intro
+      %h1.Headline.u-ff-didot.u-c-petrol
+        = "Lass dich inspirieren!"
+      %p.u-ff-lato.u-fw-light.u-c-petrol
+        = "Entdecken Sie handverlesene und individuelle Urlaubsdomizile mit dem gewissen Extra – deutschlandweit. Charming Hideaways bietet außerge-wöhnlichen Ferienhäusern und besonderen Appartements ein neuartiges Portal. Für eine inspirierende Suche und einen traumhaften Urlaub."
+      .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+        = "entdecke mehr"
+    .Inspiration-wrapTeaser
+
+
+.Teaser.u-pl-1.u-pr-1
+  %h1.Teaser-headline.u-ta-center.u-c-petrol.u-mh-Auto.u-ff-didot
+    = "Erelebe unvergessliche Momente, die zu<br>deinem Leben passen."
+  .Teaser-wrapItems.u-flex.u-flexWrap--row
+    - data.frontpage.momente_teaser.each_with_index do | item, index | 
+      .Moment-item.u-widthFull.u-m-width1of2.u-l-width1of2
+        .Momente-title.u-ff-didot.u-c-petrol.u-ta-center
+          = "#{item.title}"
+        %img.Momente-image(src="/images/momente/#{item.image}.jpg")
+        .Momente-wrapDescription
+          .Momente-description
+            .Momente-text.u-ff-lato.u-fw-light.u-c-petrol
+              = "#{item.description}"
+        .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+          = "mehr"
+
+.Events.u-bg-lightGrey.u-mb-Section.u-pl-1.u-pr-1
+  .Events-wrapContent.u-mh-Auto
+    .Events-intro.u-width-full
+      %h1.Headline.u-ff-didot.u-c-petrol.u-mb-2.u-ta-center
+        = "Übernachten Sie an ganz besonderen Orten <br>mit unseren Event-Übernachtungen"
+    .Event-wrapItems.u-flex.u-flexWrap--row
+      - data.frontpage.events.each_with_index do | item, index | 
+        .Event-wrapItem
+          %img.Event-image(src="/images/events/#{item.image}.jpg")
+          .Event-item.u-widthFull.u-flex
+            .Event-title
+              .u-ff-didot.u-c-petrol
+                = "#{item.title}"
+              .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+                = "Entdecke mehr"
+            .Momente-wrapDescription
+              .Momente-description
+                .Momente-text.u-ff-lato.u-fw-light.u-c-petrol
+                  = "#{item.description}"
+          
+
+.ch-index.u-pl-1.u-pr-1
+  %h1.Teaser-headline.u-ta-center.u-c-petrol.u-mh-Auto.u-ff-didot
+    = "Was ist der CH-Index?"
+  .u-flex.u-flexWrap--row.u-mb-2
+    .u-widthFull.u-m-width1of2.u-l-width1of2.u-flex.u-alignStart.u-mb-2
+      %img.ch-index-icon(src="/images/CH-Index.svg")
+      %p.u-c-petrol.u-ff-lato.u-fw-light.u-pr-2
+        = "Um ein Charming Hideaway zu werden, braucht es Einiges. Um genau zu sein: mindestens 80% bei unserem Charming-Hideaways-Index. Er setzt sich aus diesen vier Kategorien zusammen:"
+    .u-widthFull.u-m-width1of2.u-l-width1of2.u-flex.u-flexWrap--row.u-ta-center.u-mb-2
+      .Block--headline
+        .u-c-white.u-ff-lato.u-fw-reg.u-bg-blueLight.u-radius--small
+          ="100 % PREMIUM DURCH MINDESTENS 80% IN DER GESAMTBEWERTUNG"
+      .u-widthFull.u-width1of2.Block--subline
+        .u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-2.u-mb-2.u-transform-up
+          ="Lage"
+      .u-widthFull.u-width1of2.Block--subline
+        .u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mb-2.u-transform-up
+          ="Archtitektur"
+      .u-widthFull.u-width1of2.Block--subline
+        .u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-2.u-transform-up
+          ="Inneneinrichtung"
+      .u-widthFull.u-width1of2.Block--subline
+        .u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-transform-up
+          ="Ausstattung"
+  .ch-index-wrapItems.u-flex.u-flexWrap--row
+    - data.frontpage.chindex.each_with_index do | item, index | 
+      .Index-item.u-width1of2.u-m-width1of2.u-l-width1of4.u-mb-2
+        .single-chart
+          %svg.circular-chart{:viewbox => "0 0 36 36"}
+            %path.circle-bg{:d => "M18 2.0845\n          a 15.9155 15.9155 0 0 1 0 31.831\n          a 15.9155 15.9155 0 0 1 0 -31.831"}
+            %path.circle{:d => "M18 2.0845\n          a 15.9155 15.9155 0 0 1 0 31.831\n          a 15.9155 15.9155 0 0 1 0 -31.831", "stroke-dasharray" => "#{item.percentage}, 100"}
+            %text.percentage.u-ff-didot.u-c-petrol{:x => "18", :y => "20.35"} 
+              ="#{item.percentage}%"
+        .Index-title.u-ff-lato.u-fw-bold.u-c-petrol.u-ta-center.u-fw-light.u-transform-up
+          = "#{item.title}"
+        .Momente-wrapDescription.u-pr-1.u-pl-1
+          .Momente-description
+            .Momente-text.u-ff-lato.u-fw-light.u-c-petrol
+              = "#{item.description}"
+          .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+            = "mehr"
+
+.Discover.u-pl-1.u-pr-1.u-bg-lightGrey
+  %h1.Teaser-headline.u-ta-center.u-c-petrol.u-mh-Auto.u-ff-didot
+    = "Entdecke neue Regionen in Deutschland"
+  .Discover-wrapItems.u-flex
+    - data.frontpage.discover.each_with_index do | item, index | 
+      .Discover-item.u-width-full.u-m-width1of2.u-l-width1of2
+        .Discover-region.u-mr-2
+          %img.Disover-region-image.u-mb-1(src="/images/discover/#{item.image}.jpg")
+          .Teaser-wrapDescription
+            .Discover-description
+              .Teaser-title.u-ff-didot.u-c-petrol
+                = "#{item.title}"
+              .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up.u-mb-2
+                = "#{item.region}"              
+              .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol.u-mb-2
+                %p
+                  = "#{item.description}"
+              .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+                = "Mehr zur region"
+          .Discover-regionHideaway
+            .Teaser--m
+              .Teaser-wrapContent.u-flex.u-flexWrap--row
+                %img.Teaser-image(src="/images/teaser/#{item.teaserimage}.jpg")
+                .Teaser-wrapDescription.u-flex
+                  .Teaser-description.u-bg-lightGrey
+                    .Teaser-infos.u-flex
+                      .Teaser-left.u-width1of2
+                        .Teaser-title.u-ff-didot.u-c-petrol
+                          = "#{item.teasertitle}"
+                        .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+                          = "#{item.teaserregion}"              
+                      .Teaser-right.u-width1of2
+                        .Teaser-price.u-ff-lato.u-fw-light.u-c-petrol
+                          = "ab #{item.teaserprice} € / Nacht"
+                    .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol
+                      = "#{item.teaserdescription}"
+                  .Teaser-index
+                    %img(src="/images/index.svg")
+                    .Teaser-wrapPercent
+                      .index-count.u-ff-lato.u-fw-bold.u-ta-center
+                        = "#{item.teaserpercent}%"
+
+
+.Inspiration.u-mb-Section.u-pl-1.u-pr-1
+  .Inspiration-wrapContent.u-max-width12of12.u-mh-Auto.u-flex
+    .Inspiration-categorieIntro
+      %h1.Headline.u-c-petrol.u-ff-didot
+        = "Entdecken Sie echte charming Hideaways mit dem gewissen etwas."
+      %p.u-ff-lato.u-fw-light.u-c-petrol
+        = "Entdecke ganz besondere Hideaways, die deinem persönlichen Gescmack genau treffen."
+      .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+        = "entdecken sie usnere inspirationssuche"
+    .Inspiration-wrapCategories.u-flex
+      .Inspiration-categorie.u-pr-5
+        %img.categorie-image(src="/images/inspiration/wohlfuehlen.png")
+        %h2.Headline.u-ff-didot.u-c-petrol
+          = "Umgebungen zum Wohlfühlen"
+      .Inspiration-categorie
+        %img.categorie-image(src="/images/inspiration/zuhause.png")
+        %h2.Headline.u-ff-didot.u-c-petrol
+          = "Hideaways für das „Zuhause-Gefühl“"
+
+= partial "footer"

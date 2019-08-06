@@ -1,0 +1,106 @@
+---
+hero:
+      -
+        image: haus01
+        headline: Ferienhäuser vom Feinsten.
+        subline: Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
+
+kooperation_teaser:
+      -
+        image: house
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
+      -
+        image: house
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
+      -
+        image: house
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
+      -
+        image: house
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
+
+momente_teaser:
+      -
+        image: hund
+        title: Mole Hüs
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+      -
+        image: hund
+        title: Mole Hüs
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+      -
+        image: hund
+        title: Mole Hüs
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+      -
+        image: hund
+        title: Mole Hüs
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+
+events:
+      -
+        image: sleeperoo
+        title: Sleeperoo
+        description: Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft. Um ein Charming Hideaway zu werden, braucht es Einiges. Um genau zu sein; mindestens 80% bei unserem Charming-Hideaways-Index. Er setzt sich aus diesen vier Kategorien zusammen.
+      -
+        image: strandkorb
+        title: Übernachtung im Strandkorb
+        description: Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft. Um ein Charming Hideaway zu werden, braucht es Einiges. Um genau zu sein; mindestens 80% bei unserem Charming-Hideaways-Index. Er setzt sich aus diesen vier Kategorien zusammen.
+
+chindex:
+      -
+        percentage: 90
+        title: Lage
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+      -
+        percentage: 75
+        title: Architektur
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+      -
+        percentage: 60
+        title: Inneneinrichtung
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+      -
+        percentage: 30
+        title: Ausstattung
+        description: Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen. 
+
+discover:
+      -
+        image: pellworm
+        title: Pellworm
+        region: Schleswig-Holstein
+        description: Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft.
+        teaserimage: house
+        teasertitle: Mole Hüs
+        teaserregion: Westerwald
+        teaserprice: 660.00
+        teaserdescription: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        teaserpercent: 91.50
+      -
+        image: eifel
+        title: Eifel
+        region: Rheinland-Pfalz
+        description: Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft. 
+        teaserimage: house
+        teasertitle: Mole Hüs
+        teaserregion: Westerwald
+        teaserprice: 660.00
+        teaserdescription: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        teaserpercent: 91.50

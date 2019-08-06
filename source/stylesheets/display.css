@@ -1,0 +1,27 @@
+.u-flex {
+  display: flex;
+}
+
+.u-alignCenter {
+  align-items: center;
+}
+
+.u-alignEnd {
+  align-items: flex-end;
+}
+
+.u-alignStart {
+  align-items: flex-start;
+}
+
+.u-justifyRight {
+  justify-content: flex-end;
+}
+
+.u-justifyCenter {
+  justify-content: center;
+}
+
+.u-flexWrap--row {
+  flex-wrap: wrap;
+}

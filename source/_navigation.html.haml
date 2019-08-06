@@ -1,0 +1,14 @@
+.Navigation--sub.u-bg-lightGrey
+  .u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-justifyRight
+    - data.navigation.subnavigation.each_with_index do | item, index | 
+      %li.link-withIcon.u-c-blueLight.u-ff-lato.u-fw-light.u-transform-up
+        %img.link-image(src="/images/icons/#{item.icon}.svg")
+        = "#{item.name}"
+.Navigation.u-bg-white
+  .u-widthFull.u-max-width12of12.u-mh-Auto.u-flex
+    .Logo--large
+      %img(src="/images/Logo_CH_Petrol.svg")
+    .Navigation-wrapItems.u-mh-Auto.u-flex.u-justifyCenter.u-alignEnd
+      - data.navigation.navigation.each_with_index do | item, index | 
+        %li.Navigation-item.link.u-c-greenDark.u-ff-lato.u-fw-reg.u-transform-up.u-c-petrol 
+          = "#{item.name}"

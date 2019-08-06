@@ -1,0 +1,145 @@
+.Search--small {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.Search-dropdown--big {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 569px) {
+  .Search-dropdown--big {
+    max-width: 30%;
+  }
+}
+
+.Search-dropdown--small {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 569px) {
+  .Search-dropdown--small {
+    max-width: 20%;
+  }
+}
+
+.Search-dropdown--mini {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 569px) {
+  .Search-dropdown--mini {
+    max-width: 10%;
+  }
+}
+
+
+.Search-checkbox--mini {
+  width: 100%;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 569px) {
+  .Search-checkbox--mini {
+    max-width: 10%;
+  }
+}
+
+select {
+  width: 100%;
+  background-color: var(--color-lightGrey);
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-blueLight) !important;
+  font-family: Lato-Bold;
+  font-size: 14px;
+  color: var(--color-petrol);
+  letter-spacing: 1.4px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 0;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label::before {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../images/icons/checked.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  float: right;
+  margin-left: 5px;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background-image: url("../../images/icons/unchecked.svg");
+}
+
+.checkbox-label {
+  font-size: 10px;
+  color: #0A3A3D;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.Search-checkbox {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1px;
+}
+
+.Search-underline {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--color-blueLight);
+}
+
+.Search--wrapContent {
+  display: flex;
+  align-items: flex-end;
+}
+
+.Search-button {
+  margin-left: 8px; 
+  background: var(--color-blueLight);
+  border-radius: 3px;
+  width: 34px;
+  height: 34px;
+}
+
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.Search-icon {
+  max-width: 17px;
+}
+
+.Search-dropdown--select {
+  background-image: url("../../images/icons/arrow-down.svg");
+  background-size: 12px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.Datepicker {
+  background-image: url("../../images/icons/datepicker.svg");
+}

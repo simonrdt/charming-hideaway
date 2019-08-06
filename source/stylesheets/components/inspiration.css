@@ -1,0 +1,45 @@
+.Inspiration {
+  padding-top: 145px;
+  padding-bottom: 145px;
+}
+
+.Inspiration-intro .Headline,
+.Inspiration-intro p {
+  padding-bottom: 35px;
+}
+
+.Inspiration-intro p {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 569px){
+  .Inspiration-intro {
+    max-width: 33%;
+    padding-right: 16px;
+  }
+}
+
+.Inspiration-categorie {
+  max-width: 270px;
+}
+
+.categorie-image {
+  display: block;
+  height: 100%;
+  max-height: 215px;
+  width: auto;
+  margin-bottom: 38px;
+}
+
+.Inspiration-categorie .Headline {
+  font-size: 20px;
+  letter-spacing: 1.6px;
+}
+
+@media screen and (min-width: 959px) {
+  .Inspiration-categorieIntro {
+    width: 33%;
+    margin-right: 250px;
+  }
+}

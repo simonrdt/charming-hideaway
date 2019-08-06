@@ -1,0 +1,28 @@
+.Search.Search--small.u-bg-lightGrey.u-mb-Section
+  .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row
+    .Search-dropdown.Search-dropdown--big
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
+        %option
+          = "Reiseziel"
+    .Search-dropdown.Search-dropdown--small
+      %select.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold
+        %option
+          = "Anreise"
+    .Search-dropdown.Search-dropdown--small
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.Datepicker
+        %option
+          = "Abreise"
+    .Search-dropdown.Search-dropdown--mini
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
+        %option
+          = "Personen"
+    .Search-checkbox--mini.Search-underline
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#hund{:checked => "checked", :name => "hund", :type => "checkbox"}/
+        %label.checkbox-label{:for => "hund"} Mit Hund
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#familien{:checked => "checked", :name => "familien", :type => "checkbox"}/
+        %label.checkbox-label{:for => "familien"} Für Familien
+    .Search-submit
+      %button.Search-button{:type => "submit"}
+        %img.Search-icon(src="/images/icons/search.svg")

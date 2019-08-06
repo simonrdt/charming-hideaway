@@ -1,0 +1,29 @@
+.Event-image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.Events {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Event-title {
+  width: 100%;
+  max-width: 240px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.Events-wrapContent {
+  max-width: 960px;
+}
+
+.Events-intro {
+  margin-top: 20px;
+  margin-bottom: 56px;
+}
+
+.Event-wrapItem {
+  margin-bottom: 80px;
+}

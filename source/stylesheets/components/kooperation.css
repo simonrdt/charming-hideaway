@@ -1,0 +1,27 @@
+.Kooperation {
+  max-width: 960px;
+  margin: 0 auto 75px auto;
+}
+
+.Kooperation-headline {
+  margin-bottom: 40px;
+}
+
+.Kooperation-image {
+  width: 100%;
+}
+
+.Kooperation-cover {
+  max-width: 250px;
+}
+
+.Kooperation-text {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 569px) {
+  .Kooperation-wrapDescription {
+    margin-top: -170px;
+  }
+}

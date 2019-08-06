@@ -1,0 +1,48 @@
+.Footer-headline {
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+
+.Footer-logo--signet {
+  width: 47px;
+}
+
+.Footer-Logo {
+  width: 20%;
+}
+
+.Footer-about h1 {
+  letter-spacing: 2.5px;
+}
+
+.Footer-about {
+  max-width: 40%;
+}
+
+.Footer-cta {
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.Footer-logo--lang {
+  max-width: 180px;
+}
+
+.Footer-disclaimer {
+  margin-left: 102px;
+  padding-bottom: 20px;
+}
+
+.Footer-wrapLegals,
+.Footer-wrapLegals p {
+  font-size: 10px;
+  letter-spacing: 1px; 
+}
+
+.Footer-wrapLegals {
+  justify-content: space-between;
+}
+
+.Footer-link {
+  text-decoration: none;
+}

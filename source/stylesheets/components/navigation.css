@@ -10,7 +10,8 @@
   line-height: 1.2;
 }
 
-.Navigation-item {
+.Navigation-item,
+.Navigation-item--burger {
   padding-left: 8px;
   padding-right: 8px;
   font-size: 15px;
@@ -27,4 +28,191 @@
   height: 10px;
   width: auto;
   padding-right: 4px;
+}
+
+#loginbox {
+  display: none;
+}
+
+#loginbox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  margin-top: 40px;
+  background: var(--color-lightGrey);
+  padding: 30px;
+  max-width:250px ;   
+}
+
+#loginbox input {
+  margin-bottom: 10px;
+  background-color: var(--color-white);
+}
+
+#loginbox .headline {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: inherit;
+}
+
+
+#searchbox {
+  display: none;
+}
+
+#searchbox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  margin-top: 40px;
+  background: var(--color-lightGrey);
+  padding: 30px;
+  max-width:250px ;   
+}
+
+#searchbox input {
+  margin-bottom: 10px;
+  background-color: var(--color-white);
+}
+
+#searchbox .headline {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: inherit;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  content: url(/images/icons/burger.svg) !important;
+}
+
+.burger-menu.u-block {
+  width: 100vw;
+  position: absolute;
+  background: var(--color-white);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.Navigation div {
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.wrapper .box-item {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+}
+.wrapper .box-item .menu-item {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.wrapper .box-item .menu-item .burger-lines {
+  top: 50%;
+  display: block;
+  margin-top: -7px;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: 0.22s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  background-color: var(--color-petrol);
+}
+.wrapper .box-item .menu-item .burger-lines:after, .wrapper .box-item .menu-item .burger-lines:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  background-color: var(--color-petrol);
+}
+.wrapper .box-item .menu-item .burger-lines:before {
+  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  top: -8px;
+}
+.wrapper .box-item .menu-item .burger-lines:after {
+  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  bottom: -8px;
+}
+.wrapper .box-item .menu-item.active .burger-lines {
+  background-color: var(--color-petrol);
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.wrapper .box-item .menu-item.active .burger-lines:before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.wrapper .box-item .menu-item.active .burger-lines:after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+.burger-menu .Navigation-item {
+  display: block;  
+}  
+
+@media screen and (min-width: 569px) {
+  .burger-menu .Navigation-item {
+    display: none;  
+  }  
+}
+
+@media screen and (max-width: 569px) {
+  nav {
+    display: none !important;  
+  }  
+
+  .Navigation div {
+    justify-content: space-between;
+  }
+
+  .Navigation-item--burger,
+  .Navigation-item {
+    width: 100%!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .burger-menu.u-block {
+    flex-wrap: wrap;
+  }
 }

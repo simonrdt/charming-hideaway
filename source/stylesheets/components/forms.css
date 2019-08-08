@@ -1,0 +1,35 @@
+input[type=text], 
+input[type=password] {
+  width: 100%;
+  background-color: var(--color-lightGrey);
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-blueLight) !important;
+  font-family: Lato-Bold;
+  font-size: 14px;
+  color: var(--color-petrol);
+  letter-spacing: 1.4px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 0;
+}
+
+input[type=text],
+input[type=password] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.label {
+  font-size: 10px;
+  color: #0A3A3D;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.warning {
+  font-size: 10px;
+  color: red;
+  letter-spacing: 1px;
+  text-align: left;
+}

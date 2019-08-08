@@ -54,7 +54,7 @@
 
 .Inspiration.u-bg-lightGrey.u-mb-Section.u-pl-1.u-pr-1
   .Inspiration-wrapContent.u-max-width12of12.u-mh-Auto.u-flex
-    .Inspiration-intro
+    .Inspiration-intro.u-pb-3
       %h1.Headline.u-ff-didot.u-c-petrol
         = "Lass dich inspirieren!"
       %p.u-ff-lato.u-fw-light.u-c-petrol
@@ -62,6 +62,21 @@
       .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
         = "entdecke mehr"
     .Inspiration-wrapTeaser
+      - data.frontpage.inspiration_teaser.each_with_index do | item, index | 
+        .Inspiration-item.u-width1of2.u-m-width1of4.u-l-width1of4
+          .Teaser_hide
+            .Teaser-index.Teaser-index--s
+              %img(src="/images/index.svg")
+              .Teaser-wrapPercent
+                .index-count.u-ff-didot.u-ta-center
+                  = "#{item.percent}%"
+            .Teaser-wrap--s
+              .Teaser-title.u-ff-didot.u-c-petrol
+                = "#{item.title}"  
+              .Teaser-price.u-ff-lato.u-fw-light.u-c-petrol
+                = "ab #{item.price} € / Nacht" 
+          %img.Inspiration-image(src="/images/inspiration/#{item.image}.jpg")
+
 
 
 .Teaser.u-pl-1.u-pr-1
@@ -149,7 +164,7 @@
   .Discover-wrapItems.u-flex
     - data.frontpage.discover.each_with_index do | item, index | 
       .Discover-item.u-width-full.u-m-width1of2.u-l-width1of2
-        .Discover-region.u-mr-2
+        .Discover-region
           %img.Disover-region-image.u-mb-1(src="/images/discover/#{item.image}.jpg")
           .Teaser-wrapDescription
             .Discover-description
@@ -196,7 +211,7 @@
       .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
         = "entdecken sie usnere inspirationssuche"
     .Inspiration-wrapCategories.u-flex
-      .Inspiration-categorie.u-pr-5
+      .Inspiration-categorie
         %img.categorie-image(src="/images/inspiration/wohlfuehlen.png")
         %h2.Headline.u-ff-didot.u-c-petrol
           = "Umgebungen zum Wohlfühlen"

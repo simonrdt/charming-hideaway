@@ -5,11 +5,44 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap", :rel => "stylesheet"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "https://fonts.googleapis.com/css?family=GFS+Didot&display=swap", :rel => "stylesheet"}/
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js", :type => "text/javascript"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js", :type => "text/javascript"}
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     / Use the title from a page's frontmatter if it has one
-    %title= current_page.data.title || "Middleman"
+    %title= current_page.data.title || "Charming Hideaways"
     = stylesheet_link_tag "site"
+    = javascript_include_tag "moment"
     = javascript_include_tag "site"
+    = javascript_include_tag "jquery.daterangepicker"
+  #loginbox
+    #loginboxinner{"data-children-count" => "2"}
+    .headline.u-ff-didot.u-c-petrol.u-ta-center.u-mb-2
+      ="Bitte loggen Sie sich ein."
+    %label.label.u-ff-lato.u-fw-light.u-transform-up.u-c-petrol{:for => "#ctl00_Login1_UserName"} 
+      = "Benutzername"
+    %input#ctl00_Login1_UserName.TextWatermarkCss{:autocomplete => "off", :name => "ctl00$Login1$UserName", :type => "text"}/
+    %input#ctl00_Login1_wmNutzername_ClientState{:name => "ctl00$Login1$wmNutzername_ClientState", :type => "hidden"}/
+    %span#ctl00_Login1_UserNameRequired.warning{:style => "display:inline-block;color:Firebrick;width:100%;display:none;"} 'Benutzername' ist ein Pflichtfeld
+    %label.label.u-ff-lato.u-fw-light.u-transform-up.u-c-petrol{:for => "#ctl00_Login1_Password"} 
+      = "Passwort"
+    %input#ctl00_Login1_Password.TextWatermarkCss.u-mb-2{:autocomplete => "off", :name => "ctl00$Login1$Password", :type => "password"}/
+    %input#ctl00_Login1_wmPasswort_ClientState{:name => "ctl00$Login1$wmPasswort_ClientState", :type => "hidden"}/
+    %span#ctl00_Login1_PasswordRequired.warning{:style => "display:inline-block;color:Firebrick;width:100%;display:none;"} 'Passwort' ist ein Pflichtfeld
+    .loginlinks
+    .loginlinks
+    .warning.u-ff-lato.u-fw-light.u-transform-up.u-c-petrol.u-mb-2
+      ="Dies ist eine Warnung"
+    %input#ctl00_Login1_Login.Button.u-bg-blueLight.u-c-white{:name => "ctl00$Login1$Login", :onclick => "javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(\"ctl00$Login1$Login\", \"\", true, \"neuRegUser\", \"\", false, false))", :type => "submit", :value => "Einloggen"}
+  #searchbox{"data-children-count" => "2"}
+    .headline.u-ff-didot.u-c-petrol.u-ta-center.u-mb-2
+      ="Suche"
+    %label.label.u-ff-lato.u-fw-light.u-transform-up.u-c-petrol{:for => "#searchbox"} 
+      = "Suche"
+    %input#searchbox_input{:autocomplete => "on", :name => "search", :type => "text"}/
+    %input#suchen.Button.u-bg-blueLight.u-c-white{:type => "submit", :value => "Suchen"}/
   %body
+    .dark#dark
     = yield

@@ -1,14 +1,33 @@
-.Navigation--sub.u-bg-lightGrey
+.Navigation--sub.u-bg-lightGrey.u-pr-1.u-pl-1
   .u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-justifyRight
     - data.navigation.subnavigation.each_with_index do | item, index | 
-      %li.link-withIcon.u-c-blueLight.u-ff-lato.u-fw-light.u-transform-up
-        %img.link-image(src="/images/icons/#{item.icon}.svg")
-        = "#{item.name}"
-.Navigation.u-bg-white
+      %li.link-withIcon.u-c-blueLight.u-ff-lato.u-fw-light.u-transform-up{:id => "item_#{item.name}", :onclick => "displayLogin()"}
+        %a
+          %img.link-image(src="/images/icons/#{item.icon}.svg")
+          = "#{item.name}"
+
+.Navigation.u-bg-white.u-pr-1.u-pl-1
   .u-widthFull.u-max-width12of12.u-mh-Auto.u-flex
     .Logo--large
       %img(src="/images/Logo_CH_Petrol.svg")
-    .Navigation-wrapItems.u-mh-Auto.u-flex.u-justifyCenter.u-alignEnd
-      - data.navigation.navigation.each_with_index do | item, index | 
-        %li.Navigation-item.link.u-c-greenDark.u-ff-lato.u-fw-reg.u-transform-up.u-c-petrol 
-          = "#{item.name}"
+    %nav.u-flex.u-mh-Auto
+      .Navigation-wrapItems.u-mh-Auto.u-flex.u-justifyCenter.u-alignEnd
+        - data.navigation.navigation.each_with_index do | item, index | 
+          %li.Navigation-item.link.u-c-greenDark.u-ff-lato.u-fw-reg.u-transform-up.u-c-petrol 
+            = "#{item.name}"
+    %a.icon#burger.u-flex.u-alignEnd
+      .wrapper
+        .box-item
+          .menu-item
+            .burger-lines
+
+.burger-menu#burger_menu
+  - data.navigation.navigation_burger.each_with_index do | item, index | 
+    %li.Navigation-item--burger.link.u-c-greenDark.u-ff-lato.u-fw-reg.u-transform-up.u-c-petrol
+      = "#{item.name}"
+  - data.navigation.navigation.each_with_index do | item, index | 
+    %li.Navigation-item.link.u-c-greenDark.u-ff-lato.u-fw-reg.u-transform-up.u-c-petrol 
+      = "#{item.name}"
+    
+
+

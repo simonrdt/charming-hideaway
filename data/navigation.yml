@@ -12,6 +12,7 @@ subnavigation:
       -
         name: werde Vermieter
         icon: vermieter
+
 navigation:
       -
         name: Buchen
@@ -23,3 +24,13 @@ navigation:
         name: Momente
       -
         name: CH-Index
+
+navigation_burger:
+      -
+        name: Newsletter
+      -
+        name: Über Uns
+      -
+        name: Gutscheine
+      -
+        name: Deutschland in Regionen

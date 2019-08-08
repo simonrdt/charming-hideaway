@@ -1,17 +1,12 @@
 .Search.Search--small.u-bg-lightGrey.u-mb-Section
   .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row
     .Search-dropdown.Search-dropdown--big
-      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
-        %option
-          = "Reiseziel"
-    .Search-dropdown.Search-dropdown--small
-      %select.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold
-        %option
-          = "Anreise"
-    .Search-dropdown.Search-dropdown--small
-      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.Datepicker
-        %option
-          = "Abreise"
+      %input.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Reiseziel"}
+    .Search-date#datepicker
+      .Search-dropdown
+        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Früheste Anreise"}
+      .Search-dropdown
+        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
     .Search-dropdown.Search-dropdown--mini
       %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
         %option

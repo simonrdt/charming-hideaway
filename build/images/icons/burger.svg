@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Burger Menü</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CH_Detailsuche" transform="translate(-1302.000000, -72.000000)" fill="#0A3A3D">
+            <g id="Menü-Leiste" transform="translate(0.000000, 23.000000)">
+                <path d="M1302,61 L1320,61 L1320,59 L1302,59 L1302,61 L1302,61 Z M1302,56 L1320,56 L1320,54 L1302,54 L1302,56 L1302,56 Z M1302,49 L1302,51 L1320,51 L1320,49 L1302,49 L1302,49 Z" id="Burger-Menü"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -26,6 +26,10 @@
   flex-wrap: wrap;
 }
 
+.u-justify--between {
+  justify-content: space-between;
+}
+
 .u-block {
   display: block !important;
 }

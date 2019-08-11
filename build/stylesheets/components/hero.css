@@ -5,15 +5,15 @@
   background-repeat: no-repeat;
 }
 
-.Hero--sliderSmall.Hero-slide {
-  height: 40vh;
+.Hero--sliderSmall .Hero-slide {
+  height: 50vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.Hero--sliderSmall.Hero-wrapContent {
-  padding-bottom: 80px;
+.Hero--sliderSmall .Hero-wrapContent {
+  padding-bottom: 74px;
 }
 
 @media screen and (max-width: 569px) {

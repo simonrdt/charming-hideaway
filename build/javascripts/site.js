@@ -40,6 +40,12 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $(".Search-option").click(function(){
+    $(this).toggleClass("chosen");
+  });
+});
+
 $(function() {
   $('.lazy').Lazy();
 

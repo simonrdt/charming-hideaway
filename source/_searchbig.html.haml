@@ -1,0 +1,58 @@
+.Search.Search--big.u-bg-lightGrey.u-mb-Section
+  .Search--wrapContent.u-alignEnd.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-mb-3.u-justify--between
+    .Search-dropdown.Search-dropdown--big
+      %input.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Reiseziel"}
+    .Search-date#datepicker
+      .Search-dropdown
+        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Früheste Anreise"}
+      .Search-dropdown
+        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
+    .Search-dropdown.Search-dropdown--mini
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
+        %option
+          = "Personen"
+    .Search-checkbox--mini.Search-underline.Search-underline--big
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#hund{:checked => "checked", :name => "hund", :type => "checkbox"}/
+        %label.checkbox-label{:for => "hund"} Mit Hund
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#familien{:checked => "checked", :name => "familien", :type => "checkbox"}/
+        %label.checkbox-label{:for => "familien"} Für Familien
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#barriere{:checked => "checked", :name => "barriere", :type => "checkbox"}/
+        %label.checkbox-label{:for => "barriere"} Barriefrei
+  .Search--wrapContent.u-alignEnd.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-pb-4.u-justify--between
+    .Search-dropdown.Search-dropdown--big
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
+        %option
+          ="Objekttyp"
+    .Search-dropdown.Search-dropdown--small
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
+        %option
+          ="Einrichtungsstil"
+    .Search-dropdown.Search-dropdown--small
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
+        %option
+          ="Schlafzimmer"
+    .Search-dropdown.Search-dropdown--mini
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
+        %option
+          ="CH-Index"
+    .Search-submit
+      %button.Search-button.Search-button--big.u-c-white.u-fw-bold.u-transform-up{:type => "submit"}
+        %img.Search-icon(src="/images/icons/search.svg")
+        ="Suchen"
+  .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-mb-3.u-justify--between
+    .Search-ausstattung.u-pl-1.u-pr-1
+      .Search-optionsHeadline.u-ff-lato.u-fw-bold.u-c-petrol.u-mb-3
+        = "TOP AUSSTATTUNG"
+      .Search-options.u-widthFull.u-l-width1of2.u-m-width1of2
+        - data.searchdetail.options.each_with_index do | item, index | 
+          .Search-option.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2
+            ="#{item.name}"
+    .Search-wrapMap.u-pl-1.u-pr-1
+      .Search-optionsHeadline.u-ff-lato.u-fw-bold.u-c-petrol.u-mb-3.u-transform-up
+        %img.Search-icon--headline.u-mr-1(src="/images/icons/compass.svg")
+        = "Hideaways auf der karte finden"
+      .Search-map
+        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18943.932514300734!2d9.699183099999999!3d53.59361215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1565518286112!5m2!1sde!2sde", :style => "border:0", :width => "600"}

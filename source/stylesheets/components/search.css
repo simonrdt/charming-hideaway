@@ -1,6 +1,12 @@
 .Search--small {
   padding-top: 28px;
   padding-bottom: 28px;
+
+}
+
+.Search--big {
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .Search-dropdown--big {
@@ -23,7 +29,7 @@
 
 @media screen and (min-width: 569px) {
   .Search-dropdown--small {
-    max-width: 20%;
+    max-width: 19%;
   }
 }
 
@@ -131,7 +137,6 @@ input[type="checkbox"]:checked+label::before {
 
 .Search--wrapContent {
   display: flex;
-  align-items: flex-end;
 }
 
 .Search-button {
@@ -142,6 +147,13 @@ input[type="checkbox"]:checked+label::before {
   height: 34px;
 }
 
+.Search-button--big {
+  width: 160px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 15px;
+}
 
 .Search-icon {
   max-width: 17px;
@@ -299,4 +311,88 @@ input::placeholder {
   color: var(--color-petrol);
   letter-spacing: 1.4px;
   padding: 8px;
+}
+
+@media screen and (min-width: 569px) {
+  .Search-options {
+    padding-right: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 160px;
+  }
+
+  .Search--wrapContent {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.Search-option {
+  border: 1px solid var(--color-blueLight);
+  border-radius: 16px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  padding: 6px 18px;
+  position: relative;
+  width: 100%;
+  max-width: 125px;
+}
+
+.Search-option:after {
+  content: url(/images/icons/plus.svg);
+  position: absolute;
+  display: block;
+  right: 16px;
+  top: 6px;
+}
+
+.Search-option.chosen {
+  color: var(--color-white);
+  background: var(--color-petrol);
+  border-color: var(--color-petrol);
+}
+
+.Search-option.chosen:after {
+  content: url(/images/icons/close.svg);
+  position: absolute;
+  display: block;
+  right: 16px;
+  top: 6px; 
+}
+
+.Search-icon--headline {
+  max-width: 20px;
+}
+
+.Search-wrapMap,
+.Search-ausstattung {
+  width: 100%;
+}
+
+@media screen and (min-width: 569px) {
+  .Search-wrapMap,
+  .Search-ausstattung {
+    width: 48%;
+  }
+}
+
+.Search-map iframe {
+  max-width: 100% !important;
+}
+
+@media screen and (max-width: 569px) {
+  .Search-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .Search-option {
+    max-width: 115px;
+  }
+}
+
+.Search-underline--big {
+  min-width: 160px;
 }

@@ -41,6 +41,8 @@ $(document).ready(function(){
 });
 
 $(function() {
+  $('.lazy').Lazy();
+
   $('#datepicker').dateRangePicker(
   {
     separator : '',
@@ -56,5 +58,15 @@ $(function() {
       $('#date-range01').val(s1);
       $('#date-range02').val(s2);
     }
+  });
+
+  $('.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
   });
 });

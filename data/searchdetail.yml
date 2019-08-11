@@ -1,0 +1,30 @@
+---
+hero:
+      -
+        image: haus02
+        headline: Finde dein perfektes Hideaway
+options: 
+      -
+        name: Kamin
+      -
+        name: Pool
+      -
+        name: Strandkorb
+      -
+        name: Bootssteg
+      -
+        name: Whirlpool
+      -
+        name: Innenpool
+      -
+        name: Wintergarten
+      -
+        name: Ruderboot
+      -
+        name: Sauna
+      -
+        name: Naturteich
+      -
+        name: Grillplatz
+      -
+        name: Pferdestall

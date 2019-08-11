@@ -1,6 +1,6 @@
 .Inspiration {
-  padding-top: 145px;
-  padding-bottom: 145px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .Inspiration-intro .Headline,
@@ -43,8 +43,8 @@
 
 @media screen and (min-width: 959px) {
   .Inspiration-categorieIntro {
-    width: 33%;
-    margin-right: 250px;
+    width: 43%;
+    margin-right: 175px;
   }
 }
 

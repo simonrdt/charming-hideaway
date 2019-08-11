@@ -5,6 +5,17 @@
   background-repeat: no-repeat;
 }
 
+.Hero--sliderSmall .Hero-slide {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Hero--sliderSmall .Hero-wrapContent {
+  padding-bottom: 74px;
+}
+
 @media screen and (max-width: 569px) {
   .Hero-slide {
     height: 80vh;
@@ -18,6 +29,8 @@
     align-items: center !important;
   }
 }
+
+
 
 .Hero-wrapContent {
   padding-bottom: 220px;

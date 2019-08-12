@@ -160,3 +160,27 @@
 .Moment-item .Button--teaser {
   margin-bottom: 40px;
 }
+
+
+@media screen and (min-width: 569px) {
+  .Teaser--l .Teaser-description {
+    padding-right: 110px;
+  }
+}
+
+.Teaser--l .Teaser-index {
+    max-height: 105px;
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 569px) {
+
+  .Teaser--l .Teaser-wrapContent {
+      flex-wrap: wrap;
+  }
+
+  .Teaser--l .Teaser-index {
+    top: -105px;
+  }
+}

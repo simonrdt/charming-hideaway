@@ -62,7 +62,6 @@ select {
   background-color: var(--color-lightGrey);
   border-radius: 0;
   border-bottom: 1px solid var(--color-blueLight) !important;
-  font-family: Lato-Bold;
   font-size: 14px;
   color: var(--color-petrol);
   letter-spacing: 1.4px;
@@ -327,6 +326,21 @@ input::placeholder {
   }
 }
 
+
+@media screen and (min-width: 569px) {
+  .Search-options--active.Search-options {
+    padding-right: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-height: 160px;
+  }
+
+  .Search-options--active.Search--wrapContent {
+    flex-wrap: nowrap !important;
+  }
+}
+
 .Search-option {
   border: 1px solid var(--color-blueLight);
   border-radius: 16px;
@@ -340,6 +354,18 @@ input::placeholder {
 
 .Search-option:after {
   content: url(/images/icons/plus.svg);
+  position: absolute;
+  display: block;
+  right: 16px;
+  top: 6px;
+}
+
+.Search-option--notAvailable {
+  opacity: .5;
+}
+
+.Search-option--notAvailable:after {
+  content: url(/images/icons/minus.svg);
   position: absolute;
   display: block;
   right: 16px;
@@ -395,4 +421,24 @@ input::placeholder {
 
 .Search-underline--big {
   min-width: 160px;
+}
+
+.Search-headline--results {
+
+}
+
+.Search-showMap,
+.Sort-menu {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+select.order-results {
+  background: transparent !important;
+  color: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-bottom: none;
+  padding: 0;
+  font-weight: 300 !important;
 }

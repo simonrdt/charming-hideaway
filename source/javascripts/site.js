@@ -32,6 +32,10 @@ $(document).ready(function(){
   $("#burger").click(function(e){
     $("#burger_menu").toggleClass("u-block");
   });
+
+  $("#showmore").click(function(e){
+    $("#more_filter").toggleClass("hidden");
+  });
 });
 
 $(document).ready(function(){

@@ -1,0 +1,55 @@
+.Search.Search--small.u-bg-lightGrey
+  .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row
+    .Search-dropdown.Search-dropdown--big
+      %input.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Reiseziel"}
+    .Search-date#datepicker
+      .Search-dropdown
+        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Früheste Anreise"}
+      .Search-dropdown
+        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
+    .Search-dropdown.Search-dropdown--mini
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
+        %option
+          = "Personen"
+    .Search-checkbox--mini.Search-underline
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#hund{:checked => "checked", :name => "hund", :type => "checkbox"}/
+        %label.checkbox-label{:for => "hund"} Mit Hund
+      .Search-checkbox.u-ff-lato.u-transform-up
+        %input#familien{:checked => "checked", :name => "familien", :type => "checkbox"}/
+        %label.checkbox-label{:for => "familien"} Für Familien
+    .Search-submit
+      %button.Search-button{:type => "submit"}
+        %img.Search-icon(src="/images/icons/search.svg")
+
+
+.Search.Search--big.u-bg-lightGrey
+  .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-justify--between
+    .Search-ausstattung.u-pl-1.u-pr-1
+      #showmore.Search-optionsHeadline.Search-headline--results.u-ff-lato.u-fw-bold.u-c-petrol.u-mb-2.u-flex
+        %span.u-pr-1
+          = "weitere Suchfilter"
+        %img.Search-icon(src="/images/icons/plus.svg")
+
+      .Search-options.Search-options--active.u-widthFull
+        - data.results.active.each_with_index do | item, index | 
+          .Search-option.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2.chosen
+            ="#{item.name}"
+
+      #more_filter.Search-options.u-widthFull.u-l-width1of2.u-m-width1of2.hidden
+        - data.searchdetail.options.each_with_index do | item, index | 
+          .Search-option.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2
+            ="#{item.name}"
+
+.Search.Search-results.u-bg-blueLight.u-pb-2.u-pt-2.u-mb-Section.u-pl-1.u-pr-1
+  .Search-resultsBar.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-justify--between.u-alignCenter
+    .Sort-menu.u-c-creme.u-transform-up.u-ff-lato.u-fw-light.Search-optionsHeadline.u-flex
+      %select.order-results.u-mr-2
+        %option
+          ="Sortieren nach"
+      %img.Search-icon(src="/images/icons/arrow-down-white.svg")
+
+    .Search-resutsCount.u-c-creme.u-transform-up.u-ff-lato
+      ="2 Suchergebnisse"
+    / .Search-showMap.u-c-creme.u-transform-up.u-ff-lato.u-fw-light
+    /   ="auf der karte anzeigen"

@@ -33,3 +33,11 @@
 .u-block {
   display: block !important;
 }
+
+.hidden {
+  display: none !important;
+}
+
+.u-pos-rel {
+  position: relative;
+}

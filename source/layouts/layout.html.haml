@@ -10,6 +10,8 @@
     %link{:href => "https://fonts.googleapis.com/css?family=GFS+Didot&display=swap", :rel => "stylesheet"}/
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js", :type => "text/javascript"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js", :type => "text/javascript"}
+    %link{:href => "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", :type => "text/javascript"}
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || "Charming Hideaways"
@@ -43,6 +45,6 @@
       = "Suche"
     %input#searchbox_input{:autocomplete => "on", :name => "search", :type => "text"}/
     %input#suchen.Button.u-bg-blueLight.u-c-white{:type => "submit", :value => "Suchen"}/
-  %body
+  %body#body
     .dark#dark
     = yield

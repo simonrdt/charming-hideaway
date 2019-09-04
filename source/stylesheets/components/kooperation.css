@@ -39,3 +39,8 @@
     margin-top: 18px;
   }
 }
+
+.Kooperation-wrapDescription {
+  background-color: var(--color-white);
+  z-index: 100;
+}

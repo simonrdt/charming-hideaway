@@ -1,6 +1,6 @@
 = partial "navigation"
 
-.Hero.Hero--sliderSmall
+.Hero.Hero--sliderSmall.u-mt-6
   - data.results.hero.each_with_index do | item, index | 
     .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "hero/#{item.image}.jpg"})"}
       .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
@@ -14,7 +14,7 @@
         - data.results.result.each_with_index do | item, index | 
           .Teaser--l.u-mb-3
             .Teaser-wrapContent.u-flex.u-flexWrap--column
-              %img.Teaser-image.u-m-width1of2.u-l-width1of2(src="/images/teaser/#{item.image}.jpg")
+              .Teaser-image.u-m-width1of2.u-l-width1of2{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
               .Teaser-wrapDescription.u-flex.u-pos-rel.u-bg-lightGrey.u-flexWrap--row
                 .Teaser-description
                   .Teaser-infos.u-flex
@@ -85,7 +85,7 @@
         - data.results.result.each_with_index do | item, index | 
           .Teaser--l.u-mb-3
             .Teaser-wrapContent.u-flex.u-flexWrap--column
-              %img.Teaser-image.u-m-width1of2.u-l-width1of2(src="/images/teaser/#{item.image}.jpg")
+              .Teaser-image.u-m-width1of2.u-l-width1of2{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
               .Teaser-wrapDescription.u-flex.u-pos-rel.u-bg-lightGrey.u-flexWrap--row
                 .Teaser-description
                   .Teaser-infos.u-flex

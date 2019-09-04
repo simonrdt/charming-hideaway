@@ -1,13 +1,14 @@
 = partial "navigation"
 
-.Hero.Hero--slider
+.Hero.Hero--slider.Slider-home.u-mt-6
   - data.frontpage.hero.each_with_index do | item, index | 
-    .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "hero/#{item.image}.jpg"})"}
-      .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
-        %h1.Hero-headline.u-c-white.u-ff-didot
-          = "#{item.headline}"
-        %h2.Hero-subline.u-ff-lato.u-fw-light.u-c-white
-          = "#{item.subline}"
+    .Slide
+      .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "hero/#{item.image}.jpg"})"}
+        .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+          %h1.Hero-headline.u-c-white.u-ff-didot
+            = "#{item.headline}"
+          %h2.Hero-subline.u-ff-lato.u-fw-light.u-c-white
+            = "#{item.subline}"
 
 = partial "searchsmall"
 
@@ -30,7 +31,7 @@
     - data.frontpage.kooperation_teaser.each_with_index do | item, index | 
       .Teaser--m
         .Teaser-wrapContent.u-flex.u-flexWrap--row
-          %img.Teaser-image(src="/images/teaser/#{item.image}.jpg")
+          .Teaser-image{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
           .Teaser-wrapDescription.u-flex
             .Teaser-description.u-bg-lightGrey
               .Teaser-infos.u-flex
@@ -180,7 +181,7 @@
           .Discover-regionHideaway
             .Teaser--m
               .Teaser-wrapContent.u-flex.u-flexWrap--row
-                %img.Teaser-image(src="/images/teaser/#{item.teaserimage}.jpg")
+                .Teaser-image{:style => "background-image: url(../images/teaser/#{item.teaserimage}.jpg)"}
                 .Teaser-wrapDescription.u-flex
                   .Teaser-description.u-bg-lightGrey
                     .Teaser-infos.u-flex

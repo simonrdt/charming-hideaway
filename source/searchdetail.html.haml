@@ -1,6 +1,6 @@
 = partial "navigation"
 
-.Hero.Hero--sliderSmall
+.Hero.Hero--sliderSmall.u-mt-6
   - data.searchdetail.hero.each_with_index do | item, index | 
     .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "hero/#{item.image}.jpg"})"}
       .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1

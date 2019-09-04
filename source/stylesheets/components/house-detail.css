@@ -1,0 +1,279 @@
+.House-facilities {
+  margin-bottom: 50px;
+}
+
+.Facility {
+  width: 100%;
+  max-width: 123px;
+  text-align: center;
+}
+
+.Wrap-facilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 740px !important;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Facility-headline {
+  margin-bottom: 8px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.Facility-icon {
+  width: auto;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  height: 32px;
+}
+
+.House-name {
+  font-size: 25px;
+  color: #0A3A3D;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.House-region {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.House-description {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.Teaser-info {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.House-rating .circular-chart {
+  margin-top: 0 !important;
+}
+
+.House-buzzwords {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.House-anchorLink {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.House-content {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.House-tabItem {
+  position: relative;
+}
+
+.House-tabItem:after {
+  width: 0%;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-bottom: 3px var(--color-petrol) solid;
+}
+
+.House-tabItem:hover {
+  color: var(--color-petrol);
+}
+
+.House-tabItem:hover::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-bottom: 3px var(--color-petrol) solid;
+}
+
+.House-topFacility {
+  border: 1px solid var(--color-blueLight);
+  border-radius: 16px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  padding: 6px 18px;
+  position: relative;
+  width: 100%;
+  max-width: 150px;
+}
+
+.House-facilityCategorie {
+  width: 100%;
+  max-width: 33%;
+}
+
+.House-moreFacility {
+  width: 100%;
+}
+
+.Category-title {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.list-item {
+  list-style-type: disc;
+  font-size: 15px;
+  color: #0A3A3D;
+  letter-spacing: 1.5px;
+}
+
+ul {
+  padding-inline-start: 15px;
+}
+
+.House-showMore {
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.price-subtitle {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.House-map {
+  width: 100%;
+}
+
+.recommendation-description,
+.Host-description {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.Host-image {
+  border-radius: 100%;
+  max-width: 65px;
+}
+
+.Host-name {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.recommendation-header {
+  background-image: url("../../images/house/kenny-luo-7IiPopynx18-unsplash.jpg");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+.backtotop {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  width: 100%;
+  display: block;
+}
+
+.back-to-top {
+  max-width: 40px;
+  margin: 0 auto;
+}
+
+.Booking {
+  width: 100%;
+  padding: 15px;
+}
+
+@media screen and (min-width: 569px) {
+  .Booking {
+    max-width: 22%;
+    position: fixed;
+    top: 60vh;
+    right: 7%;
+  }
+
+  .wrap-housecontent {
+    width: 100%;
+    max-width: 80%;
+    margin-left: 7%;
+  }
+}
+
+.Booking-wrapContent .Search-date {
+  width: 100%;
+}
+
+.Booking-wrapContent input, 
+.Booking-wrapContent select {
+  background-color: transparent;
+}
+
+.Booking-wrapContent .Search-date .Search-dropdown {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Booking-wrapContent .price {
+  font-size: 20px;
+  letter-spacing: 0.36px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.button-image {
+  position: absolute;
+  width: 20px;
+  left: 25px;
+}
+
+.price-about {
+  text-decoration: underline;
+  font-size: 10px;
+  margin-bottom: 8px;
+  color: #0A3A3D;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.wrap-housecontent {
+
+}
+
+.wrap-housecontent .ch-index {
+  max-width: 740px;
+}
+
+.max-width-houseLayout {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:569px) {
+  .u-m-flexWrap--row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .House-facilityCategorie {
+    width: 100%;
+    max-width: 48%;
+  }
+}

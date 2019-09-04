@@ -1,5 +1,5 @@
 .Hero-slide {
-  height: 60vh;
+  height: 60vh !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,6 @@
 }
 
 
-
 .Hero-wrapContent {
   padding-bottom: 220px;
 }
@@ -47,3 +46,64 @@
   letter-spacing: 1px;
   padding-bottom: 12px;
 }
+
+.slider-big {
+
+}
+
+.slider-nav {
+  max-width: 740px;
+}
+
+.Slider-navigation {
+    max-width: 740px;
+    margin: 15px auto 15px auto;
+}
+
+.Hero-teaser {
+  max-width: 123px;
+  max-height: 88px;
+  background-size: cover;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 6px;
+}
+
+.slick-track:before {
+  display: block;
+  background-image: url("../../images/icons/arrow-left.svg");
+  background-size: cover;
+  width: 29px;
+  height: 29px;
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 30px;
+}
+
+.slick-track:after {
+  display: block;
+  background-image: url("../../images/icons/arrow-right-active.svg");
+  background-size: cover;
+  width: 29px;
+  height: 29px;
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 30px;
+}
+
+@media screen and (max-width: 569px) {
+  .slick-track:before {
+    top: 9px;
+  }
+
+  .slick-track:after {
+    top: 9px;
+  }
+
+  .slick-track {
+    height: 50px;
+  }
+}
+

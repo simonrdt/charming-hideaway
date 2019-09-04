@@ -1,0 +1,380 @@
+= partial "navigation"
+
+.Hero.Hero--slider.slider-big.u-mt-6
+  - data.housedetail.hero.each_with_index do | item, index | 
+    .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "house/#{item.image}.png"})"}
+      .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+
+
+
+.wrap-housecontent
+  .Slider-navigation.u-pl-1.u-pr-1
+    .slider-nav
+      - data.housedetail.hero.each_with_index do | item, index | 
+        .Hero-teaser.u-flex{:style => "background-image: url(#{image_path "house/#{item.image}.png"})"}
+          .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+
+.House-facilities.u-bg-lightGrey
+  .wrap-housecontent
+    .Wrap-facilities.u-m-flexWrap--row
+      .Facility.Wohnflaeche.u-mb-2
+        .Wrap-icon
+          %img.Facility-icon(src="/images/icons/Wohnflaeche_Petrol_RGB.svg")
+        .Facility-headline.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+          = "Wohnfläche"
+        .Facility-value.u-c-petrol.u-ff-lato.u-fw-bold
+          = "135m"
+
+      .Facility.Personen.u-mb-2
+        .Wrap-icon
+          %img.Facility-icon(src="/images/icons/Personen_Petrol_RGB.svg")
+        .Facility-headline.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+          = "Max. Personen"
+        .Facility-value.u-c-petrol.u-ff-lato.u-fw-bold
+          = "6"
+
+      .Facility.Schlafzimmer.u-mb-2
+        .Wrap-icon
+          %img.Facility-icon(src="/images/icons/Bed_Petrol_RGB.svg")
+        .Facility-headline.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+          = "Schlafzimmer"
+        .Facility-value.u-c-petrol.u-ff-lato.u-fw-bold
+          = "3"
+
+      .Facility.Badezimmer.u-mb-2
+        .Wrap-icon
+          %img.Facility-icon(src="/images/icons/Badezimmer_Petrol_RGB.svg")
+        .Facility-headline.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+          = "Badezimmer"
+        .Facility-value.u-c-petrol.u-ff-lato.u-fw-bold
+          = "3"    
+      
+      .Facility.Haustiere.u-mb-2
+        .Wrap-icon
+          %img.Facility-icon(src="/images/icons/Group 18.svg")
+        .Facility-headline.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+          = "Haustiere"
+        .Facility-value.u-c-petrol.u-ff-lato.u-fw-bold
+          = "Nein"    
+
+
+.House-intro.u-pl-1.u-pr-1.u-mb-3
+  .wrap-housecontent
+    %h1.House-name.u-ta-center.u-c-petrol.u-ff-didot
+      = "Mole Hüs"
+    %p.House-region.u-ta-center.u-ff-lato.u-c-petrol.u-fw-light.u-mb-3.u-transform-up
+      = "Westerwald"
+    %p.House-description.u-ta-center.u-ff-lato.u-c-petrol.u-fw-light.u-mb-2
+      = "Das moderne und exklusive  alleinstehende Reetdachhaus <br>„Mole Hüs“ in Kampen ist ein charmantes Quartier fpr einen<br> gelungenen Urlaub."
+
+.House-rating.u-pl-1.u-pr-1.u-mb-3
+  .wrap-housecontent
+    .ch-index.u-pl-1.u-pr-1
+      .ch-index-wrapItems.u-flex.u-flexWrap--row
+        .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
+          .Teaser-index
+            %img(src="/images/index.svg")
+            .Teaser-wrapPercent
+              .index-count.u-ff-didot.u-ta-center
+                = "91,50%"
+        - data.frontpage.chindex.each_with_index do | item, index | 
+          .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
+            .single-chart
+              %svg.circular-chart{:viewbox => "0 0 36 36"}
+                %path.circle-bg{:d => "M18 2.0845\n          a 15.9155 15.9155 0 0 1 0 31.831\n          a 15.9155 15.9155 0 0 1 0 -31.831"}
+                %path.circle{:d => "M18 2.0845\n          a 15.9155 15.9155 0 0 1 0 31.831\n          a 15.9155 15.9155 0 0 1 0 -31.831", "stroke-dasharray" => "#{item.percentage}, 100"}
+                %text.percentage.u-ff-didot.u-c-petrol{:x => "18", :y => "20.35"} 
+                  ="#{item.percentage}%"
+            .Index-title.u-ff-lato.u-fw-bold.u-c-petrol.u-ta-center.u-fw-light.u-transform-up.u-mb-0
+              = "#{item.title}"
+        .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
+          .Teaser-info.u-fw-light.u-ff-lato.u-c-petrol
+            = "Was bedeutet dieser Index und wie bewertet Charming Hideaways die Objekte? Erfahren Sie mehr:"
+
+.wrap-housecontent
+  .House-buzzwords.u-pl-1.u-pr-1.u-mb-3
+    .u-flex.u-flexWrap--row.u-mb-2
+      .u-widthFull.u-flex.u-flexWrap--row.u-ta-center.u-mb-2
+        .Block--subline
+          .u-pl-2.u-pr-2.u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-1.u-ml-1.u-mb-2.u-transform-up.mini-copy
+            ="Direkt am Wasser"
+        .Block--subline
+          .u-pl-2.u-pr-2.u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-1.u-ml-1.u-mb-2.u-transform-up.mini-copy
+            ="Sandige Füße"
+        .Block--subline
+          .u-pl-2.u-pr-2.u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-1.u-ml-1.u-mb-2.u-transform-up.mini-copy
+            ="Modern Country"
+        .Block--subline
+          .u-pl-2.u-pr-2.u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-1.u-ml-1.u-mb-2.u-transform-up.mini-copy
+            ="Vintage"
+        .Block--subline
+          .u-pl-2.u-pr-2.u-c-petrol.u-ff-lato.u-fw-reg.u-radius--big.u-bg-creme.u-mr-1.u-ml-1.u-mb-2.u-transform-up.mini-copy
+            ="Ruhe & Idylle"
+
+.wrap-housecontent  
+  .House-content.u-pl-1.u-pr-1.u-mb-3
+    .House-tabs.u-bg-lightGrey.u-pt-1.u-pb-1.u-flex.u-align-center.u-justify--around.u-mb-3.u-m-flexWrap--row
+      .House-tabItem.u-c-blueLight.u-transform-up.u-ff-lato.u-fw-reg.u-pl-1.u-pr-1
+        %a.House-anchorLink{:href => "#beschreibung"}
+          ="Beschreibung"
+      .House-tabItem.u-c-blueLight.u-transform-up.u-ff-lato.u-fw-reg.u-pl-1.u-pr-1
+        %a.House-anchorLink{:href => "#ausstattung"}
+          ="Ausstattung"
+      .House-tabItem.u-c-blueLight.u-transform-up.u-ff-lato.u-fw-reg.u-pl-1.u-pr-1
+        %a.House-anchorLink{:href => "#verfügbarkeit"}
+          ="Verfügbarkeit"
+      .House-tabItem.u-c-blueLight.u-transform-up.u-ff-lato.u-fw-reg.u-pl-1.u-pr-1
+        %a.House-anchorLink{:href => "#preise"}
+          ="Preis"
+      .House-tabItem.u-c-blueLight.u-transform-up.u-ff-lato.u-fw-reg.u-pl-1.u-pr-1
+        %a.House-anchorLink{:href => "#lage"}
+          ="Lage"
+      .House-tabItem.u-c-blueLight.u-transform-up.u-ff-lato.u-fw-reg.u-pl-1.u-pr-1
+        %a.House-anchorLink{:href => "#region"}
+          ="Tipps zur Region"
+    
+    .House-desc{:id => "beschreibung"}
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-3
+        = "Beschreibung"
+      %p.House-description.u-ff-lato.u-c-petrol.u-fw-light.u-mb-3
+        = "Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. <br> <br> Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse. Wohnzimmer, Balkon, Küche (offen) und Duschbad befinden sich auf der unteren Ebene, eine Treppe im Flur führt nach oben ins Schlafzimmer. Das Meeresrauschen zum Einschlafen ist inklusive."
+
+    .House-desc{:id => "ausstattung"}
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-3
+        = "Ausstattung"
+      .House-facilities
+        .u-ff-lato.u-transform-up.u-c-petrol.u-mb-1.u-fw-light
+          ="Top Ausstattung"
+        .House-wrapFacility.u-flex.u-pb-2.u-m-flexWrap--row
+          .House-topFacility.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2.u-ta-center
+            ="Kamin"
+          .House-topFacility.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2.u-ta-center
+            ="Außenpool"
+          .House-topFacility.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2.u-ta-center
+            ="Strandkorb"
+          .House-topFacility.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2.u-ta-center
+            ="Bootssteg"
+
+        #more-facilities.House-wrapMoreFacilities.hidden.u-flex.u-pt-3
+          .House-moreFacility.u-c-petrol.u-ff-lato.u-fw-bold.u-mb-1.u-mr-2.u-flex.u-m-flexWrap--row
+            .House-facilityCategorie
+              .Category-title.u-ff-lato.u-fw-reg.u-transform-up
+                = "Allgemein"
+              %ul
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+            .House-facilityCategorie
+              .Category-title.u-ff-lato.u-fw-reg.u-transform-up
+                = "Wohnzimmer"
+              %ul
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+            .House-facilityCategorie
+              .Category-title.u-ff-lato.u-fw-reg.u-transform-up
+                = "Badezimmer"
+              %ul
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+            .House-facilityCategorie
+              .Category-title.u-ff-lato.u-fw-reg.u-transform-up
+                = "Schlafzimmer"
+              %ul
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+            .House-facilityCategorie
+              .Category-title.u-ff-lato.u-fw-reg.u-transform-up
+                = "Aussenbereich"
+              %ul
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+                %li.list-item.u-fw-light.u-ff-lato
+                  ="Klimaanlage"
+
+        .House-showMore.u-transform-up.u-c-white.u-ff-lato.u-bg-blueLight.u-ta-center
+          %a#showmore
+            ="Gesamte Ausstattung anzeigen"
+
+    .House-desc{:id => "verfügbarkeit"}
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-3
+        = "Verfügbarkeit"
+
+
+    .House-desc.u-mb-3{:id => "preise"}
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-2
+        = "Preise"
+      .price-subtitle.u-ff-lato.u-transform-up.u-c-petrol.u-mb-1.u-fw-bold
+        ="Saisonpreise"
+      .price-subtitle.u-ff-lato.u-transform-up.u-c-petrol.u-mb-1.u-fw-bold
+        ="Nebenkosten"
+      .price-subtitle.u-ff-lato.u-transform-up.u-c-petrol.u-mb-1.u-fw-bold
+        ="optional"
+
+    .House-desc.u-pb-4{:id => "lage"}
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-2
+        = "Lage"
+      %p.House-description.u-ff-lato.u-c-petrol.u-fw-light.u-mb-3
+        = "Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. <br> <br> Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse. Wohnzimmer, Balkon, Küche (offen) und Duschbad befinden sich auf der unteren Ebene, eine Treppe im Flur führt nach oben ins Schlafzimmer. Das Meeresrauschen zum Einschlafen ist inklusive."
+      .House-map
+        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "400", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18943.932514300734!2d9.699183099999999!3d53.59361215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1565518286112!5m2!1sde!2sde", :style => "border:0", :width => "100%"}
+
+.House-host.u-bg-lightGrey.u-pt-3.u-pb-4.u-pl-1.u-pr-1
+  .wrap-housecontent
+    .max-width-houseLayout
+      .House-desc.u-pb-2{:id => "host"}
+        %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-2
+          = "Persönliche Tipps vom Vermieter"  
+      .u-flex.u-m-flexWrap--row
+        .House-hostDetails.u-widthFull.u-m-width1of2.u-l-width1of3.u-ml-1.u-mr-1.u-mb-2
+          %img.Host-image.u-pb-2(src="/images/house/host.jpg")
+          .Host-name.u-ff-lato.u-fw-bold.u-c-petrol.u-pb-1
+            ="Max Mustermann"
+          .Host-description.u-ff-lato.u-fw-light.u-c-petrol
+            ="Wir freuen uns, sie in unserem Hideaways begrüßen zu dürfen. Für einen unvergesslichen Aufenthalt empfehlen wir unsere persönlichen Highlights."
+        .House-recRestaurant.u-widthFull.u-m-width1of2.u-l-width1of3.u-ml-1.u-mr-1.u-mb-2
+          .recommendation-header.u-ff-didot.u-c-white.u-ta-center.u-mb-2
+            ="Lieblingsrestaurant"
+          .recommendation-description.u-ff-lato.u-fw-light.u-c-petrol
+            ="Gern empfehlen wir unseren Gästen das Restaurant ODIN in der Kampener 'Whiskymeile', sowie das familienfreundliche KAAMP MEREN im 'Kaamp Hüs' oder den DORFKRUG KAMPEN Bar & Grill"
+        .House-recActivity.u-widthFull.u-m-width1of2.u-l-width1of3.u-ml-1.u-mr-1.u-mb-2
+          .recommendation-header.u-ff-didot.u-c-white.u-ta-center.u-mb-2
+            ="Aktivität"
+          .recommendation-description.u-ff-lato.u-fw-light.u-c-petrol
+            ="Sylt ist eine vielfältige Insel, auf der von Golf über Wassersport, wie Segeln und Surfen hin zu Radfahren sportlich viel geboten wird. Aber auch kulturell wird hier viel geboten wie 'Kampen Jazz', der Kunst- & Kulturpfad oder das 'White Dinner'."
+
+
+.House-desc.u-pb-4{:id => "region"}
+  .wrap-housecontent
+    .max-width-houseLayout.u-pl-1.u-pr-1.u-pt-3
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-2
+        = "Entdecke die Region mit Charming Hideaways"
+      .u-flex.u-m-flexWrap--row
+        .House-recRestaurant.u-widthFull.u-m-width1of2.u-l-width2of3.u-ml-1.u-mb-2
+          .Discover-item
+            .Discover-region
+              %img.Disover-region-image.u-mb-1(src="/images/discover/pellworm.jpg")
+              .Teaser-wrapDescription
+                .Discover-description
+                  .Teaser-title.u-ff-didot.u-c-petrol
+                    = "Pellworm"
+                  .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up.u-mb-2
+                    = "Schleswig-Holstein"              
+                  .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol.u-mb-2
+                    %p
+                      = "Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft."
+        .House-recActivity.u-widthFull.u-m-width1of2.u-l-width1of3.u-mr-1.u-mb-2
+          .recommendation-header.u-ff-didot.u-c-white.u-ta-center.u-mb-2
+            ="Restaurant-Tipp"
+          .Teaser-title.u-ff-didot.u-c-petrol
+            = "Vogelkoje"
+          .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up.u-mb-2
+            = "Zur Webseite"    
+          .recommendation-description.u-ff-lato.u-fw-light.u-c-petrol
+            ="Die Kampener Vogelkoje ist mit ihrer historischen Entenfangstätte ein beliebtes Ausflugsziel. Direkt daneben zwischen alten Bäumen, Meer und Watt liegt das Restaurant Vogelkoje mit großer Strandkorb-Terrasse und einem Spielplatz, wo die Kids sich austoben können, während die Eltern entspannt genießen. Probieren Sie den bewährten Klassiker, die 'Halbe Ente', und entdecken Sie Altbewährtes im neuen Gewand. "
+
+
+.House-desc.u-pb-4{:id => "more_houses"}
+  .wrap-housecontent
+    .u-max-widthSmall.u-pl-1.u-pr-1
+      %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-2
+        = "Weitere Objekte von diesem Vermieter"
+      .Teaser-wrapItems.u-flex.u-flexWrap--row
+        - data.housedetail.kooperation_teaser.each_with_index do | item, index | 
+          .Teaser--m
+            .Teaser-wrapContent.u-flex.u-flexWrap--row
+              .Teaser-image{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
+              .Teaser-wrapDescription.u-flex
+                .Teaser-description.u-bg-lightGrey
+                  .Teaser-infos.u-flex
+                    .Teaser-left.u-width1of2
+                      .Teaser-title.u-ff-didot.u-c-petrol
+                        = "#{item.title}"
+                      .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+                        = "#{item.region}"              
+                    .Teaser-right.u-width1of2
+                      .Teaser-price.u-ff-lato.u-fw-light.u-c-petrol
+                        = "ab #{item.price} € / Nacht"
+                  .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol
+                    = "#{item.description}"
+                .Teaser-index
+                  %img(src="/images/index.svg")
+                  .Teaser-wrapPercent
+                    .index-count.u-ff-didot.u-ta-center
+                      = "#{item.percent}%"
+
+.Back-to-top.u-ta-center.u-pb-4
+  %img.back-to-top.u-mb-1(src="/images/icons/backtotop.svg")
+  %a.backtotop.u-ff-lato.u-c-petrol.u-fw-light{:href => "#"}
+    ="Zurück an den Anfang"
+
+.Booking.u-bg-creme
+  .Booking-wrapContent
+    .Teaser-title.u-ff-didot.u-c-petrol
+      = "Mole Hüs"
+    .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up.u-pb-2
+      = "Westerwald"
+    .Search-date#datepicker.u-pb-2
+      .Search-dropdown.u-pr-1
+        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Früheste Anreise"}
+      .Search-dropdown
+        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
+    .Search-dropdown.u-pb-3
+      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
+        %option
+          = "Personen"
+    .Booking-wrapPrice.u-flex
+      .price-title.u-width1of2.u-ff-lato.u-c-petrol
+        ="Ihr Mietpreis"
+      .price.u-width1of2.u-ff-didot.u-ta-right.u-c-petrol
+        ="2.625,00€"
+    .disclaimer.u-ta-right.u-ff-lato.u-fw-light.u-c-petrol.u-pb-2
+      = "zzgl. Buchungsnebenkosten <br>und Kaution"
+    .u-ta-center
+      %a.hover-link.u-fw-light.u-ff-lato.u-pb-1.price-about
+        ="Wie errechnet sich mein Gesamtpreis?"
+    .button.button-dark.u-c-white.u-ff-lato.u-fw-light.u-transform-up.u-bg-petrol.u-mb-1.u-pb-1.u-pt-1.u-ta-center
+      = "buchung anfragen"
+    .button.button-light.u-c-white.u-ff-lato.u-fw-light.u-transform-up.u-bg-blueLight.u-mb-1.u-pb-1.u-pt-1.u-ta-center
+      %img.button-image(src="/images/icons/merkliste-white.svg")
+      = "objekt merken"
+    .button.button-light.u-c-white.u-ff-lato.u-fw-light.u-transform-up.u-bg-blueLight.u-mb-1.u-pb-1.u-pt-1.u-ta-center
+      = "fragen zum objekt"
+
+= partial "footer"

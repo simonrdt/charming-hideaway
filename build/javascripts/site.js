@@ -15,6 +15,25 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+
+  $('.slider-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+
+  $('.slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-big',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+
+
   $("#item_suche").click(function(e){
     $("#searchbox").toggleClass("u-block");
     $("#dark").toggleClass("u-block");
@@ -26,9 +45,7 @@ $(document).ready(function(){
       $("#dark").removeClass("u-block");
     }
   });
-});
 
-$(document).ready(function(){
   $("#burger").click(function(e){
     $("#burger_menu").toggleClass("u-block");
   });
@@ -36,6 +53,11 @@ $(document).ready(function(){
   $("#showmore").click(function(e){
     $("#more_filter").toggleClass("hidden");
   });
+
+  $("#showmore").click(function(e){
+    $("#more-facilities").toggleClass("hidden");
+  });
+
 });
 
 $(document).ready(function(){

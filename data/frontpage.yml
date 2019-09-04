@@ -4,11 +4,19 @@ hero:
         image: haus01
         headline: Ferienhäuser vom Feinsten.
         subline: Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
+      -
+        image: haus01
+        headline: Headline 2.
+        subline: Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
+      -
+        image: haus01
+        headline: Headline 3.
+        subline: Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
 
 kooperation_teaser:
       -
         image: house
-        title: Mole Hüs
+        title: Mole Hüs Sehr langer Name der 
         region: Westerwald
         price: 660.00
         description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.

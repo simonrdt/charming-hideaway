@@ -30,6 +30,10 @@
   justify-content: space-between;
 }
 
+.u-justify--around {
+  justify-content: space-around;
+}
+
 .u-block {
   display: block !important;
 }

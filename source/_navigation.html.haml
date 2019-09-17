@@ -12,7 +12,7 @@
       .Logo--large
         %img(src="/images/Logo_CH_Petrol.svg")
       %nav.u-flex.u-mh-Auto
-        .Navigation-wrapItems.u-mh-Auto.u-flex.u-justifyCenter.u-alignEnd
+        %ul.Navigation-wrapItems.u-mh-Auto.u-flex.u-justifyCenter.u-alignEnd
           - data.navigation.navigation.each_with_index do | item, index | 
             %li.Navigation-item.link.u-c-greenDark.u-ff-lato.u-fw-reg.u-transform-up.u-c-petrol 
               = "#{item.name}"

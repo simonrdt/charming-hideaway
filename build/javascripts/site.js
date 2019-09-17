@@ -14,8 +14,30 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
 
+$(document).ready(function(){
+    // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+
+  // Get the header
+  var header = document.getElementById("searchsmall");
+
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > 850) {
+      header.classList.add("fix-search");
+    } else {
+      header.classList.remove("fix-search");
+    }
+  }
+});
+
+
+$(document).ready(function(){
+  
   $('.slider-big').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -33,6 +55,15 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 
+
+  $('.Slider-home').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    dots: true,
+    centerMode: true
+  });
 
   $("#item_suche").click(function(e){
     $("#searchbox").toggleClass("u-block");

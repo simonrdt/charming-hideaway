@@ -54,8 +54,9 @@ Suche
 <input autocomplete='on' id='searchbox_input' name='search' type='text'>
 <input class='Button u-bg-blueLight u-c-white' id='suchen' type='submit' value='Suchen'>
 </div>
-<body>
+<body id='body'>
 <div class='dark' id='dark'></div>
+<div class='Navigation-sticky'>
 <div class='Navigation--sub u-bg-lightGrey u-pr-1 u-pl-1'>
 <div class='u-widthFull u-max-width12of12 u-mh-Auto u-flex u-justifyRight'>
 <li class='link-withIcon u-c-blueLight u-ff-lato u-fw-light u-transform-up' id='item_suche' onclick='displayLogin()'>
@@ -148,8 +149,10 @@ Momente
 CH-Index
 </li>
 </div>
+</div>
 
-<div class='Hero Hero--slider'>
+<div class='Hero Hero--slider Slider-home u-mt-6'>
+<div class='Slide'>
 <div class='Hero-slide u-flex u-alignEnd' style='background-image: url(/images/hero/haus01.jpg)'>
 <div class='Hero-wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-pl-1 u-pr-1'>
 <h1 class='Hero-headline u-c-white u-ff-didot'>
@@ -161,7 +164,32 @@ Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtun
 </div>
 </div>
 </div>
-<div class='Search Search--small u-bg-lightGrey u-mb-Section'>
+<div class='Slide'>
+<div class='Hero-slide u-flex u-alignEnd' style='background-image: url(/images/hero/haus01.jpg)'>
+<div class='Hero-wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-pl-1 u-pr-1'>
+<h1 class='Hero-headline u-c-white u-ff-didot'>
+Headline 2.
+</h1>
+<h2 class='Hero-subline u-ff-lato u-fw-light u-c-white'>
+Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
+</h2>
+</div>
+</div>
+</div>
+<div class='Slide'>
+<div class='Hero-slide u-flex u-alignEnd' style='background-image: url(/images/hero/haus01.jpg)'>
+<div class='Hero-wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-pl-1 u-pr-1'>
+<h1 class='Hero-headline u-c-white u-ff-didot'>
+Headline 3.
+</h1>
+<h2 class='Hero-subline u-ff-lato u-fw-light u-c-white'>
+Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
+</h2>
+</div>
+</div>
+</div>
+</div>
+<div class='Search Search--small u-bg-lightGrey u-mb-Section' id='searchsmall'>
 <div class='Search--wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-flex u-flexWrap--row'>
 <div class='Search-dropdown Search-dropdown--big'>
 <input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Reiseziel'>
@@ -223,7 +251,42 @@ Unsere Hideaways in Bayern
 <div class='Teaser-wrapItems u-flex u-flexWrap--row'>
 <div class='Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
-<img class='Teaser-image' src='/images/teaser/house.jpg'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs Sehr langer Name der
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
 <div class='Teaser-description u-bg-lightGrey'>
 <div class='Teaser-infos u-flex'>
@@ -258,7 +321,7 @@ Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf de
 </div>
 <div class='Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
-<img class='Teaser-image' src='/images/teaser/house.jpg'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
 <div class='Teaser-description u-bg-lightGrey'>
 <div class='Teaser-infos u-flex'>
@@ -293,42 +356,7 @@ Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf de
 </div>
 <div class='Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
-<img class='Teaser-image' src='/images/teaser/house.jpg'>
-<div class='Teaser-wrapDescription u-flex'>
-<div class='Teaser-description u-bg-lightGrey'>
-<div class='Teaser-infos u-flex'>
-<div class='Teaser-left u-width1of2'>
-<div class='Teaser-title u-ff-didot u-c-petrol'>
-Mole Hüs
-</div>
-<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
-Westerwald
-</div>
-</div>
-<div class='Teaser-right u-width1of2'>
-<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
-ab 660.0 € / Nacht
-</div>
-</div>
-</div>
-<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
-Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
-</div>
-</div>
-<div class='Teaser-index'>
-<img src='/images/index.svg'>
-<div class='Teaser-wrapPercent'>
-<div class='index-count u-ff-didot u-ta-center'>
-91.5%
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='Teaser--m'>
-<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
-<img class='Teaser-image' src='/images/teaser/house.jpg'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
 <div class='Teaser-description u-bg-lightGrey'>
 <div class='Teaser-infos u-flex'>
@@ -772,7 +800,7 @@ Mehr zur region
 <div class='Discover-regionHideaway'>
 <div class='Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
-<img class='Teaser-image' src='/images/teaser/house.jpg'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
 <div class='Teaser-description u-bg-lightGrey'>
 <div class='Teaser-infos u-flex'>
@@ -832,7 +860,7 @@ Mehr zur region
 <div class='Discover-regionHideaway'>
 <div class='Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
-<img class='Teaser-image' src='/images/teaser/house.jpg'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
 <div class='Teaser-description u-bg-lightGrey'>
 <div class='Teaser-infos u-flex'>

@@ -9,8 +9,14 @@
         %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
     .Search-dropdown.Search-dropdown--mini
       %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
-        %option
+        %option.select-item{:value => "Personen"}
           = "Personen"
+        %option.select-item{:value => "1 Person"}
+          = "1 Person"
+        %option.select-item{:value => "2 Personen"}
+          = "2 Personen"
+        %option.select-item{:value => "3 Personen"}
+          = "3 Personen"
     .Search-checkbox--mini.Search-underline
       .Search-checkbox.u-ff-lato.u-transform-up
         %input#hund{:checked => "checked", :name => "hund", :type => "checkbox"}/

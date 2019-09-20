@@ -60,6 +60,7 @@
   background-position: center;
   display: block;
   height: 250px;
+  position: relative;
 }
 
 .Teaser-wrapPercent {
@@ -67,6 +68,10 @@
   padding-bottom: 6px;
   font-size: 15px;
   letter-spacing: 1px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: center;
 }
 
 .Teaser-index {
@@ -190,4 +195,27 @@
   .Teaser--l .Teaser-index {
     top: -105px;
   }
+}
+
+.index-info {
+  max-width: 15px;
+  padding-right: 5px;
+}
+
+
+
+.Teaser-favoriten {
+  display: block;
+  position: absolute;
+  right: 15px;
+  width: 35px;
+  top: 15px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.favor {
+  background-image: url(../../images/icons/favorite-selected.svg) !important;
 }

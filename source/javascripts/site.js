@@ -89,6 +89,12 @@ $(document).ready(function(){
     $("#more-facilities").toggleClass("hidden");
   });
 
+  var favorites = $('a.favorite');
+
+  favorites.click(function(){
+    $(this).addClass('favor');  
+  });
+
 });
 
 $(document).ready(function(){

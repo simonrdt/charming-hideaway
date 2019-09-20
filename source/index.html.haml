@@ -32,6 +32,7 @@
       .Teaser--m
         .Teaser-wrapContent.u-flex.u-flexWrap--row
           .Teaser-image{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
+            %a.Teaser-favoriten.favorite{:style => "background-image: url(../images/icons/favorite.svg)"}
           .Teaser-wrapDescription.u-flex
             .Teaser-description.u-bg-lightGrey
               .Teaser-infos.u-flex
@@ -48,6 +49,9 @@
             .Teaser-index
               %img(src="/images/index.svg")
               .Teaser-wrapPercent
+                .index-info
+                  %a{:href => "https://google.com"}
+                    %img.info-icon(src="/images/icons/info.svg")
                 .index-count.u-ff-didot.u-ta-center
                   = "#{item.percent}%"
   .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto

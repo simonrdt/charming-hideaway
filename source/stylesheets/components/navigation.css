@@ -137,7 +137,7 @@
 .wrapper .box-item .menu-item .burger-lines {
   top: 50%;
   display: block;
-  margin-top: -7px;
+  margin-top: -4px;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition-duration: 0.22s;
   position: absolute;
@@ -193,6 +193,10 @@
   .burger-menu .Navigation-item {
     display: none;  
   }  
+
+  .Logo--large {
+    width: 275px;
+  }
 }
 
 @media screen and (max-width: 569px) {
@@ -223,3 +227,4 @@
   top: 0;
   z-index: 100000;
 }
+

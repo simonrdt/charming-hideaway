@@ -1,12 +1,12 @@
-#searchsmall.Search.Search--small.u-bg-lightGrey.u-mb-Section
+#searchsmall.Search.Search--small.u-bg-creme.u-mb-Section
   .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row
     .Search-dropdown.Search-dropdown--big
       %input.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Reiseziel"}
     .Search-date#datepicker
       .Search-dropdown
-        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Früheste Anreise"}
+        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Anreise"}
       .Search-dropdown
-        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
+        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Abreise"}
     .Search-dropdown.Search-dropdown--mini
       %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
         %option.select-item{:value => "Personen"}
@@ -17,7 +17,7 @@
           = "2 Personen"
         %option.select-item{:value => "3 Personen"}
           = "3 Personen"
-    .Search-checkbox--mini.Search-underline
+    .Search-checkbox--mini
       .Search-checkbox.u-ff-lato.u-transform-up
         %input#hund{:checked => "checked", :name => "hund", :type => "checkbox"}/
         %label.checkbox-label{:for => "hund"} Mit Hund
@@ -26,4 +26,5 @@
         %label.checkbox-label{:for => "familien"} Für Familien
     .Search-submit
       %button.Search-button{:type => "submit"}
-        %img.Search-icon(src="/images/icons/search.svg")
+        %a
+          = "SUCHE"

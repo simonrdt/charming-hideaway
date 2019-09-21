@@ -16,6 +16,9 @@
   fill: none;
   stroke-width: 1.8;
   stroke-linecap: round;
+}
+
+.progress-animation {
   animation: progress 1s ease-out forwards;
 }
 

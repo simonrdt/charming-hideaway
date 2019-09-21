@@ -83,10 +83,32 @@
 .Inspiration-wrapTeaser {
   display: flex;
   width: 100%;
+  max-width: 70%;
 }
 
 .Inspiration-item {
   position: relative;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+
+.slider-inspiration .slick-list {
+  padding-top: 67px;
+}
+
+.slider-inspiration .slick-prev,
+.slider-inspiration .slick-next {
+  bottom: -40px !important;
+  top: initial !important;
+}
+
+.slider-inspiration .slick-prev {
+    left: 60%;
+    bottom: 20px;
+}
+
+.slider-inspiration .slick-next {
+    right: 30%;
+    bottom: 20px;
 }

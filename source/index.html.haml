@@ -4,11 +4,18 @@
   - data.frontpage.hero.each_with_index do | item, index | 
     .Slide
       .Hero-slide.u-flex.u-alignEnd{:style => "background: url(#{image_path "hero/#{item.image}.jpg"}) rgba(0,0,0,0.3); background-size:cover; background-blend-mode: multiply;"}
-        .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
-          %h1.Hero-headline.u-c-white.u-ff-didot
-            = "#{item.headline}"
-          %h2.Hero-subline.u-ff-lato.u-fw-light.u-c-white
-            = "#{item.subline}"
+        .Hero-contentWidth
+          .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+            %h1.Hero-headline.u-c-white.u-ff-didot
+              = "#{item.headline}"
+            %h2.Hero-subline.u-ff-lato.u-fw-light.u-c-white
+              = "#{item.subline}"
+          .Hero-wrapLink
+            .Hero-link.u-c-white.u-ff-didot
+              = "Dieses Hideaway: Liebelei"
+            %a.Object-button
+              .Link-button
+                ="Zum Objekt"
 
 = partial "searchsmall"
 

@@ -109,13 +109,10 @@
 
 .Teaser-index--s {
   max-width: 90px;
-  position: absolute;
-  bottom: 36px;
 }
 
 .Teaser-wrap--s {
-  position: absolute;
-  bottom: -30px;
+
 }
 
 .Teaser-wrap--s .Teaser-title {
@@ -128,15 +125,29 @@
 }
 
 .Teaser_hide {
-  opacity: 0;
+  /*opacity: 0;*/
     -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.Inspiration-item {
+  transition: transform .3s ease-in;
 }
 
 .Inspiration-item:hover .Teaser_hide {
-  opacity: 1;
+  /*opacity: 1;*/
+}
+
+.Inspiration-item:hover .Inspiration-image {
+  position: relative;
+  z-index: -2;
+  transform: translateY(-67px);
 }
 
 /*MOMENTE*/

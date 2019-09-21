@@ -17,7 +17,8 @@
   }
 
   .Discover-region {
-    margin-right: 17px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -30,4 +31,22 @@
   .Discover-wrapItems .Discover-item:not(:first-child) {
       display: none;
   }
+}
+
+.slider-region .slick-next:before,
+.slider-inspiration .slick-next:before {
+  content: url("../../images/icons/arrow-right.svg") !important;
+}
+
+.slider-region .slick-prev:before,
+.slider-inspiration .slick-prev:before {
+  content: url("../../images/icons/arrow-left.svg") !important;
+}
+
+.slider-region .slick-next {
+  right: -50px;
+}
+
+.slider-region .slick-prev {
+  left: -50px;
 }

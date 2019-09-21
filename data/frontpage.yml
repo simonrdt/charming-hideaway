@@ -112,8 +112,50 @@ discover:
         teaserprice: 660.00
         teaserdescription: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
         teaserpercent: 91.50
+      - 
+        image: pellworm
+        title: Pellworm
+        region: Schleswig-Holstein
+        description: Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft.
+        teaserimage: house
+        teasertitle: Mole Hüs
+        teaserregion: Westerwald
+        teaserprice: 660.00
+        teaserdescription: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        teaserpercent: 91.50
+      -
+        image: eifel
+        title: Eifel
+        region: Rheinland-Pfalz
+        description: Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft. 
+        teaserimage: house
+        teasertitle: Mole Hüs
+        teaserregion: Westerwald
+        teaserprice: 660.00
+        teaserdescription: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        teaserpercent: 91.50
 
 inspiration_teaser:
+      - 
+        image: vorschau_1
+        title: Mole Hüs
+        price: 660.00
+        percent: 91.50
+      -
+        image: vorschau_2
+        title: Westerwald
+        price: 660.00
+        percent: 91.50
+      -
+        image: vorschau_3
+        title: Westerwald
+        price: 660.00
+        percent: 91.50
+      -
+        image: vorschau_1
+        title: Westerwald
+        price: 660.00
+        percent: 91.50
       - 
         image: vorschau_1
         title: Mole Hüs

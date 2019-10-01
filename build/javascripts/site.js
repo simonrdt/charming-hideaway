@@ -56,6 +56,24 @@ $(document).ready(function(){
   });
 
 
+  $('.slider-inspiration').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: true
+  });
+
+  $('.slider-region').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: false,
+    arrows: true
+  });
+
   $('.Slider-home').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -89,6 +107,30 @@ $(document).ready(function(){
     $("#more-facilities").toggleClass("hidden");
   });
 
+  var favorites = $('a.favorite');
+
+  favorites.click(function(){
+    $(this).toggleClass('favor');  
+  });
+
+  $(function($, win) {
+    $.fn.inViewport = function(cb) {
+       return this.each(function(i,el){
+         function visPx(){
+           var H = $(this).height(),
+               r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+           return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+         } visPx();
+         $(win).on("resize scroll", visPx);
+       });
+    };
+  }(jQuery, window));
+
+
+
+  $(".circle").inViewport(function(px){
+      if(px) $(this).addClass("progress-animation") ;
+  });
 });
 
 $(document).ready(function(){

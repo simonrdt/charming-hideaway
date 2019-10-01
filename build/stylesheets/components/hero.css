@@ -1,5 +1,5 @@
 .Hero-slide {
-  height: 60vh !important;
+  height: 75vh !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,4 +193,47 @@
     outline: none;
     background: transparent;
     z-index: 1000;
+}
+
+@media screen and (min-width: 569px) {
+  .Hero-wrapLink {
+    max-width: 400px;
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  .Hero-link {
+    width: 65%;
+    background: rgba(255,255,255,0.50);
+    border-radius: 6px 0 0 6px;
+    padding: 10px 8px 10px 10px;
+    align-content: flex-end;
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 18px;
+  }
+
+  .Link-button {
+    text-align: center;
+    padding: 10px 13px;
+    color: var(--color-white);
+    background: #5EA9B5;
+    font-family: Lato;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.9;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .Hero-contentWidth {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
 }

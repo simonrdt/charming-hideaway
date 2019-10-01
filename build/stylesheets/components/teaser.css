@@ -60,6 +60,7 @@
   background-position: center;
   display: block;
   height: 250px;
+  position: relative;
 }
 
 .Teaser-wrapPercent {
@@ -67,6 +68,10 @@
   padding-bottom: 6px;
   font-size: 15px;
   letter-spacing: 1px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: center;
 }
 
 .Teaser-index {
@@ -104,13 +109,10 @@
 
 .Teaser-index--s {
   max-width: 90px;
-  position: absolute;
-  bottom: 36px;
 }
 
 .Teaser-wrap--s {
-  position: absolute;
-  bottom: -30px;
+
 }
 
 .Teaser-wrap--s .Teaser-title {
@@ -123,13 +125,31 @@
 }
 
 .Teaser_hide {
-  opacity: 0;
+  /*opacity: 0;*/
     -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.Inspiration-item {
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
 }
 
 .Inspiration-item:hover .Teaser_hide {
-  opacity: 1;
+  /*opacity: 1;*/
+}
+
+.Inspiration-item:hover .Inspiration-image {
+  position: relative;
+  z-index: -2;
+  -webkit-transform: translateY(-67px);
+          transform: translateY(-67px);
 }
 
 /*MOMENTE*/
@@ -188,4 +208,27 @@
   .Teaser--l .Teaser-index {
     top: -105px;
   }
+}
+
+.index-info {
+  max-width: 15px;
+  padding-right: 5px;
+}
+
+
+
+.Teaser-favoriten {
+  display: block;
+  position: absolute;
+  right: 15px;
+  width: 35px;
+  top: 15px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.favor {
+  background-image: url(../../images/icons/favorite-selected.svg) !important;
 }

@@ -382,6 +382,38 @@ ul {
     display:block;
 }
 
+
+#Lage-detail {
+    display:none;
+}
+#show-Lage:hover #Lage-detail {
+    display:block;
+}
+
+
+#Architektur-detail {
+    display:none;
+}
+#show-Architektur:hover #Architektur-detail {
+    display:block;
+}
+
+
+#Inneneinrichtung-detail {
+    display:none;
+}
+#show-Inneneinrichtung:hover #Inneneinrichtung-detail {
+    display:block;
+}
+
+
+#Ausstattung-detail {
+    display:none;
+}
+#show-Ausstattung:hover #Ausstattung-detail {
+    display:block;
+}
+
 .price-detail h6 {
   text-align: left;
   letter-spacing: .8px;
@@ -394,4 +426,17 @@ ul {
   padding: 10px;
   margin: 0 auto;
   margin-top: 15px;
+}
+
+.jury-category-detail {
+  position: absolute;
+  width: 860px;
+  padding: 10px;
+  margin: 0 auto;
+  left: 0;
+  margin-top: 45px;
+}
+
+.ch-index-wrapItems {
+  position: relative;
 }

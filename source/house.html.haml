@@ -125,7 +125,7 @@
               .price-title.u-c-petrol.u-ff-lato
                 ="Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse."
         - data.frontpage.chindex.each_with_index do | item, index | 
-          .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
+          .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2{:id => "show-#{item.title}"}
             .single-chart
               %svg.circular-chart{:viewbox => "0 0 36 36"}
                 %path.circle-bg{:d => "M18 2.0845\n          a 15.9155 15.9155 0 0 1 0 31.831\n          a 15.9155 15.9155 0 0 1 0 -31.831"}
@@ -134,6 +134,13 @@
                   ="#{item.percentage}%"
             .Index-title.u-ff-lato.u-fw-bold.u-c-petrol.u-ta-center.u-fw-light.u-transform-up.u-mb-0
               = "#{item.title}"
+            .jury-category-detail.u-bg-lightGrey{:id => "#{item.title}-detail"}
+              %h6.u-c-petrol.u-fw-bold.u-ff-lato.u-pb-1.u-transform-up
+                ="Kommentar der Jury"
+              .price-row.u-pb-1
+                .price-title.u-c-petrol.u-ff-lato
+                  ="Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse."
+
         .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
           .Teaser-info.u-fw-light.u-ff-lato.u-c-petrol
             = "Was bedeutet dieser Index und wie bewertet Charming Hideaways die Objekte? Erfahren Sie mehr:"

@@ -112,12 +112,18 @@
   .wrap-housecontent
     .ch-index.u-pl-1.u-pr-1
       .ch-index-wrapItems.u-flex.u-flexWrap--row
-        .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
+        #show-jury.Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
           .Teaser-index
             %img(src="/images/index.svg")
             .Teaser-wrapPercent
               .index-count.u-ff-didot.u-ta-center
                 = "91,50%"
+          #jury-detail.jury-detail.u-bg-lightGrey
+            %h6.u-c-petrol.u-fw-bold.u-ff-lato.u-pb-1.u-transform-up
+              ="Kommentar der Jury"
+            .price-row.u-pb-1
+              .price-title.u-c-petrol.u-ff-lato
+                ="Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse."
         - data.frontpage.chindex.each_with_index do | item, index | 
           .Index-item.u-width1of2.u-m-width1of4.u-l-width1of6.u-mb-2
             .single-chart
@@ -474,7 +480,7 @@
             ="Ihr Gesamtpreis"
           .price-value.u-c-petrol.u-ff-didot
             ="2.625,00€"
-            
+
     .button.button-dark.u-c-white.u-ff-lato.u-fw-light.u-transform-up.u-bg-petrol.u-mb-1.u-pb-1.u-pt-1.u-ta-center{:href => "#"}
       = "buchung anfragen"
     .button.button-light.u-c-white.u-ff-lato.u-fw-light.u-transform-up.u-bg-blueLight.u-mb-1.u-pb-1.u-pt-1.u-ta-center{:href => "#"}

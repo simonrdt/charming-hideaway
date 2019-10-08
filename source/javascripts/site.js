@@ -37,6 +37,10 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+
+  $('#accordion').collapse({
+    toggle: false
+  })
   
   $('.slider-big').slick({
     slidesToShow: 1,
@@ -103,6 +107,10 @@ $(document).ready(function(){
     $("#more_filter").toggleClass("hidden");
   });
 
+  $("#showdetails").click(function(e){
+    $("#facilitydetails").toggleClass("hidden");
+  });
+
   $("#showmore").click(function(e){
     $("#more-facilities").toggleClass("hidden");
   });
@@ -131,6 +139,23 @@ $(document).ready(function(){
   $(".circle").inViewport(function(px){
       if(px) $(this).addClass("progress-animation") ;
   });
+
+  var maxLength = 450;
+    $(".show-read-more").each(function(){
+        var myStr = $(this).text();
+        if($.trim(myStr).length > maxLength){
+            var newStr = myStr.substring(0, maxLength);
+            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+            $(this).empty().html(newStr);
+            $(this).append(' <a href="javascript:void(0);" class="Button u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol read-more">Mehr</a>');
+            $(this).append('<span class="more-text">' + removedStr + '</span>');
+        }
+    });
+    $(".read-more").click(function(){
+        $(this).siblings(".more-text").contents().unwrap();
+        $(this).remove();
+    });
+
 });
 
 $(document).ready(function(){

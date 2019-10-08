@@ -36,3 +36,17 @@ kooperation_teaser:
         price: 660.00
         description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
         percent: 91.50
+      -
+        image: house
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
+      -
+        image: house
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50

@@ -1,0 +1,21 @@
+.card-header button {
+  background: transparent;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border: 0 !important; 
+  border-radius: 0 !important;
+}
+
+.card-header {
+  border: 0;
+}

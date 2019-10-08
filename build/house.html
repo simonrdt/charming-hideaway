@@ -12,6 +12,9 @@
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js' type='text/javascript'></script>
 <link href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' rel='stylesheet' type='text/css'>
 <script src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' type='text/javascript'></script>
+<script crossorigin='anonymous' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
 <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
 <!-- Use the title from a page's frontmatter if it has one -->
 <title>Charming Hideaways</title>
@@ -278,6 +281,65 @@ Nein
 </div>
 </div>
 </div>
+<div class='House-facilities hidden' id='facilitydetails'>
+<div class='wrap-housecontent'>
+<div class='Wrap-facilityDetails u-m-flexWrap--row u-bg-creme'>
+<div class='Facility-details table-border u-mb-2'>
+<div class='Facility-descriptionHeadline u-ff-didot u-c-petrol'>
+Wohnfläche
+</div>
+<div class='Facility-descriptionValue u-c-petrol u-ff-lato'>
+135m
+</div>
+</div>
+<div class='Facility-details table-border u-mb-2'>
+<div class='Facility-descriptionHeadline u-ff-didot u-c-petrol'>
+Max. Personen
+</div>
+<div class='Facility-descriptionValue u-c-petrol u-ff-lato'>
+6
+</div>
+<div class='Facility-descriptionHeadline u-ff-didot u-c-petrol'>
+Max. Personen
+</div>
+<div class='Facility-descriptionValue u-c-petrol u-ff-lato'>
+6
+</div>
+</div>
+<div class='Facility-details table-border u-mb-2'>
+<div class='Facility-descriptionHeadline u-ff-didot u-c-petrol'>
+Schlafzimmer
+</div>
+<div class='Facility-descriptionValue u-c-petrol u-ff-lato'>
+3
+</div>
+</div>
+<div class='Facility-details table-border u-mb-2'>
+<div class='Facility-descriptionHeadline u-ff-didot u-c-petrol'>
+Badezimmer
+</div>
+<div class='Facility-descriptionValue u-c-petrol u-ff-lato'>
+3
+</div>
+</div>
+<div class='Facility-details u-mb-2'>
+<div class='Facility-descriptionHeadline u-ff-didot u-c-petrol'>
+Haustiere
+</div>
+<div class='Facility-descriptionValue u-c-petrol u-ff-lato'>
+Nein
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='wrap-housecontent'>
+<div class='House-facilitiesDetails u-bg-creme'>
+<a class='Details-link u-c-petrol u-ff-lato u-ta-center' id='showdetails'>
+Details einblenden
+</a>
+</div>
+</div>
 <div class='House-intro u-pl-1 u-pr-1 u-mb-3'>
 <div class='wrap-housecontent'>
 <h1 class='House-name u-ta-center u-c-petrol u-ff-didot'>
@@ -457,11 +519,18 @@ Tipps zur Region
 <h1 class='House-headline u-c-petrol u-ff-didot u-mb-3'>
 Beschreibung
 </h1>
-<p class='House-description u-ff-lato u-c-petrol u-fw-light u-mb-3'>
+<p class='House-description u-ff-lato u-c-petrol u-fw-light u-mb-3 show-read-more'>
 Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. <br> <br> Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse. Wohnzimmer, Balkon, Küche (offen) und Duschbad befinden sich auf der unteren Ebene, eine Treppe im Flur führt nach oben ins Schlafzimmer. Das Meeresrauschen zum Einschlafen ist inklusive.
 </p>
 </div>
-<div class='House-desc' id='ausstattung'>
+<div class='House-content'>
+<video controls='' width='100%'>
+<source src='/media/examples/flower.webm' type='video/webm'>
+<source src='/media/examples/flower.mp4' type='video/mp4'>
+Sorry, your browser doesn't support embedded videos.
+</video>
+</div>
+<div class='House-desc u-mb-3' id='ausstattung'>
 <h1 class='House-headline u-c-petrol u-ff-didot u-mb-3'>
 Ausstattung
 </h1>
@@ -613,30 +682,88 @@ Verfügbarkeit
 <h1 class='House-headline u-c-petrol u-ff-didot u-mb-2'>
 Preise
 </h1>
-<div class='price-subtitle u-ff-lato u-transform-up u-c-petrol u-mb-1 u-fw-bold'>
+<div class='price-accordion' id='accordion'>
+<div class='card'>
+<div class='card-header' id='headingOne'>
+<button aria-controls='collapseOne' aria-expanded='true' class='price-subtitle u-ff-lato u-transform-up u-c-petrol u-mb-1 u-fw-bold' data-target='#collapseOne' data-toggle='collapse'>
 Saisonpreise
+</button>
 </div>
-<div class='price-subtitle u-ff-lato u-transform-up u-c-petrol u-mb-1 u-fw-bold'>
+<div aria-labelledby='headingOne' class='collapse show' data-parent='#accordion' id='collapseOne'>
+<div class='card-body'>
+Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+</div>
+<div class='card'>
+<div class='card-header' id='headingTwo'>
+<button aria-controls='collapseTwo' aria-expanded='false' class='price-subtitle u-ff-lato u-transform-up u-c-petrol u-mb-1 u-fw-bold' data-target='#collapseTwo' data-toggle='collapse'>
 Nebenkosten
+</button>
 </div>
-<div class='price-subtitle u-ff-lato u-transform-up u-c-petrol u-mb-1 u-fw-bold'>
+<div aria-labelledby='headingTwo' class='collapse' data-parent='#accordion' id='collapseTwo'>
+<div class='card-body'>
+Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+</div>
+<div class='card'>
+<div class='card-header' id='headingThree'>
+<button aria-controls='collapseThree' aria-expanded='false' class='price-subtitle u-ff-lato u-transform-up u-c-petrol u-mb-1 u-fw-bold' data-target='#collapseThree' data-toggle='collapse'>
 optional
+</button>
+</div>
+<div aria-labelledby='headingThree' class='collapse' data-parent='#accordion' id='collapseThree'>
+<div class='card-body'>
+Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class='House-desc u-pb-4' id='lage'>
 <h1 class='House-headline u-c-petrol u-ff-didot u-mb-2'>
 Lage
 </h1>
-<p class='House-description u-ff-lato u-c-petrol u-fw-light u-mb-3'>
+<p class='House-description u-ff-lato u-c-petrol u-fw-light u-mb-3 show-read-more'>
 Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. <br> <br> Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse. Wohnzimmer, Balkon, Küche (offen) und Duschbad befinden sich auf der unteren Ebene, eine Treppe im Flur führt nach oben ins Schlafzimmer. Das Meeresrauschen zum Einschlafen ist inklusive.
 </p>
 <div class='House-map'>
 <iframe allowfullscreen='' frameborder='0' height='400' src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18943.932514300734!2d9.699183099999999!3d53.59361215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1565518286112!5m2!1sde!2sde' style='border:0' width='100%'></iframe>
 </div>
+<div class='House-showMore u-transform-up u-c-white u-ff-lato u-bg-blueLight u-ta-center u-mb-3'>
+<a href='google.com'>
+Wir sind Ausgezeichnet!
+</a>
+</div>
 </div>
 </div>
 </div>
 <div class='House-host u-bg-lightGrey u-pt-3 u-pb-4 u-pl-1 u-pr-1'>
+<div class='wrap-housecontent'>
+<div class='max-width-houseLayout'>
+<div class='House-desc u-pb-2' id='host'>
+<h1 class='House-headline u-c-petrol u-ff-didot u-mb-2'>
+Das mag der Eigentümer besonders:
+</h1>
+</div>
+<div class='u-flex u-m-flexWrap--row'>
+<div class='House-hostDetails u-widthFull u-m-width1of2 u-l-width1of3 u-ml-1 u-mr-1 u-mb-2'>
+<img class='u-pb-2' src='/images/house/host.jpg'>
+</div>
+<div class='House-recRestaurant u-widthFull u-m-width1of2 u-l-width2of3 u-ml-1 u-mr-1 u-mb-2'>
+<div class='recommendation-description u-ff-lato u-fw-light u-c-petrol'>
+Sylt ist eine vielfältige Insel, auf der von Golf über Wassersport, wie Segeln und Surfen hin zu Radfahren sportlich viel geboten wird. Aber auch kulturell wird hier viel geboten wie 'Kampen Jazz', der Kunst- & Kulturpfad oder das 'White Dinner'.
+</div>
+</div>
+</div>
+<div class='House-showMore u-transform-up u-c-white u-ff-lato u-bg-blueLight u-ta-center u-mb-3'>
+<a href='google.com'>
+Wir sind Ausgezeichnet!
+</a>
+</div>
+</div>
+</div>
 <div class='wrap-housecontent'>
 <div class='max-width-houseLayout'>
 <div class='House-desc u-pb-2' id='host'>
@@ -727,8 +854,8 @@ Die Kampener Vogelkoje ist mit ihrer historischen Entenfangstätte ein beliebtes
 <h1 class='House-headline u-c-petrol u-ff-didot u-mb-2'>
 Weitere Objekte von diesem Vermieter
 </h1>
-<div class='Teaser-wrapItems u-flex u-flexWrap--row'>
-<div class='Teaser--m'>
+<div class='Teaser-wrapItems u-flex u-flexWrap--row slider-region'>
+<div class='Slide Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
 <div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
@@ -763,7 +890,77 @@ Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf de
 </div>
 </div>
 </div>
-<div class='Teaser--m'>
+<div class='Slide Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Teaser--m'>
 <div class='Teaser-wrapContent u-flex u-flexWrap--row'>
 <div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
 <div class='Teaser-wrapDescription u-flex'>
@@ -818,10 +1015,10 @@ Westerwald
 </div>
 <div class='Search-date u-pb-2' id='datepicker'>
 <div class='Search-dropdown u-pr-1'>
-<input class='Search-dropdown--select Datepicker u-ff-lato u-transform-up u-fw-bold u-c-petrol' id='date-range01' placeholder='Früheste Anreise'>
+<input class='Search-dropdown--select Datepicker u-ff-lato u-transform-up u-fw-bold u-c-petrol' id='date-range01' placeholder='Anreise'>
 </div>
 <div class='Search-dropdown'>
-<input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold u-c-petrol Datepicker' id='date-range02' placeholder='Späteste Abreise'>
+<input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold u-c-petrol Datepicker' id='date-range02' placeholder='Abreise'>
 </div>
 </div>
 <div class='Search-dropdown u-pb-3'>
@@ -842,19 +1039,57 @@ Ihr Mietpreis
 <div class='disclaimer u-ta-right u-ff-lato u-fw-light u-c-petrol u-pb-2'>
 zzgl. Buchungsnebenkosten <br>und Kaution
 </div>
-<div class='u-ta-center'>
-<a class='hover-link u-fw-light u-ff-lato u-pb-1 price-about'>
+<div class='u-ta-center' id='show-details'>
+<a class='hover-link u-fw-light u-ff-lato u-pb-1 price-about' href='#'>
 Wie errechnet sich mein Gesamtpreis?
 </a>
+<div class='price-detail u-bg-lightGrey' id='price-detail'>
+<h6 class='u-c-petrol u-fw-bold u-ff-lato u-pb-2 u-transform-up'>
+Ihr Reisepreis
+</h6>
+<div class='price-row u-pb-1'>
+<div class='price-title u-c-petrol u-ff-lato u-fw-bold'>
+Mietpreis
 </div>
-<div class='button button-dark u-c-white u-ff-lato u-fw-light u-transform-up u-bg-petrol u-mb-1 u-pb-1 u-pt-1 u-ta-center'>
+<div class='price-value u-c-petrol u-ff-didot'>
+2.625,00€
+</div>
+</div>
+<div class='price-row u-pb-1'>
+<div class='price-title u-c-petrol u-ff-lato u-fw-bold'>
+Mietpreis
+</div>
+<div class='price-value u-c-petrol u-ff-didot'>
+2.625,00€
+</div>
+</div>
+<div class='price-row u-pb-2'>
+<div class='price-title u-c-petrol u-ff-lato u-fw-bold'>
+Mietpreis
+</div>
+<div class='price-value u-c-petrol u-ff-didot'>
+2.625,00€
+</div>
+</div>
+<hr>
+<div class='price-row u-pb-2'>
+<div class='price-title u-c-petrol u-ff-lato u-fw-bold'>
+Ihr Gesamtpreis
+</div>
+<div class='price-value u-c-petrol u-ff-didot'>
+2.625,00€
+</div>
+</div>
+</div>
+</div>
+<div class='button button-dark u-c-white u-ff-lato u-fw-light u-transform-up u-bg-petrol u-mb-1 u-pb-1 u-pt-1 u-ta-center' href='#'>
 buchung anfragen
 </div>
-<div class='button button-light u-c-white u-ff-lato u-fw-light u-transform-up u-bg-blueLight u-mb-1 u-pb-1 u-pt-1 u-ta-center'>
+<div class='button button-light u-c-white u-ff-lato u-fw-light u-transform-up u-bg-blueLight u-mb-1 u-pb-1 u-pt-1 u-ta-center' href='#'>
 <img class='button-image' src='/images/icons/merkliste-white.svg'>
 objekt merken
 </div>
-<div class='button button-light u-c-white u-ff-lato u-fw-light u-transform-up u-bg-blueLight u-mb-1 u-pb-1 u-pt-1 u-ta-center'>
+<div class='button button-light u-c-white u-ff-lato u-fw-light u-transform-up u-bg-blueLight u-mb-1 u-pb-1 u-pt-1 u-ta-center' href='#'>
 fragen zum objekt
 </div>
 </div>

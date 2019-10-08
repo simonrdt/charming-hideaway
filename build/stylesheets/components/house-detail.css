@@ -1,18 +1,38 @@
-.House-facilities {
+/*.House-facilities {
   margin-bottom: 50px;
-}
+}*/
 
 .Facility {
   width: 100%;
-  max-width: 123px;
+  max-width:  20%;
   text-align: center;
+}
+
+.Facility-details {
+  width: 100%;
+  max-width:  20%;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1;
 }
 
 .Wrap-facilities {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 740px !important;
+  max-width: 860px !important;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Wrap-facilityDetails {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px !important;
   margin: 0 auto;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -61,7 +81,7 @@
 }
 
 .House-buzzwords {
-  max-width: 740px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -71,7 +91,7 @@
 }
 
 .House-content {
-  max-width: 740px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -201,7 +221,7 @@ ul {
 
 @media screen and (min-width: 569px) {
   .Booking {
-    max-width: 22%;
+    max-width: 300px;
     position: fixed;
     top: 60vh;
     right: 7%;
@@ -259,11 +279,11 @@ ul {
 }
 
 .wrap-housecontent .ch-index {
-  max-width: 740px;
+  max-width: 860px;
 }
 
 .max-width-houseLayout {
-  max-width: 740px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -277,4 +297,87 @@ ul {
     width: 100%;
     max-width: 48%;
   }
+}
+
+.House-facilitiesDetails {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 0 auto 50px auto;
+  max-width: 860px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Details-link {
+  font-size: 14px;
+}
+
+.table-border {
+  border-bottom: 2px solid var(--color-petrol);
+}
+
+@media screen and (min-width: 569px) {
+  .table-border {
+    border-right: 2px solid var(--color-petrol);
+    border-bottom: 0 !important;
+  }
+}
+
+.Facility-descriptionHeadline {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .7px;
+}
+
+.Facility-descriptionValue {
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+
+.show-read-more .more-text{
+  display: none;
+}
+
+.read-more {
+  display: block;
+  max-width: 140px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.price-detail {
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-petrol);
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-title {
+  font-size: 14px;
+  letter-spacing: .8px;
+}
+
+.price-value {
+  font-size: 14px;
+}
+
+#price-detail {
+    display:none;
+}
+#show-details:hover #price-detail {
+    display:block;
+}
+
+.price-detail h6 {
+  text-align: left;
+  letter-spacing: .8px;
+  font-size: 15px;
 }

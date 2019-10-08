@@ -16,6 +16,35 @@
             %a.Object-button
               .Link-button
                 ="Zum Objekt"
+  .Slide
+    .Hero-slide.u-flex{:style => "background: url(#{image_path "hero/haus01.jpg"}) rgba(0,0,0,0.3); background-size:cover; background-blend-mode: multiply;"}
+      .Hero-contentWidth
+        .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+        .Hero-wrapTitleElement
+          .Hero-TitleElement.u-c-white.u-ff-lato.u-c-petrol.u-transform-up
+            = "Hideaway der Woche"
+          %a.Teaser-favoriten.favorite{:style => "background-image: url(../images/icons/favorite.svg)"}
+        .Hero-teaserElement.Teaser--m
+          .Teaser-wrapDescription.u-flex.u-alignCenter
+            .Teaser-description
+              .Teaser-infos.u-flex
+                .Teaser-left.u-width1of2
+                  .Teaser-title.u-ff-didot.u-c-petrol
+                    = "Mole Hüs"
+                  .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up
+                    = "Westerwald"              
+                  .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol
+                    = "ab 660,00 € / Nacht"
+              .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol
+                = "Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See."
+            .Teaser-index
+              %img(src="/images/index.svg")
+              .Teaser-wrapPercent
+                .index-info
+                  %a{:href => "https://google.com"}
+                    %img.info-icon(src="/images/icons/info.svg")
+                .index-count.u-ff-didot.u-ta-center
+                  = "91,50%"
 
 = partial "searchsmall"
 

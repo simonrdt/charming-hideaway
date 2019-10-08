@@ -375,8 +375,23 @@ ul {
     display:block;
 }
 
+#jury-detail {
+    display:none;
+}
+#show-jury:hover #jury-detail {
+    display:block;
+}
+
 .price-detail h6 {
   text-align: left;
   letter-spacing: .8px;
   font-size: 15px;
+}
+
+.jury-detail {
+  position: absolute;
+  width: 860px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
 }

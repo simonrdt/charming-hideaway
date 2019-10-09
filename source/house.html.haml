@@ -9,10 +9,11 @@
 
 .wrap-housecontent
   .Slider-navigation.u-pl-1.u-pr-1
-    .slider-nav
+    #captions-demo.slider-nav
       - data.housedetail.hero.each_with_index do | item, index | 
         .Hero-teaser.u-flex{:style => "background-image: url(#{image_path "house/#{item.image}.png"})"}
-          .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+          %a.Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1{"data-caption" => "Lorem ipsum 1000/700", :href => "#{image_path "house/#{item.image}.png"}", :target => "_blank"}
+            %img.lightbox-teaser{:alt => "", :src => "#{image_path "house/#{item.image}.png"}" }
 
 .House-facilities.u-bg-lightGrey
   .wrap-housecontent
@@ -56,6 +57,7 @@
           = "Haustiere"
         .Facility-value.u-c-petrol.u-ff-lato.u-fw-bold
           = "Nein"
+
 .House-facilities.hidden{:id => "facilitydetails"}
   .wrap-housecontent
     .Wrap-facilityDetails.u-m-flexWrap--row.u-bg-creme

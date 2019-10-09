@@ -10,6 +10,8 @@
 <link href='https://fonts.googleapis.com/css?family=GFS+Didot&amp;display=swap' rel='stylesheet'>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js' type='text/javascript'></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js' type='text/javascript'></script>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css' rel='stylesheet'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js'></script>
 <link href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' rel='stylesheet' type='text/css'>
 <script src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' type='text/javascript'></script>
 <script crossorigin='anonymous' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
@@ -195,26 +197,26 @@ Finde dein perfektes Hideaway
 </div>
 </div>
 <div class='Search Search--big u-bg-lightGrey u-mb-Section'>
-<div class='Search--wrapContent u-alignEnd u-widthFull u-max-width12of12 u-mh-Auto u-flex u-flexWrap--row u-mb-3 u-justify--between'>
-<div class='Search-dropdown Search-dropdown--big'>
+<div class='Search--wrapContent u-alignStart u-widthFull u-max-width12of12 u-mh-Auto u-flex u-flexWrap--row row'>
+<div class='Search-dropdown Search-dropdown--big col-sm-3'>
 <input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Reiseziel'>
 </div>
-<div class='Search-date' id='datepicker'>
+<div class='Search-date col-sm-5' id='datepicker'>
 <div class='Search-dropdown'>
-<input class='Search-dropdown--select Datepicker u-ff-lato u-transform-up u-fw-bold u-c-petrol' id='date-range01' placeholder='Früheste Anreise'>
+<input class='Search-dropdown--select Datepicker u-ff-lato u-transform-up u-fw-bold u-c-petrol' id='date-range01' placeholder='Anreise'>
 </div>
 <div class='Search-dropdown'>
-<input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold u-c-petrol Datepicker' id='date-range02' placeholder='Späteste Abreise'>
+<input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold u-c-petrol Datepicker' id='date-range02' placeholder='Abreise'>
 </div>
 </div>
-<div class='Search-dropdown Search-dropdown--mini'>
+<div class='Search-dropdown Search-dropdown--small col-sm-2'>
 <select class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold'>
 <option>
 Personen
 </option>
 </select>
 </div>
-<div class='Search-checkbox--mini Search-underline Search-underline--big'>
+<div class='Search-checkbox--small Search-underline--big col-sm-2'>
 <div class='Search-checkbox u-ff-lato u-transform-up'>
 <input checked='checked' id='hund' name='hund' type='checkbox'>
 <label class='checkbox-label' for='hund'>Mit Hund</label>
@@ -229,36 +231,40 @@ Personen
 </div>
 </div>
 </div>
-<div class='Search--wrapContent u-alignEnd u-widthFull u-max-width12of12 u-mh-Auto u-flex u-flexWrap--row u-pb-4 u-justify--between'>
-<div class='Search-dropdown Search-dropdown--big'>
+<div class='Search--wrapContent u-alignEnd u-widthFull u-max-width12of12 u-mh-Auto u-flex u-flexWrap--row u-pb-4 u-justify--between row'>
+<div class='Search-dropdown Search-dropdown--big col-sm-3'>
 <select class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Objekttyp'>
 <option>
 Objekttyp
 </option>
 </select>
 </div>
-<div class='Search-dropdown Search-dropdown--small'>
+<div class='col-sm-5'>
+<div class='row'>
+<div class='Search-dropdown col-sm-6'>
 <select class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Objekttyp'>
 <option>
 Einrichtungsstil
 </option>
 </select>
 </div>
-<div class='Search-dropdown Search-dropdown--small'>
+<div class='Search-dropdown col-sm-6'>
 <select class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Objekttyp'>
 <option>
 Schlafzimmer
 </option>
 </select>
 </div>
-<div class='Search-dropdown Search-dropdown--mini'>
+</div>
+</div>
+<div class='Search-dropdown Search-dropdown--small col-sm-2'>
 <select class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Objekttyp'>
 <option>
 CH-Index
 </option>
 </select>
 </div>
-<div class='Search-submit'>
+<div class='Search-submit col-sm-2'>
 <button class='Search-button Search-button--big u-c-white u-fw-bold u-transform-up' type='submit'>
 <img class='Search-icon' src='/images/icons/search.svg'>
 Suchen
@@ -324,10 +330,10 @@ Hideaways auf der karte finden
 <div class='Inspiration u-mb-Section u-pl-1 u-pr-1'>
 <div class='Inspiration-wrapContent u-max-width12of12 u-mh-Auto u-flex'>
 <div class='Inspiration-categorieIntro'>
-<h1 class='Headline u-c-petrol u-ff-didot'>
+<h1 class='Headline u-c-petrol u-ff-didot u-mb-2'>
 Entdecken Sie echte charming Hideaways mit dem gewissen etwas.
 </h1>
-<p class='u-ff-lato u-fw-light u-c-petrol'>
+<p class='u-ff-lato u-fw-light u-c-petrol u-mb-2'>
 Entdecke ganz besondere Hideaways, die deinem persönlichen Gescmack genau treffen.
 </p>
 <div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>

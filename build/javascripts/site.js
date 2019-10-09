@@ -37,6 +37,12 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+      
+  $('#captions-demo').slickLightbox({
+    caption: 'caption',
+    useHistoryApi: 'true',
+    background: 'rgba(255,255,255,1)'
+  });
 
   $('#accordion').collapse({
     toggle: false
@@ -47,13 +53,11 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
   });
 
   $('.slider-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    asNavFor: '.slider-big',
     dots: false,
     centerMode: true,
     focusOnSelect: true

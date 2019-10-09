@@ -59,7 +59,7 @@
 
 select {
   width: 100%;
-  background-color: var(--color-creme);
+  background-color: transparent;
   border-radius: 0;
   border-bottom: 1px solid var(--color-blueLight) !important;
   font-size: 14px;
@@ -78,7 +78,7 @@ select {
 
 input {
   width: 100%;
-  background-color: var(--color-creme);
+  background-color: transparent;
   border-radius: 0;
   border-bottom: 1px solid var(--color-blueLight) !important;
   font-family: Lato-Bold;
@@ -198,6 +198,7 @@ input[type="checkbox"]:checked+label::before {
 .Search-date {
   width: 40%;
   display: flex;
+  padding: 0;
 }
 
 .Search-date .Search-dropdown {
@@ -368,11 +369,11 @@ input::placeholder {
   border: 1px solid var(--color-blueLight);
   border-radius: 16px;
   font-size: 14px;
-  letter-spacing: 1.4px;
-  padding: 6px 18px;
+  letter-spacing: 1px;
+  padding: 6px 12px;
   position: relative;
   width: 100%;
-  max-width: 125px;
+  max-width: 132px;
 }
 
 .Search-option:after {
@@ -471,4 +472,15 @@ select.order-results {
   top: 118px;
   z-index: 1000;
   width: 100%;
+}
+
+.Search--big select
+.Search--big input {
+  background: transparent !important;
+}
+
+.Search-dropdown {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
 }

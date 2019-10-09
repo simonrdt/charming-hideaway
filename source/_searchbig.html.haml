@@ -1,17 +1,22 @@
 .Search.Search--big.u-bg-lightGrey.u-mb-Section
-  .Search--wrapContent.u-alignEnd.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-mb-3.u-justify--between
-    .Search-dropdown.Search-dropdown--big
+  
+  .Search--wrapContent.u-alignStart.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.row
+    
+    .Search-dropdown.Search-dropdown--big.col-sm-3
       %input.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Reiseziel"}
-    .Search-date#datepicker
+    
+    .Search-date#datepicker.col-sm-5
       .Search-dropdown
-        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Früheste Anreise"}
+        %input#date-range01.Search-dropdown--select.Datepicker.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol{:placeholder => "Anreise"}
       .Search-dropdown
-        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Späteste Abreise"}
-    .Search-dropdown.Search-dropdown--mini
+        %input#date-range02.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold.u-c-petrol.Datepicker{:placeholder => "Abreise"}
+    
+    .Search-dropdown.Search-dropdown--small.col-sm-2
       %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold
         %option
           = "Personen"
-    .Search-checkbox--mini.Search-underline.Search-underline--big
+    
+    .Search-checkbox--small.Search-underline--big.col-sm-2
       .Search-checkbox.u-ff-lato.u-transform-up
         %input#hund{:checked => "checked", :name => "hund", :type => "checkbox"}/
         %label.checkbox-label{:for => "hund"} Mit Hund
@@ -21,27 +26,39 @@
       .Search-checkbox.u-ff-lato.u-transform-up
         %input#barriere{:checked => "checked", :name => "barriere", :type => "checkbox"}/
         %label.checkbox-label{:for => "barriere"} Barriefrei
-  .Search--wrapContent.u-alignEnd.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-pb-4.u-justify--between
-    .Search-dropdown.Search-dropdown--big
+  
+
+
+  .Search--wrapContent.u-alignEnd.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-pb-4.u-justify--between.row
+    
+    .Search-dropdown.Search-dropdown--big.col-sm-3
       %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
         %option
           ="Objekttyp"
-    .Search-dropdown.Search-dropdown--small
-      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
-        %option
-          ="Einrichtungsstil"
-    .Search-dropdown.Search-dropdown--small
-      %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
-        %option
-          ="Schlafzimmer"
-    .Search-dropdown.Search-dropdown--mini
+    
+    .col-sm-5
+      .row
+        .Search-dropdown.col-sm-6
+          %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
+            %option
+              ="Einrichtungsstil"
+
+        .Search-dropdown.col-sm-6
+          %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
+            %option
+              ="Schlafzimmer"
+    
+    .Search-dropdown.Search-dropdown--small.col-sm-2
       %select.Search-dropdown--select.u-ff-lato.u-transform-up.u-fw-bold{:placeholder => "Objekttyp"}
         %option
           ="CH-Index"
-    .Search-submit
+    
+    .Search-submit.col-sm-2
       %button.Search-button.Search-button--big.u-c-white.u-fw-bold.u-transform-up{:type => "submit"}
         %img.Search-icon(src="/images/icons/search.svg")
         ="Suchen"
+  
+
   .Search--wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-flex.u-flexWrap--row.u-mb-3.u-justify--between
     .Search-ausstattung.u-pl-1.u-pr-1
       .Search-optionsHeadline.u-ff-lato.u-fw-bold.u-c-petrol.u-mb-3

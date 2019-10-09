@@ -1,0 +1,8 @@
+.table th {
+  border-top: none; 
+  letter-spacing: 1px;
+}
+
+.table td {
+  letter-spacing: 1px;
+}

@@ -19,3 +19,14 @@
 .card-header {
   border: 0;
 }
+
+button:after {
+  content: url(/images/icons/arrow-down-bright.svg);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+button[aria-expanded="true"]:after {
+  transform: rotate(180deg);
+}

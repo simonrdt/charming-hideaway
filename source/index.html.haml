@@ -51,14 +51,14 @@
 .Kooperation.u-pl-1.u-pr-1
   %h1.Kooperation-headline.u-ta-center.u-c-petrol.u-ff-didot
     = "Unser Lesetipp:<br>Atemberaubendes Bayern"
-  %img.Kooperation-image(src="/images/kooperation/Opener Bild.jpg")
+  .Kooperation-image{:style => "background-image: url(../images/house/house1.png)"}
   .Kooperation-wrapDescription.u-flex.u-alignEnd
-    .Koopertation-wrapText
+    .Kooperation-wrapText
       %p.Kooperation-text.u-ff-lato.u-c-petrol.u-fw-light.u-mb-2
         = "Urig, idyllisch, vielfältig – es gibt viele Begriffe, die den Chiemgau beschreiben. Hier finden sich gastfreundliche Einheimische, idyllische Landschaften und das Bayerische Meer. Umrahmt von der wunderschönen Bergkulisse der Chiemgauer Alpen liegt der Chiemsee. Hier lässt es sich im Sommer segeln, surfen, kiten, kanu- und kajakfahren, raften, …"
       .Button.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol
         = "Ganzen Artikel lesen"
-    %img.Kooperation-cover(src="/images/kooperation/Kooperation.jpg")
+    .Kooperation-cover{:style => "background-image: url(../images/kooperation/Kooperation.jpg)"}
 
 .Teaser.u-pl-1.u-pr-1
   %h1.Teaser-headline.u-ta-center.u-c-petrol.u-mh-Auto.u-ff-didot
@@ -105,7 +105,7 @@
     .Inspiration-wrapTeaser.slider-inspiration
       - data.frontpage.inspiration_teaser.each_with_index do | item, index | 
         .Slide.Inspiration-item.u-width1of2.u-m-width1of4.u-l-width1of4
-          %img.Inspiration-image(src="/images/inspiration/#{item.image}.jpg")
+          .Inspiration-image{:style => "background-image: url(../images/inspiration/#{item.image}.jpg)"}
           .Teaser_hide
             .Teaser-index.Teaser-index--s
               %img(src="/images/index.svg")
@@ -128,7 +128,7 @@
       .Moment-item.u-widthFull.u-m-width1of2.u-l-width1of2
         .Momente-title.u-ff-didot.u-c-petrol.u-ta-center
           = "#{item.title}"
-        %img.Momente-image(src="/images/momente/#{item.image}.jpg")
+        .Momente-image{:style => "background-image: url(../images/momente/#{item.image}.jpg)"}
         .Momente-wrapDescription
           .Momente-description
             .Momente-text.u-ff-lato.u-fw-light.u-c-petrol
@@ -144,7 +144,7 @@
     .Event-wrapItems.u-flex.u-flexWrap--row
       - data.frontpage.events.each_with_index do | item, index | 
         .Event-wrapItem
-          %img.Event-image(src="/images/events/#{item.image}.jpg")
+          .Event-image{:style => "background-image: url(../images/events/#{item.image}.jpg)"}
           .Event-item.u-widthFull.u-flex
             .Event-title
               .u-ff-didot.u-c-petrol
@@ -206,7 +206,7 @@
     - data.frontpage.discover.each_with_index do | item, index | 
       .Slide.Discover-item.u-width-full.u-m-width1of2
         .Discover-region
-          %img.Disover-region-image.u-mb-1(src="/images/discover/#{item.image}.jpg")
+          .Disover-region-image.u-mb-1{:style => "background-image: url(../images/discover/#{item.image}.jpg)"}
           .Teaser-wrapDescription
             .Discover-description
               .Teaser-title.u-ff-didot.u-c-petrol

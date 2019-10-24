@@ -9,6 +9,9 @@
 
 .Kooperation-image {
   width: 100%;
+  background-size: cover;
+  height: 45vh;
+  display: block;
 }
 
 .Kooperation-cover {
@@ -41,6 +44,19 @@
 }
 
 .Kooperation-wrapDescription {
-  background-color: var(--color-white);
   z-index: 100;
+}
+
+.Kooperation-wrapText {
+  background-color: var(--color-white);
+  padding: 10px;
+}
+
+.Kooperation-cover {
+  width: 93%;
+  min-width: 240px;
+  height: 35vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }

@@ -147,7 +147,7 @@
 .Inspiration-item:hover .Inspiration-image {
   position: relative;
   z-index: -2;
-  transform: translateY(-67px);
+  transform: translateY(-76px);
 }
 
 /*MOMENTE*/
@@ -162,6 +162,9 @@
 .Momente-image {
   width: 100%;
   margin-bottom: 16px;
+  background-size: cover;
+  height: 30vh;
+  display: block;
 }
 
 .Momente-text {
@@ -212,7 +215,6 @@
   max-width: 15px;
   padding-right: 5px;
 }
-
 
 
 .Teaser-favoriten {

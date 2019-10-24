@@ -93,6 +93,13 @@
   padding-right: 8px;
 }
 
+.Inspiration-image {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 100%;
+  height: 270px;
+}
 
 .slider-inspiration .slick-list {
   padding-top: 67px;

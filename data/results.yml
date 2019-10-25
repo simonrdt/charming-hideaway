@@ -38,19 +38,26 @@ notavailable:
         name: Kamin
 result:
       -
-        image: Rectangle Copy 6
+        image: Rectangle
         title: Mole Hüs
         region: Westerwald
         price: 660.00
         description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
         percent: 91.50
-        gallery:
-          -
-            image: item01
-          -
-            image: item02
-          -
-            image: item03
+      -
+        image: Rectangle
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
+      -
+        image: Rectangle
+        title: Mole Hüs
+        region: Westerwald
+        price: 660.00
+        description: Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+        percent: 91.50
       -
         image: Rectangle
         title: Mole Hüs

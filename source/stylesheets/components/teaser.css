@@ -232,3 +232,30 @@
 .favor {
   background-image: url(../../images/icons/favorite-selected.svg) !important;
 }
+
+.Teaser--s .Teaser-image {
+  height: 23rem;
+}
+
+.Teaser--s .Teaser-index {
+  display: flex;
+  max-width: 75%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Teaser--s .Teaser-index img {
+  width: auto;
+}
+
+.Teaser--s .Teaser-wrapPercent {
+  width: 100%;
+}
+
+.Teaser--s .Teaser-index {
+    min-width: inherit;
+}
+
+.Results--map .Teaser--m {
+  max-width: 100%;
+}

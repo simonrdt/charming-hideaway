@@ -1,0 +1,40 @@
+= partial "navigation"
+
+.Hero.Hero--sliderSmall.u-mt-6
+  - data.results.hero.each_with_index do | item, index | 
+    .Hero-slide.u-flex.u-alignEnd{:style => "background-image: url(#{image_path "hero/#{item.image}.jpg"})"}
+      .Hero-wrapContent.u-widthFull.u-max-width12of12.u-mh-Auto.u-pl-1.u-pr-1
+
+= partial "searchresults-map"
+
+.container.u-mb-3
+  .row
+    .col-md-3.col-sm-12
+      .Results.Results--map
+        .Results-wrapItems
+          .Teaser.u-pl-1.u-pr-1
+            .Teaser-wrapItems.u-flex.u-flexWrap--row
+              - data.results.result.each_with_index do | item, index | 
+                .Teaser--s.u-mb-3
+                  .Teaser-wrapContent.u-flex.u-flexWrap--row
+                    .Teaser-image{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
+                      .Teaser-index
+                        %img(src="/images/index.svg")
+                        .Teaser-wrapPercent
+                          .index-title.u-ff-lato.u-fw-light.u-c-petrol.u-ta-center.u-transform-up
+                            = "CH-Index"
+                          .index-count.u-ff-didot.u-ta-center
+                            = "#{item.percent}%"
+                    .Teaser-wrapDescription
+                      .Teaser-description
+                        .Teaser-infos
+                          .Teaser-title.u-ff-didot.u-c-petrol
+                            = "#{item.title}"  
+                          .Teaser-price.u-ff-lato.u-fw-light.u-c-petrol
+                            = "ab #{item.price} € / Nacht"
+    .col-md-9.col-sm-12
+      .Results-map
+        .Search-map
+          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "100vh", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18943.932514300734!2d9.699183099999999!3d53.59361215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1565518286112!5m2!1sde!2sde", :style => "border:0", :width => "100%"}
+                
+= partial "footer"

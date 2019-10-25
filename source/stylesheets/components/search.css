@@ -484,3 +484,12 @@ select.order-results {
   padding-left: 8px;
   padding-right: 8px;
 }
+
+.Results-map .Search-map iframe {
+  height: 100vh;
+}
+
+.Results--map {
+  overflow: scroll;
+  height: 100vh;
+}

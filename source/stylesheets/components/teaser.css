@@ -237,15 +237,35 @@
   height: 23rem;
 }
 
+.Teaser--s .index-title {
+  font-size: 8px;
+}
+
+.Teaser--s .Teaser-wrapPercent {
+  background: var(--color-creme);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
 .Teaser--s .Teaser-index {
   display: flex;
-  max-width: 75%;
+  max-width: 150px;
   width: 100%;
   justify-content: space-between;
+  padding: 8px;
+  background: transparent !important;
+}
+
+
+.Teaser--s .Teaser-wrapSignet {
+  background: var(--color-blueLight);
+  align-content: center;
+  justify-content: center;
 }
 
 .Teaser--s .Teaser-index img {
-  width: auto;
+  height: 100%;
 }
 
 .Teaser--s .Teaser-wrapPercent {
@@ -258,4 +278,9 @@
 
 .Results--map .Teaser--m {
   max-width: 100%;
+}
+
+.Teaser--s .index-title,
+.Teaser--s .index-count {
+  width: 100%;
 }

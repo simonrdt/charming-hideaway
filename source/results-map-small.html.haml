@@ -19,7 +19,8 @@
                   .Teaser-wrapContent.u-flex.u-flexWrap--row
                     .Teaser-image{:style => "background-image: url(../images/teaser/#{item.image}.jpg)"}
                       .Teaser-index
-                        %img(src="/images/index.svg")
+                        .Teaser-wrapSignet
+                          %img(src="/images/icons/signet-small.svg")
                         .Teaser-wrapPercent
                           .index-title.u-ff-lato.u-fw-light.u-c-petrol.u-ta-center.u-transform-up
                             = "CH-Index"

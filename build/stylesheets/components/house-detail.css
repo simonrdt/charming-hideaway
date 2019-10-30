@@ -492,3 +492,30 @@ ul {
   display: block;
   color: var(--color-petrol);
 }
+
+.Image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Image--1by1 {
+  padding-bottom: 100%;
+}
+
+.Host-image {
+  padding-bottom: 65px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.House-recRestaurant .Discover-region-image {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  padding-bottom: 100%;
+  height: auto !important;
+  width: 100%;
+}

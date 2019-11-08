@@ -61,7 +61,7 @@
 }
 
 .Hero-teaser {
-  max-width: 123px;
+  max-width: auto;
   max-height: 88px;
   background-size: cover;
   margin-left: 3px;

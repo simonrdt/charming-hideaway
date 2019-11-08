@@ -59,7 +59,7 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
-    centerMode: true,
+    centerMode: false,
     focusOnSelect: true
   });
 

@@ -221,7 +221,7 @@ ul {
 @media screen and (min-width: 569px) {
   .Booking {
     max-width: 300px;
-    position: fixed;
+    position: absolute;
     top: 60vh;
     right: 7%;
   }
@@ -517,4 +517,11 @@ ul {
   padding-bottom: 100%;
   height: auto !important;
   width: 100%;
+}
+
+@media screen and (min-width: 569px){
+  .fixedtop {
+    position: fixed;
+    top: 130px;
+  }
 }

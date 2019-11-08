@@ -194,11 +194,8 @@
         = "Beschreibung"
       %p.House-description.u-ff-lato.u-c-petrol.u-fw-light.u-mb-3.show-read-more
         = "Unsere 2-Zimmer Meerblick-Maisonette Sylt hat ein nordisch-frisches Outfit, liegt zentral und trotzdem ruhig direkt hinter der Düne in Westerland am weitläufigen Strand. <br> <br> Sie haben aus der ganzen Wohnung einen herrlichen Blick aufs Meer und können auf dem großen Westbalkon die schönsten Sonnenuntergänge genießen. Die Maisonette ist ideal für zwei Personen - und Eltern mit Kind - geeignet, liegt im 2. OG/DG, ist 42 qm groß und komplett ausgestattet, vom Audiosystem über WLAN bis zur Zitronenpresse. Wohnzimmer, Balkon, Küche (offen) und Duschbad befinden sich auf der unteren Ebene, eine Treppe im Flur führt nach oben ins Schlafzimmer. Das Meeresrauschen zum Einschlafen ist inklusive."
-    .House-content
-      %video{:controls => "", :width => "100%"}
-        %source{:src => "/media/examples/flower.webm", :type => "video/webm"}
-        %source{:src => "/media/examples/flower.mp4", :type => "video/mp4"}
-        Sorry, your browser doesn't support embedded videos.
+    .House-content.House-videoContent
+      %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://ibf.sylt360.de/de/vt/IBF_Panorama_Touren/d/58016/siv/1"}
 
     .House-desc.u-mb-3{:id => "ausstattung"}
       %h1.House-headline.u-c-petrol.u-ff-didot.u-mb-3

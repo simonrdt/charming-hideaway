@@ -35,6 +35,14 @@ $(document).ready(function(){
   }
 });
 
+$(function() {
+    var distance = $('.Booking').offset().top,
+      $window = $(window);
+
+    $window.scroll(function() {
+    $('.Booking').toggleClass('fixedtop', $window.scrollTop() >= distance)
+    });
+  });
 
 $(document).ready(function(){
       
@@ -48,6 +56,7 @@ $(document).ready(function(){
     toggle: false
   })
   
+
   $('.slider-big').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

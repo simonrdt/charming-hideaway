@@ -555,3 +555,40 @@ div.divBilderGalerieResp2 .galerie-next-cont > .galerie-next > .galerieNext {
 div.divBilderGalerieResp2 .galerie-prev-cont > .galerie-prev > .galeriePrev {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…AgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+) !important;
 }
+
+#divObjektauszeichnungen {
+  display: none;
+}
+
+div.objekt-entfernung-title {
+  font-family: 'Lato', sans-serif !important;
+  color: var(--color-petrol) !important;
+  background-color: #fff !important;
+  padding: 0.75rem !important;
+  letter-spacing: 1px !important;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 700;
+  border-top: 0 !important;
+}
+
+div.objekt-entfernung {
+  font-family: 'Lato', sans-serif !important;
+  color: var(--color-petrol) !important;
+  background-color: #fff !important;
+  padding: 12px !important;
+  letter-spacing: 1px !important;
+  border-top: 1px solid #dee2e6;
+  font-size: 16px !important;
+}
+
+li.objekt-entfernung-container {
+  margin: 0 !important;
+}
+
+#wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle ul li.objekt-entfernung-container {
+    padding: 0 !important;
+}
+
+#wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle div.objekt-entfernung-ort, #wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle div.objekt-entfernung-zahl, #wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle div.objekt-entfernung-hinweis {
+  font-size: 16px !important;
+}

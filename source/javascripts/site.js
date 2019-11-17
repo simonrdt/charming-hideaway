@@ -120,6 +120,10 @@ $(document).ready(function(){
     $("#more_filter").toggleClass("hidden");
   });
 
+  $("#showcertificate").click(function(e){
+    $("#divObjektauszeichnungen").toggleClass("u-block");
+  });
+
   $("#showdetails").click(function(e){
     $("#facilitydetails").toggleClass("hidden");
   });

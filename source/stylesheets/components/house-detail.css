@@ -542,3 +542,16 @@ ul {
   width: 100%;
   height: 100%;
 }
+
+div.divBilderGalerieResp2 .galerie-prev-cont > .galerie-prev, 
+div.divBilderGalerieResp2 .galerie-next-cont > .galerie-next {
+  background: transparent !important;
+}
+
+div.divBilderGalerieResp2 .galerie-next-cont > .galerie-next > .galerieNext {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…AgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
+}
+
+div.divBilderGalerieResp2 .galerie-prev-cont > .galerie-prev > .galeriePrev {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…AgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
+}

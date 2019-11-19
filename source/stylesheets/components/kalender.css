@@ -16,7 +16,7 @@
   font-size: 12px;
   font-size: 1.2rem;
   cursor: pointer;
-  font-family: Lato-Regular;
+  font-family: 'Lato';
   font-size: 14px;
   color: #5EA9B5;
   letter-spacing: 1.4px;
@@ -34,11 +34,12 @@
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-monattitel {
   box-sizing: border-box;
-  height: 44px;
+  height: 10%;
   line-height: 44px;
   width: 100%;
   float: left;
-  font-family: Lato-Bold;
+  font-family: 'Lato';
+  font-weight: 700;
   font-size: 13px;
   color: #0A3A3D;
   letter-spacing: 1.3px;
@@ -53,11 +54,13 @@
   border: none;
   float: left;
   height: 310px;
+  max-width: 25%;
+  padding: 10px;
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag-leer {
   background-color: #fff;
-  font-family: Lato-Regular;
+  font-family: 'Lato';
   font-size: 13px;
   color: #0A3A3D;
   letter-spacing: 1.3px;
@@ -65,20 +68,20 @@
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > div.objektdetails-kalender-wochentag-wochenende {
-  font-family: Lato-Regular;
+  font-family: 'Lato';
   font-size: 13px;
   color: #5EA9B5;
   letter-spacing: 1.3px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag-historie, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag {
   box-sizing: border-box;
-  height: 44px;
+  height: 10%;
   line-height: 44px;
   text-align: center;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: .8rem;
   width: 14.28571427%;
   border: solid 1px #ffffff;
   float: left;
@@ -89,11 +92,10 @@
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag-historie, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag {
   box-sizing: border-box;
-  height: 44px;
+  height: 10%;
   line-height: 44px;
   text-align: center;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: .8rem;
   width: 14.28571427%;
   border: solid 1px #ffffff;
   float: left;
@@ -114,18 +116,18 @@
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum-belegt, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum-belegt {
   box-sizing: border-box;
-  height: 44px;
+  height: 10%;
   line-height: 44px;
   text-align: center;
   font-family: lato-regular;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: .8rem;
   width: 100%;
   color: #000;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 3;
+  display: none;
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-anreise-belegt {
@@ -151,12 +153,11 @@
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum-belegt, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum-belegt {
   box-sizing: border-box;
-  height: 44px;
+  height: 10%;
   line-height: 44px;
   text-align: center;
-  font-family: lato-regular;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-family: 'Lato';
+  font-size: .8rem;
   width: 100%;
   color: #ffffff;
   position: absolute;
@@ -168,8 +169,21 @@
 #divRentalKalenderContainer > div.objektdetails-kalender-legende {
   height: 45px;
   margin: 0px 0px 55px 0px;
-  font-family: Lato-Bold;
+  font-family: 'Lato';
+  font-weight: 700;
   font-size: 13px;
   color: #0A3A3D;
   letter-spacing: 1.3px;
+}
+
+.objektdetails-kalender-monat .clear {
+  display: none;
+}
+
+.objektdetails-kalender-tag-datum\{0\} {
+  display: none;
+}
+
+#divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende {
+  background: transparent;
 }

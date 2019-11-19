@@ -187,3 +187,7 @@
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende {
   background: transparent;
 }
+
+#divRentalKalenderContainer {
+  position: relative;
+}

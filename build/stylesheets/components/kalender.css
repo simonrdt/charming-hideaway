@@ -9,11 +9,11 @@
   width: 138px;
   text-align: center;
   padding: 3px 0px;
-  top: 58px;
+  top: -1.5rem;
   left: auto;
   right: auto;
   bottom: auto;
-  z-index: 20;
+  z-index: 1;
   font-size: 12px;
   font-size: 1.2rem;
   cursor: pointer;
@@ -29,7 +29,7 @@
   #divRentalKalenderContainer > .objektdetails-kalender-prev, #divRentalKalenderContainer > .objektdetails-kalender-next, #divRentalKalenderContainer > .objektdetails-kalender-year {
     width: 180px;
     font-size: 15px;
-    font-size: 1.5rem; 
+    font-size: 1rem; 
   }
 }
 
@@ -62,7 +62,7 @@
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag-leer {
-  background-color: #fff;
+  background-color: #fff !important;
   font-family: 'Lato';
   font-size: 13px;
   color: #0A3A3D;
@@ -91,7 +91,6 @@
   float: left;
   color: #000;
   position: relative;
-  background-color: #f5f1e5;
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-wochentag-wochenende, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag-historie, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag {
@@ -116,7 +115,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 2;/* border-radius: 6px; */
 }
 
 #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum, #divRentalKalenderContainer > .objektdetails-kalender-monate > .objektdetails-kalender-monat > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum-belegt, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum, #divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-datum-belegt {
@@ -125,7 +124,7 @@
   height: 10%;
   line-height: 44px;
   text-align: center;
-  font-family: lato-regular;
+  font-family: 'lato';
   font-size: .8rem;
   width: 100%;
   color: #000;
@@ -176,13 +175,13 @@
 }
 
 #divRentalKalenderContainer > div.objektdetails-kalender-legende {
-  height: 45px;
+  height: auto;
   margin: 0px 0px 55px 0px;
   font-family: 'Lato';
   font-weight: 700;
   font-size: 13px;
-  color: #0A3A3D;
-  letter-spacing: 1.3px;
+  color: #0A3A3D;display: flex;flex-wrap: wrap;
+  letter-spacing: 1.3px;flex-direction: row;align-items: center;
 }
 
 .objektdetails-kalender-monat .clear {
@@ -198,5 +197,38 @@
 }
 
 #divRentalKalenderContainer {
-  position: relative;
+  position: relative;padding-top: 2rem;
+}
+
+.objektdetails-kalender-prev {
+  left: 0 !important;
+}
+.objektdetails-kalender-next {
+  right: 0 !important;
+}
+.objektdetails-kalender-year {
+  display: none;
+}
+
+#divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag {
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 6px;
+    margin-right: .8rem;
+    margin-bottom: .25rem;
+}
+
+#divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag-belegt {
+    border-radius: 6px !important;
+}
+.objektdetails-kalender-legende > span {
+    width: calc(100% - 3rem);
+}
+
+#divRentalKalenderContainer > .objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-abreise-belegt {
+  border-radius: 6px;
+}
+
+.objektdetails-kalender-legende > .objektdetails-kalender-tag > .objektdetails-kalender-tag-belegt {
+  border-radius: 6px;
 }

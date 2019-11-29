@@ -16,6 +16,17 @@
   padding-bottom: 74px;
 }
 
+.Hero--sliderExtraSmall .Hero-slide {
+  max-height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Hero--sliderSmall .Hero-wrapContent {
+  padding-bottom: 74px;
+}
+
 @media screen and (max-width: 569px) {
   .Hero-slide {
     height: 80vh;

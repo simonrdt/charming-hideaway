@@ -1,0 +1,595 @@
+/*.House-facilities {
+  margin-bottom: 50px;
+}*/
+
+.Facility {
+  width: 100%;
+  max-width:  20%;
+  text-align: center;
+}
+
+.Facility-details {
+  width: 100%;
+  max-width:  20%;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1;
+}
+
+.Wrap-facilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 860px !important;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Wrap-facilityDetails {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px !important;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Facility-headline {
+  margin-bottom: 8px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.Facility-icon {
+  width: auto;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  height: 32px;
+}
+
+.House-name {
+  font-size: 25px;
+  color: #0A3A3D;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.House-region {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.House-description {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.Teaser-info {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.House-rating .circular-chart {
+  margin-top: 0 !important;
+}
+
+.House-buzzwords {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.House-anchorLink {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.House-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.House-tabItem {
+  position: relative;
+}
+
+.House-tabItem:after {
+  width: 0%;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-bottom: 3px var(--color-petrol) solid;
+}
+
+.House-tabItem:hover {
+  color: var(--color-petrol);
+}
+
+.House-tabItem:hover::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-bottom: 3px var(--color-petrol) solid;
+}
+
+.House-topFacility {
+  border: 1px solid var(--color-blueLight);
+  border-radius: 16px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  padding: 6px 18px;
+  position: relative;
+  width: 100%;
+  max-width: 150px;
+}
+
+.House-facilityCategorie {
+  width: 100%;
+  max-width: 33%;
+}
+
+.House-moreFacility {
+  width: 100%;
+}
+
+.Category-title {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.list-item {
+  list-style-type: disc;
+  font-size: 15px;
+  color: #0A3A3D;
+  letter-spacing: 1.5px;
+}
+
+ul {
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+}
+
+.House-showMore {
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.price-subtitle {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.House-map {
+  width: 100%;
+}
+
+.recommendation-description,
+.Host-description {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.Host-image {
+  border-radius: 100%;
+  max-width: 65px;
+}
+
+.Host-name {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+.recommendation-header {
+  background-image: url("../../images/house/kenny-luo-7IiPopynx18-unsplash.jpg");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+.backtotop {
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  width: 100%;
+  display: block;
+}
+
+.back-to-top {
+  max-width: 40px;
+  margin: 0 auto;
+}
+
+.Booking {
+  width: 100%;
+  padding: 15px;
+}
+
+@media screen and (min-width: 569px) {
+  .Booking {
+    max-width: 300px;
+    position: absolute;
+    top: 60vh;
+    right: 7%;
+  }
+
+  .wrap-housecontent {
+    width: 100%;
+    max-width: 80%;
+    margin-left: 7%;
+  }
+}
+
+.Booking-wrapContent .Search-date {
+  width: 100%;
+}
+
+.Booking-wrapContent input, 
+.Booking-wrapContent select {
+  background-color: transparent;
+}
+
+.Booking-wrapContent .Search-date .Search-dropdown {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Booking-wrapContent .price {
+  font-size: 20px;
+  letter-spacing: 0.36px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.button-image {
+  position: absolute;
+  width: 20px;
+  left: 25px;
+}
+
+.price-about {
+  text-decoration: underline;
+  font-size: 10px;
+  margin-bottom: 8px;
+  color: #0A3A3D;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.wrap-housecontent {
+
+}
+
+.wrap-housecontent .ch-index {
+  max-width: 860px;
+}
+
+.max-width-houseLayout {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:569px) {
+  .u-m-flexWrap--row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .House-facilityCategorie {
+    width: 100%;
+    max-width: 48%;
+  }
+}
+
+.House-facilitiesDetails {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 0 auto 50px auto;
+  max-width: 860px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Details-link {
+  font-size: 14px;
+}
+
+.table-border {
+  border-bottom: 2px solid var(--color-petrol);
+}
+
+@media screen and (min-width: 569px) {
+  .table-border {
+    border-right: 2px solid var(--color-petrol);
+    border-bottom: 0 !important;
+  }
+}
+
+.Facility-descriptionHeadline {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .7px;
+}
+
+.Facility-descriptionValue {
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+
+.show-read-more .more-text{
+  display: none;
+}
+
+.read-more {
+  display: block;
+  max-width: 140px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.price-detail {
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-petrol);
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-title {
+  font-size: 14px;
+  letter-spacing: .8px;
+}
+
+.price-value {
+  font-size: 14px;
+}
+
+#price-detail {
+    display:none;
+}
+#show-details:hover #price-detail {
+    display:block;
+}
+
+#jury-detail {
+    display:none;
+}
+#show-jury:hover #jury-detail {
+    display:block;
+}
+
+
+#Lage-detail {
+    display:none;
+}
+#show-Lage:hover #Lage-detail {
+    display:block;
+}
+
+
+#Architektur-detail {
+    display:none;
+}
+#show-Architektur:hover #Architektur-detail {
+    display:block;
+}
+
+
+#Inneneinrichtung-detail {
+    display:none;
+}
+#show-Inneneinrichtung:hover #Inneneinrichtung-detail {
+    display:block;
+}
+
+
+#Ausstattung-detail {
+    display:none;
+}
+#show-Ausstattung:hover #Ausstattung-detail {
+    display:block;
+}
+
+.price-detail h6 {
+  text-align: left;
+  letter-spacing: .8px;
+  font-size: 15px;
+}
+
+.jury-detail {
+  position: absolute;
+  width: 860px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.jury-category-detail {
+  position: absolute;
+  width: 860px;
+  padding: 10px;
+  margin: 0 auto;
+  left: 0;
+  margin-top: 45px;
+}
+
+.ch-index-wrapItems {
+  position: relative;
+}
+
+.lightbox-teaser {
+  visibility: hidden;
+}
+
+
+.slick-prev:before {
+  content: url("../../images/icons/arrow-left.svg") !important;
+  opacity: 1 !important;
+}
+
+.slick-next:before {
+  content: url("../../images/icons/arrow-right-active.svg") !important;
+  opacity: 1 !important;
+}
+
+.slick-prev, .slick-next {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.slick-lightbox .slick-next {
+  right: 5%;
+}
+
+.slick-lightbox .slick-prev {
+  left: 5%;
+  z-index: 1000;
+}
+
+.slick-lightbox-close {
+  top: 15%;
+  right: 9%;
+  height: 35px;
+  width: 35px;
+}
+
+.slick-lightbox-close:before {
+  content: url("../../images/icons/close-petrol.svg") !important;
+  opacity: 1 !important;
+}
+
+.slick-lightbox-slick-caption {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  font-family: "Lato";
+  margin-top: 15px;
+  display: block;
+  color: var(--color-petrol);
+}
+
+.Image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Image--1by1 {
+  padding-bottom: 100%;
+}
+
+.Host-image {
+  padding-bottom: 65px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.House-recRestaurant .Discover-region-image {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  padding-bottom: 100%;
+  height: auto !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 569px){
+  .fixedtop {
+    position: fixed;
+    top: 130px;
+  }
+}
+
+.House-videoContent {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.House-videoContent > iframe {
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.divBilderGalerieResp2 .galerie-prev-cont > .galerie-prev, 
+div.divBilderGalerieResp2 .galerie-next-cont > .galerie-next {
+  background: transparent !important;
+}
+
+div.divBilderGalerieResp2 .galerie-next-cont > .galerie-next > .galerieNext {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…AgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+) !important;
+}
+
+div.divBilderGalerieResp2 .galerie-prev-cont > .galerie-prev > .galeriePrev {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…AgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+) !important;
+}
+
+#divObjektauszeichnungen {
+  display: none;
+}
+
+div.objekt-entfernung-title {
+  font-family: 'Lato', sans-serif !important;
+  color: var(--color-petrol) !important;
+  background-color: #fff !important;
+  padding: 0.75rem !important;
+  letter-spacing: 1px !important;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 700;
+  border-top: 0 !important;
+}
+
+div.objekt-entfernung {
+  font-family: 'Lato', sans-serif !important;
+  color: var(--color-petrol) !important;
+  background-color: #fff !important;
+  padding: 12px !important;
+  letter-spacing: 1px !important;
+  border-top: 1px solid #dee2e6;
+  font-size: 16px !important;
+}
+
+li.objekt-entfernung-container {
+  margin: 0 !important;
+}
+
+#wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle ul li.objekt-entfernung-container {
+    padding: 0 !important;
+}
+
+#wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle div.objekt-entfernung-ort, #wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle div.objekt-entfernung-zahl, #wrapper #divRentalDisplay #divObjektDetails #divObjektEntfernungenTabelle div.objekt-entfernung-hinweis {
+  font-size: 16px !important;
+}

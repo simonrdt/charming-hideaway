@@ -1,0 +1,47 @@
+.Event-image {
+  width: 100%;
+  margin-bottom: 40px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.Events {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Event-title {
+  width: 100%;
+  max-width: 240px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.Events-wrapContent {
+  max-width: 960px;
+}
+
+.Events-intro {
+  margin-top: 20px;
+  margin-bottom: 56px;
+}
+
+.Event-wrapItem {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 569px) {
+  .Event-item {
+    flex-wrap: wrap;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .Event-title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+}

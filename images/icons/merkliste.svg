@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Merkliste Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CH_Startseite-" transform="translate(-1171.000000, -6.000000)" fill="#5EA9B5">
+            <g id="Top-Bar">
+                <g id="Merkliste" transform="translate(1171.000000, 5.000000)">
+                    <path d="M9.705,5.79 L5.205,1.29 C5.025,1.11 4.775,1 4.5,1 L1,1 C0.45,1 0,1.45 0,2 L0,5.5 C0,5.775 0.11,6.025 0.295,6.21 L4.795,10.71 C4.975,10.89 5.225,11 5.5,11 C5.775,11 6.025,10.89 6.205,10.705 L9.705,7.205 C9.89,7.025 10,6.775 10,6.5 C10,6.225 9.885,5.97 9.705,5.79 L9.705,5.79 Z M1.75,3.5 C1.335,3.5 1,3.165 1,2.75 C1,2.335 1.335,2 1.75,2 C2.165,2 2.5,2.335 2.5,2.75 C2.5,3.165 2.165,3.5 1.75,3.5 L1.75,3.5 Z M7.635,7.635 L5.5,9.77 L3.365,7.635 C3.14,7.405 3,7.095 3,6.75 C3,6.06 3.56,5.5 4.25,5.5 C4.595,5.5 4.91,5.64 5.135,5.87 L5.5,6.23 L5.865,5.865 C6.09,5.64 6.405,5.5 6.75,5.5 C7.44,5.5 8,6.06 8,6.75 C8,7.095 7.86,7.41 7.635,7.635 L7.635,7.635 Z" id="Merkliste-Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

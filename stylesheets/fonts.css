@@ -1,0 +1,35 @@
+:root {
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-light: 300;
+};
+
+.u-fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.u-fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.u-fw-light {
+  font-weight: var(--fw-light);
+}
+
+.u-ff-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.u-ff-didot {
+  font-family: 'GFS Didot', serif;
+}
+
+.small-copy {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+.mini-copy {
+  font-size: 10px !important;
+  letter-spacing: 1px;
+}

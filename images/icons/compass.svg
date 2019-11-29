@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CH_Detailsuche" transform="translate(-728.000000, -720.000000)" fill="#0A3A3D">
+            <path d="M738,728.9 C737.39,728.9 736.9,729.39 736.9,730 C736.9,730.61 737.39,731.1 738,731.1 C738.61,731.1 739.1,730.61 739.1,730 C739.1,729.39 738.61,728.9 738,728.9 L738,728.9 Z M738,720 C732.48,720 728,724.48 728,730 C728,735.52 732.48,740 738,740 C743.52,740 748,735.52 748,730 C748,724.48 743.52,720 738,720 L738,720 Z M740.19,732.19 L732,736 L735.81,727.81 L744,724 L740.19,732.19 L740.19,732.19 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

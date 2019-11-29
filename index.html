@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta charset='utf-8'>
+<meta content='ie=edge' http-equiv='x-ua-compatible'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap' rel='stylesheet'>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=GFS+Didot&amp;display=swap' rel='stylesheet'>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js' type='text/javascript'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js' type='text/javascript'></script>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css' rel='stylesheet'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js'></script>
+<link href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' rel='stylesheet' type='text/css'>
+<script src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' type='text/javascript'></script>
+<script crossorigin='anonymous' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+<!-- Use the title from a page's frontmatter if it has one -->
+<title>Charming Hideaways</title>
+<link href="/stylesheets/site.css" rel="stylesheet" />
+<script src="/javascripts/moment.js"></script>
+<script src="/javascripts/site.js"></script>
+<script src="/javascripts/jquery.daterangepicker.js"></script>
+</head>
+<div id='loginbox'>
+<div data-children-count='2' id='loginboxinner'></div>
+<div class='headline u-ff-didot u-c-petrol u-ta-center u-mb-2'>
+Bitte loggen Sie sich ein.
+</div>
+<label class='label u-ff-lato u-fw-light u-transform-up u-c-petrol' for='#ctl00_Login1_UserName'>
+Benutzername
+</label>
+<input autocomplete='off' class='TextWatermarkCss' id='ctl00_Login1_UserName' name='ctl00$Login1$UserName' type='text'>
+<input id='ctl00_Login1_wmNutzername_ClientState' name='ctl00$Login1$wmNutzername_ClientState' type='hidden'>
+<span class='warning' id='ctl00_Login1_UserNameRequired' style='display:inline-block;color:Firebrick;width:100%;display:none;'>'Benutzername' ist ein Pflichtfeld</span>
+<label class='label u-ff-lato u-fw-light u-transform-up u-c-petrol' for='#ctl00_Login1_Password'>
+Passwort
+</label>
+<input autocomplete='off' class='TextWatermarkCss u-mb-2' id='ctl00_Login1_Password' name='ctl00$Login1$Password' type='password'>
+<input id='ctl00_Login1_wmPasswort_ClientState' name='ctl00$Login1$wmPasswort_ClientState' type='hidden'>
+<span class='warning' id='ctl00_Login1_PasswordRequired' style='display:inline-block;color:Firebrick;width:100%;display:none;'>'Passwort' ist ein Pflichtfeld</span>
+<div class='loginlinks'></div>
+<div class='loginlinks'></div>
+<div class='warning u-ff-lato u-fw-light u-transform-up u-c-petrol u-mb-2'>
+Dies ist eine Warnung
+</div>
+<input class='Button u-bg-blueLight u-c-white' id='ctl00_Login1_Login' name='ctl00$Login1$Login' onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Login1$Login&quot;, &quot;&quot;, true, &quot;neuRegUser&quot;, &quot;&quot;, false, false))' type='submit' value='Einloggen'>
+</div>
+<div data-children-count='2' id='searchbox'>
+<div class='headline u-ff-didot u-c-petrol u-ta-center u-mb-2'>
+Suche
+</div>
+<label class='label u-ff-lato u-fw-light u-transform-up u-c-petrol' for='#searchbox'>
+Suche
+</label>
+<input autocomplete='on' id='searchbox_input' name='search' type='text'>
+<input class='Button u-bg-blueLight u-c-white' id='suchen' type='submit' value='Suchen'>
+</div>
+<body id='body'>
+<div class='dark' id='dark'></div>
+<div class='Navigation-sticky'>
+<div class='Navigation--sub u-bg-lightGrey u-pr-1 u-pl-1'>
+<ul class='u-widthFull u-max-width12of12 u-mh-Auto u-flex u-justifyRight'>
+<li class='link-withIcon u-c-blueLight u-ff-lato u-fw-light u-transform-up' id='item_suche' onclick='displayLogin()'>
+<a>
+<img class='link-image' src='/images/icons/suche.svg'>
+suche
+</a>
+</li>
+<li class='link-withIcon u-c-blueLight u-ff-lato u-fw-light u-transform-up' id='item_merkliste' onclick='displayLogin()'>
+<a>
+<img class='link-image' src='/images/icons/merkliste.svg'>
+merkliste
+</a>
+</li>
+<li class='link-withIcon u-c-blueLight u-ff-lato u-fw-light u-transform-up' id='item_login' onclick='displayLogin()'>
+<a>
+<img class='link-image' src='/images/icons/login.svg'>
+login
+</a>
+</li>
+<li class='link-withIcon u-c-blueLight u-ff-lato u-fw-light u-transform-up' id='item_werde Vermieter' onclick='displayLogin()'>
+<a>
+<img class='link-image' src='/images/icons/vermieter.svg'>
+werde Vermieter
+</a>
+</li>
+</ul>
+</div>
+<div class='Navigation u-bg-white u-pr-1 u-pl-1'>
+<div class='u-widthFull u-max-width12of12 u-mh-Auto u-flex'>
+<div class='Logo--large'>
+<img src='/images/Logo_CH_Petrol.svg'>
+</div>
+<nav class='u-flex u-widthFull u-justifyRight'>
+<ul class='Navigation-wrapItems u-flex u-justifyRight u-alignEnd'>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Buchen
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Kurzfristig frei
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Inspiration
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Momente
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+CH-Index
+</a>
+</li>
+</ul>
+</nav>
+<a class='icon u-flex u-alignEnd u-ml-1' id='burger'>
+<div class='wrapper'>
+<div class='box-item'>
+<div class='menu-item'>
+<div class='burger-lines'></div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class='burger-menu' id='burger_menu'>
+<li class='Navigation-item--burger link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Newsletter
+</a>
+</li>
+<li class='Navigation-item--burger link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Über Uns
+</a>
+</li>
+<li class='Navigation-item--burger link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Gutscheine
+</a>
+</li>
+<li class='Navigation-item--burger link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Deutschland in Regionen
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Buchen
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Kurzfristig frei
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Inspiration
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+Momente
+</a>
+</li>
+<li class='Navigation-item link u-c-greenDark u-ff-lato u-fw-light u-transform-up u-c-petrol'>
+<a>
+CH-Index
+</a>
+</li>
+</div>
+</div>
+
+<div class='Hero Hero--slider Slider-home u-mt-6'>
+<div class='Slide'>
+<div class='Hero-slide u-flex u-alignEnd' style='background: url(/images/hero/haus01.jpg) rgba(0,0,0,0.3); background-size:cover; background-blend-mode: multiply;'>
+<div class='Hero-contentWidth'>
+<div class='Hero-wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-pl-1 u-pr-1'>
+<h1 class='Hero-headline u-c-white u-ff-didot'>
+Ferienhäuser vom Feinsten.
+</h1>
+<h2 class='Hero-subline u-ff-lato u-fw-light u-c-white'>
+Deuschlands erstes Ferienhausportal mit einem Index für Architektur, Einrichtung und Geschmack.
+</h2>
+</div>
+<div class='Hero-wrapLink'>
+<div class='Hero-link u-c-white u-ff-didot'>
+Dieses Hideaway: Liebelei
+</div>
+<a class='Object-button'>
+<div class='Link-button'>
+Zum Objekt
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class='Slide'>
+<div class='Hero-slide u-flex' style='background: url(/images/hero/haus01.jpg) rgba(0,0,0,0.3); background-size:cover; background-blend-mode: multiply;'>
+<div class='Hero-contentWidth'>
+<div class='Hero-wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-pl-1 u-pr-1'></div>
+<div class='Hero-wrapTitleElement'>
+<div class='Hero-TitleElement u-c-white u-ff-lato u-c-petrol u-transform-up'>
+Hideaway der Woche
+</div>
+<a class='Teaser-favoriten favorite' style='background-image: url(../images/icons/favorite.svg)'></a>
+</div>
+<div class='Hero-teaserElement Teaser--m'>
+<div class='Teaser-wrapDescription u-flex u-alignCenter'>
+<div class='Teaser-description'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol'>
+ab 660,00 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+91,50%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Search Search--small u-bg-creme u-mb-Section' id='searchsmall'>
+<div class='Search--wrapContent u-widthFull u-max-width12of12 u-mh-Auto u-flex u-flexWrap--row'>
+<div class='Search-dropdown Search-dropdown--big'>
+<input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold' placeholder='Reiseziel'>
+</div>
+<div class='Search-date' id='datepicker'>
+<div class='Search-dropdown'>
+<input class='Search-dropdown--select Datepicker u-ff-lato u-transform-up u-fw-bold u-c-petrol' id='date-range01' placeholder='Anreise'>
+</div>
+<div class='Search-dropdown'>
+<input class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold u-c-petrol Datepicker' id='date-range02' placeholder='Abreise'>
+</div>
+</div>
+<div class='Search-dropdown Search-dropdown--mini'>
+<select class='Search-dropdown--select u-ff-lato u-transform-up u-fw-bold'>
+<option class='select-item' value='Personen'>
+Personen
+</option>
+<option class='select-item' value='1 Person'>
+1 Person
+</option>
+<option class='select-item' value='2 Personen'>
+2 Personen
+</option>
+<option class='select-item' value='3 Personen'>
+3 Personen
+</option>
+</select>
+</div>
+<div class='Search-checkbox--mini'>
+<div class='Search-checkbox u-ff-lato u-transform-up'>
+<input checked='checked' id='hund' name='hund' type='checkbox'>
+<label class='checkbox-label' for='hund'>Mit Hund</label>
+</div>
+<div class='Search-checkbox u-ff-lato u-transform-up'>
+<input checked='checked' id='familien' name='familien' type='checkbox'>
+<label class='checkbox-label' for='familien'>Für Familien</label>
+</div>
+</div>
+<div class='Search-submit'>
+<button class='Search-button' type='submit'>
+<a>
+SUCHE
+</a>
+</button>
+</div>
+</div>
+</div>
+
+<div class='Kooperation u-pl-1 u-pr-1'>
+<h1 class='Kooperation-headline u-ta-center u-c-petrol u-ff-didot'>
+Unser Lesetipp:<br>Atemberaubendes Bayern
+</h1>
+<div class='Kooperation-image' style='background-image: url(../images/house/house1.png)'></div>
+<div class='Kooperation-wrapDescription u-flex u-alignEnd'>
+<div class='Kooperation-wrapText'>
+<p class='Kooperation-text u-ff-lato u-c-petrol u-fw-light u-mb-2'>
+Urig, idyllisch, vielfältig – es gibt viele Begriffe, die den Chiemgau beschreiben. Hier finden sich gastfreundliche Einheimische, idyllische Landschaften und das Bayerische Meer. Umrahmt von der wunderschönen Bergkulisse der Chiemgauer Alpen liegt der Chiemsee. Hier lässt es sich im Sommer segeln, surfen, kiten, kanu- und kajakfahren, raften, …
+</p>
+<div class='Button u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol'>
+Ganzen Artikel lesen
+</div>
+</div>
+<div class='Kooperation-cover' style='background-image: url(../images/kooperation/Kooperation.jpg)'></div>
+</div>
+</div>
+<div class='Teaser u-pl-1 u-pr-1'>
+<h1 class='Teaser-headline u-ta-center u-c-petrol u-mh-Auto u-ff-didot'>
+Unsere Hideaways in Bayern
+</h1>
+<div class='Teaser-wrapItems u-flex u-flexWrap--row'>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'>
+<a class='Teaser-favoriten favorite' style='background-image: url(../images/icons/favorite.svg)'></a>
+</div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs Sehr langer Name der
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'>
+<a class='Teaser-favoriten favorite' style='background-image: url(../images/icons/favorite.svg)'></a>
+</div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'>
+<a class='Teaser-favoriten favorite' style='background-image: url(../images/icons/favorite.svg)'></a>
+</div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'>
+<a class='Teaser-favoriten favorite' style='background-image: url(../images/icons/favorite.svg)'></a>
+</div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+entdecke mehr
+</div>
+</div>
+<div class='Inspiration u-bg-lightGrey u-mb-Section u-pl-1 u-pr-1'>
+<div class='Inspiration-wrapContent u-max-width12of12 u-mh-Auto u-flex'>
+<div class='Inspiration-intro u-pb-3'>
+<h1 class='Headline u-ff-didot u-c-petrol'>
+Lass dich inspirieren!
+</h1>
+<p class='u-ff-lato u-fw-light u-c-petrol'>
+Entdecken Sie handverlesene und individuelle Urlaubsdomizile mit dem gewissen Extra – deutschlandweit. Charming Hideaways bietet außerge-wöhnlichen Ferienhäusern und besonderen Appartements ein neuartiges Portal. Für eine inspirierende Suche und einen traumhaften Urlaub.
+</p>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+entdecke mehr
+</div>
+</div>
+<div class='Inspiration-wrapTeaser slider-inspiration'>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_1.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_2.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Westerwald
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_3.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Westerwald
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_1.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Westerwald
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_1.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_2.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Westerwald
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_3.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Westerwald
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Inspiration-item u-width1of2 u-m-width1of4 u-l-width1of4'>
+<div class='Inspiration-image' style='background-image: url(../images/inspiration/vorschau_1.jpg)'></div>
+<div class='Teaser_hide'>
+<div class='Teaser-index Teaser-index--s'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-count u-ff-didot u-ta-center'>
+91.5%
+</div>
+</div>
+</div>
+<div class='Teaser-wrap--s'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Westerwald
+</div>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Teaser u-pl-1 u-pr-1'>
+<h1 class='Teaser-headline u-ta-center u-c-petrol u-mh-Auto u-ff-didot'>
+Erelebe unvergessliche Momente, die zu<br>deinem Leben passen.
+</h1>
+<div class='Teaser-wrapItems u-flex u-flexWrap--row'>
+<div class='Moment-item u-widthFull u-m-width1of2 u-l-width1of2'>
+<div class='Momente-title u-ff-didot u-c-petrol u-ta-center'>
+Mole Hüs
+</div>
+<div class='Momente-image' style='background-image: url(../images/momente/hund.jpg)'></div>
+<div class='Momente-wrapDescription'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+<div class='Moment-item u-widthFull u-m-width1of2 u-l-width1of2'>
+<div class='Momente-title u-ff-didot u-c-petrol u-ta-center'>
+Mole Hüs
+</div>
+<div class='Momente-image' style='background-image: url(../images/momente/hund.jpg)'></div>
+<div class='Momente-wrapDescription'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+<div class='Moment-item u-widthFull u-m-width1of2 u-l-width1of2'>
+<div class='Momente-title u-ff-didot u-c-petrol u-ta-center'>
+Mole Hüs
+</div>
+<div class='Momente-image' style='background-image: url(../images/momente/hund.jpg)'></div>
+<div class='Momente-wrapDescription'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+<div class='Moment-item u-widthFull u-m-width1of2 u-l-width1of2'>
+<div class='Momente-title u-ff-didot u-c-petrol u-ta-center'>
+Mole Hüs
+</div>
+<div class='Momente-image' style='background-image: url(../images/momente/hund.jpg)'></div>
+<div class='Momente-wrapDescription'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+</div>
+</div>
+<div class='Events u-bg-lightGrey u-mb-Section u-pl-1 u-pr-1'>
+<div class='Events-wrapContent u-mh-Auto'>
+<div class='Events-intro u-width-full'>
+<h1 class='Headline u-ff-didot u-c-petrol u-mb-2 u-ta-center'>
+Übernachten Sie an ganz besonderen Orten <br>mit unseren Event-Übernachtungen
+</h1>
+</div>
+<div class='Event-wrapItems u-flex u-flexWrap--row'>
+<div class='Event-wrapItem'>
+<div class='Event-image' style='background-image: url(../images/events/sleeperoo.jpg)'></div>
+<div class='Event-item u-widthFull u-flex'>
+<div class='Event-title'>
+<div class='u-ff-didot u-c-petrol'>
+Sleeperoo
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+Entdecke mehr
+</div>
+</div>
+<div class='Momente-wrapDescription'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft. Um ein Charming Hideaway zu werden, braucht es Einiges. Um genau zu sein; mindestens 80% bei unserem Charming-Hideaways-Index. Er setzt sich aus diesen vier Kategorien zusammen.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Event-wrapItem'>
+<div class='Event-image' style='background-image: url(../images/events/strandkorb.jpg)'></div>
+<div class='Event-item u-widthFull u-flex'>
+<div class='Event-title'>
+<div class='u-ff-didot u-c-petrol'>
+Übernachtung im Strandkorb
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+Entdecke mehr
+</div>
+</div>
+<div class='Momente-wrapDescription'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft. Um ein Charming Hideaway zu werden, braucht es Einiges. Um genau zu sein; mindestens 80% bei unserem Charming-Hideaways-Index. Er setzt sich aus diesen vier Kategorien zusammen.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='ch-index u-pl-1 u-pr-1'>
+<h1 class='Teaser-headline u-ta-center u-c-petrol u-mh-Auto u-ff-didot'>
+Was ist der CH-Index?
+</h1>
+<div class='u-flex u-flexWrap--row u-mb-2'>
+<div class='u-widthFull u-m-width1of2 u-l-width1of2 u-flex u-alignStart u-mb-2'>
+<img class='ch-index-icon' src='/images/CH-Index.svg'>
+<p class='u-c-petrol u-ff-lato u-fw-light u-pr-2'>
+Um ein Charming Hideaway zu werden, braucht es Einiges. Um genau zu sein: mindestens 80% bei unserem Charming-Hideaways-Index. Er setzt sich aus diesen vier Kategorien zusammen:
+</p>
+</div>
+<div class='u-widthFull u-m-width1of2 u-l-width1of2 u-flex u-flexWrap--row u-ta-center u-mb-2'>
+<div class='Block--headline'>
+<div class='u-c-white u-ff-lato u-fw-reg u-bg-blueLight u-radius--small'>
+100 % PREMIUM DURCH MINDESTENS 80% IN DER GESAMTBEWERTUNG
+</div>
+</div>
+<div class='u-widthFull u-width1of2 Block--subline'>
+<div class='u-c-petrol u-ff-lato u-fw-reg u-radius--big u-bg-creme u-mr-2 u-mb-2 u-transform-up'>
+Lage
+</div>
+</div>
+<div class='u-widthFull u-width1of2 Block--subline'>
+<div class='u-c-petrol u-ff-lato u-fw-reg u-radius--big u-bg-creme u-mb-2 u-transform-up'>
+Archtitektur
+</div>
+</div>
+<div class='u-widthFull u-width1of2 Block--subline'>
+<div class='u-c-petrol u-ff-lato u-fw-reg u-radius--big u-bg-creme u-mr-2 u-transform-up'>
+Inneneinrichtung
+</div>
+</div>
+<div class='u-widthFull u-width1of2 Block--subline'>
+<div class='u-c-petrol u-ff-lato u-fw-reg u-radius--big u-bg-creme u-transform-up'>
+Ausstattung
+</div>
+</div>
+</div>
+</div>
+<div class='ch-index-wrapItems u-flex u-flexWrap--row'>
+<div class='Index-item u-width1of2 u-m-width1of2 u-l-width1of4 u-mb-2'>
+<div class='single-chart'>
+<svg class='circular-chart' viewbox='0 0 36 36'>
+<path class='circle-bg' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831'></path>
+<path class='circle' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831' stroke-dasharray='90, 100'></path>
+<text class='percentage u-ff-didot u-c-petrol' x='18' y='20.35'>
+90%
+</text>
+</svg>
+</div>
+<div class='Index-title u-ff-lato u-fw-bold u-c-petrol u-ta-center u-fw-light u-transform-up'>
+Lage
+</div>
+<div class='Momente-wrapDescription u-pr-1 u-pl-1'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+</div>
+<div class='Index-item u-width1of2 u-m-width1of2 u-l-width1of4 u-mb-2'>
+<div class='single-chart'>
+<svg class='circular-chart' viewbox='0 0 36 36'>
+<path class='circle-bg' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831'></path>
+<path class='circle' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831' stroke-dasharray='75, 100'></path>
+<text class='percentage u-ff-didot u-c-petrol' x='18' y='20.35'>
+75%
+</text>
+</svg>
+</div>
+<div class='Index-title u-ff-lato u-fw-bold u-c-petrol u-ta-center u-fw-light u-transform-up'>
+Architektur
+</div>
+<div class='Momente-wrapDescription u-pr-1 u-pl-1'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+</div>
+<div class='Index-item u-width1of2 u-m-width1of2 u-l-width1of4 u-mb-2'>
+<div class='single-chart'>
+<svg class='circular-chart' viewbox='0 0 36 36'>
+<path class='circle-bg' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831'></path>
+<path class='circle' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831' stroke-dasharray='60, 100'></path>
+<text class='percentage u-ff-didot u-c-petrol' x='18' y='20.35'>
+60%
+</text>
+</svg>
+</div>
+<div class='Index-title u-ff-lato u-fw-bold u-c-petrol u-ta-center u-fw-light u-transform-up'>
+Inneneinrichtung
+</div>
+<div class='Momente-wrapDescription u-pr-1 u-pl-1'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+</div>
+<div class='Index-item u-width1of2 u-m-width1of2 u-l-width1of4 u-mb-2'>
+<div class='single-chart'>
+<svg class='circular-chart' viewbox='0 0 36 36'>
+<path class='circle-bg' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831'></path>
+<path class='circle' d='M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831' stroke-dasharray='30, 100'></path>
+<text class='percentage u-ff-didot u-c-petrol' x='18' y='20.35'>
+30%
+</text>
+</svg>
+</div>
+<div class='Index-title u-ff-lato u-fw-bold u-c-petrol u-ta-center u-fw-light u-transform-up'>
+Ausstattung
+</div>
+<div class='Momente-wrapDescription u-pr-1 u-pl-1'>
+<div class='Momente-description'>
+<div class='Momente-text u-ff-lato u-fw-light u-c-petrol'>
+Was wäre der Urlaub ohne den heißgeliebten Vierbeiner? Das ideale Urlaubsdomizil für alle Hunde und ihre Besitzer sind Ferienhäuser und Ferienwohnungen.
+</div>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+mehr
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Discover u-pl-1 u-pr-1 u-bg-lightGrey'>
+<h1 class='Teaser-headline u-ta-center u-c-petrol u-mh-Auto u-ff-didot'>
+Entdecke neue Regionen in Deutschland
+</h1>
+<div class='Discover-wrapItems slider-region u-flex'>
+<div class='Slide Discover-item u-width-full u-m-width1of2'>
+<div class='Discover-region'>
+<div class='Discover-region-image u-mb-1' style='background-image: url(../images/discover/pellworm.jpg)'></div>
+<div class='Teaser-wrapDescription'>
+<div class='Discover-description'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Pellworm
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up u-mb-2'>
+Schleswig-Holstein
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol u-mb-2'>
+<p>
+Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft.
+</p>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+Mehr zur region
+</div>
+</div>
+</div>
+<div class='Discover-regionHideaway'>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+95%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Discover-item u-width-full u-m-width1of2'>
+<div class='Discover-region'>
+<div class='Discover-region-image u-mb-1' style='background-image: url(../images/discover/eifel.jpg)'></div>
+<div class='Teaser-wrapDescription'>
+<div class='Discover-description'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Eifel
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up u-mb-2'>
+Rheinland-Pfalz
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol u-mb-2'>
+<p>
+Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft.
+</p>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+Mehr zur region
+</div>
+</div>
+</div>
+<div class='Discover-regionHideaway'>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+95%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Discover-item u-width-full u-m-width1of2'>
+<div class='Discover-region'>
+<div class='Discover-region-image u-mb-1' style='background-image: url(../images/discover/pellworm.jpg)'></div>
+<div class='Teaser-wrapDescription'>
+<div class='Discover-description'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Pellworm
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up u-mb-2'>
+Schleswig-Holstein
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol u-mb-2'>
+<p>
+Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft.
+</p>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+Mehr zur region
+</div>
+</div>
+</div>
+<div class='Discover-regionHideaway'>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+95%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Slide Discover-item u-width-full u-m-width1of2'>
+<div class='Discover-region'>
+<div class='Discover-region-image u-mb-1' style='background-image: url(../images/discover/eifel.jpg)'></div>
+<div class='Teaser-wrapDescription'>
+<div class='Discover-description'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Eifel
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up u-mb-2'>
+Rheinland-Pfalz
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol u-mb-2'>
+<p>
+Gläser klingen aneinander, Stimmen schwirren leise durch den Raum, es duftet nach leckerem Essen, warmes Lachen ertönt – es kann so wunderbar sein, wenn sich die ganze Familie trifft.
+</p>
+</div>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+Mehr zur region
+</div>
+</div>
+</div>
+<div class='Discover-regionHideaway'>
+<div class='Teaser--m'>
+<div class='Teaser-wrapContent u-flex u-flexWrap--row'>
+<div class='Teaser-image' style='background-image: url(../images/teaser/house.jpg)'></div>
+<div class='Teaser-wrapDescription u-flex'>
+<div class='Teaser-description u-bg-lightGrey'>
+<div class='Teaser-infos u-flex'>
+<div class='Teaser-left u-width1of2'>
+<div class='Teaser-title u-ff-didot u-c-petrol'>
+Mole Hüs
+</div>
+<div class='Teaser-region u-ff-lato u-fw-light u-c-petrol u-transform-up'>
+Westerwald
+</div>
+</div>
+<div class='Teaser-right u-width1of2'>
+<div class='Teaser-price u-ff-lato u-fw-light u-c-petrol'>
+ab 660.0 € / Nacht
+</div>
+</div>
+</div>
+<div class='Teaser-text u-ff-lato u-fw-light u-c-petrol'>
+Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See.
+</div>
+</div>
+<div class='Teaser-index'>
+<img src='/images/index.svg'>
+<div class='Teaser-wrapPercent'>
+<div class='index-info'>
+<a href='https://google.com'>
+<img class='info-icon' src='/images/icons/info.svg'>
+</a>
+</div>
+<div class='index-count u-ff-didot u-ta-center'>
+95%
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='Inspiration u-mb-Section u-pl-1 u-pr-1'>
+<div class='Inspiration-wrapContent u-max-width12of12 u-mh-Auto u-flex'>
+<div class='Inspiration-categorieIntro'>
+<h1 class='Headline u-c-petrol u-ff-didot'>
+Entdecken Sie echte charming Hideaways mit dem gewissen etwas.
+</h1>
+<p class='u-ff-lato u-fw-light u-c-petrol'>
+Entdecke ganz besondere Hideaways, die deinem persönlichen Gescmack genau treffen.
+</p>
+<div class='Button Button--teaser u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto'>
+entdecken sie usnere inspirationssuche
+</div>
+</div>
+<div class='Inspiration-wrapCategories u-flex'>
+<div class='Inspiration-categorie'>
+<img class='categorie-image' src='/images/inspiration/wohlfuehlen.png'>
+<h2 class='Headline u-ff-didot u-c-petrol'>
+Umgebungen zum Wohlfühlen
+</h2>
+</div>
+<div class='Inspiration-categorie'>
+<img class='categorie-image' src='/images/inspiration/zuhause.png'>
+<h2 class='Headline u-ff-didot u-c-petrol'>
+Hideaways für das „Zuhause-Gefühl“
+</h2>
+</div>
+</div>
+</div>
+</div>
+<div class='Footer u-bg-blueLight'>
+<div class='Footer-content u-max-width12of12 u-mh-Auto u-flex u-pt-3 u-pb-3'>
+<div class='Footer-Logo'>
+<div class='Footer-wrapImage'>
+<img class='Footer-logo--signet' src='/images/signet.svg'>
+</div>
+</div>
+<div class='Footer-about'>
+<h1 class='u-ff-didot u-c-white'>
+Charming Hideaways
+</h1>
+<p class='u-ff-lato u-fw-light u-c-white u-mb-2'>
+Ferienhäuser vom Feinsten
+</p>
+<p class='u-ff-lato u-fw-light u-c-white'>
+Entdecken Sie handverlesene und individuelle Urlaubsdomizile mit dem gewissen Extra – deutschlandweit. Charming Hideaways bietet außerge-wöhnlichen Ferienhäusern und besonderen Appartements ein neuartiges Portal. Für eine inspirierende Suche und einen traumhaften Urlaub.
+</p>
+</div>
+<div class='Footer-cta'>
+<div class='Footer-headline u-ff-didot u-c-white u-mb-1'>
+Newsletter
+</div>
+<div class='u-ff-lato u-c-white u-fw-light small-copy u-mb-2'>
+Melde dich jetzt zu unserem Newsletter an  und erhalte exklusive Informationen vor allen anderen.
+</div>
+<div class='Button Button--big u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto u-mb-2'>
+Jetzt anmelden
+</div>
+<div class='Footer-headline u-ff-didot u-c-white u-mb-1'>
+Gutschein
+</div>
+<div class='u-ff-lato u-c-white u-fw-light small-copy u-mb-2'>
+Melde dich jetzt zu unserem Newsletter an  und erhalte exklusive Informationen vor allen anderen.
+</div>
+<div class='Button Button--big u-ff-lato u-bg-lightGrey u-ta-center u-transform-up u-c-petrol u-mh-Auto u-mb-2'>
+Gutschein bestellen
+</div>
+</div>
+</div>
+<div class='u-max-width12of12 u-mh-Auto'>
+<div class='Footer-disclaimer'>
+<div class='Footer-Logo--lang'>
+<img class='Footer-logo--lang' src='/images/logo-white.svg'>
+<p class='u-ff-lato u-fw-light u-c-white u-mb-2'>
+ist eine in der Europäischen Union eingetragene Marke.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='Footer-legals u-bg-petrol u-c-white u-pb-1 u-pt-1'>
+<div class='Footer-wrapLegals u-max-width12of12 u-mh-Auto u-flex u-pb-1 u-pt-1'>
+<p class='u-c-white u-ff-lato u-fw-light u-flex'>
+© 2017 CHARMING HIDEAWAYS All rights reserved
+</p>
+<div class='Footer-links u-flex u-transform-up'>
+<a class='Footer-link u-c-white u-ff-lato u-fw-light' href='google.de'>
+Kontakt
+</a>
+<span class='divider'>
+&nbsp;|&nbsp;
+</span>
+<a class='Footer-link u-c-white u-ff-lato u-fw-light' href='google.de'>
+Impressum
+</a>
+<span class='divider'>
+&nbsp;|&nbsp;
+</span>
+<a class='Footer-link u-c-white u-ff-lato u-fw-light' href='google.de'>
+AGB
+</a>
+<span class='divider'>
+&nbsp;|&nbsp;
+</span>
+<a class='Footer-link u-c-white u-ff-lato u-fw-light' href='google.de'>
+AGB Vermieter
+</a>
+<span class='divider'>
+&nbsp;|&nbsp;
+</span>
+<a class='Footer-link u-c-white u-ff-lato u-fw-light' href='google.de'>
+Datenschutzerklärung
+</a>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

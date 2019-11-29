@@ -1,0 +1,47 @@
+.u-flex {
+  display: flex;
+}
+
+.u-alignCenter {
+  align-items: center;
+}
+
+.u-alignEnd {
+  align-items: flex-end;
+}
+
+.u-alignStart {
+  align-items: flex-start;
+}
+
+.u-justifyRight {
+  justify-content: flex-end;
+}
+
+.u-justifyCenter {
+  justify-content: center;
+}
+
+.u-flexWrap--row {
+  flex-wrap: wrap;
+}
+
+.u-justify--between {
+  justify-content: space-between;
+}
+
+.u-justify--around {
+  justify-content: space-around;
+}
+
+.u-block {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.u-pos-rel {
+  position: relative;
+}

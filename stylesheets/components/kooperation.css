@@ -1,0 +1,62 @@
+.Kooperation {
+  max-width: 960px;
+  margin: 0 auto 75px auto;
+}
+
+.Kooperation-headline {
+  margin-bottom: 40px;
+}
+
+.Kooperation-image {
+  width: 100%;
+  background-size: cover;
+  height: 45vh;
+  display: block;
+}
+
+.Kooperation-cover {
+  max-width: 250px;
+}
+
+.Kooperation-text {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 569px) {
+  .Kooperation-wrapDescription {
+    margin-top: -170px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .Kooperation-wrapDescription {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .Koopertation-wrapText {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .Kooperation-cover {
+    margin-top: 18px;
+  }
+}
+
+.Kooperation-wrapDescription {
+  z-index: 100;
+}
+
+.Kooperation-wrapText {
+  background-color: var(--color-white);
+  padding: 10px;
+}
+
+.Kooperation-cover {
+  width: 93%;
+  min-width: 240px;
+  height: 35vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}

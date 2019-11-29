@@ -55,7 +55,7 @@ end
 # Middleman-deploy configuration
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.remote = 'git@github.com:simonrdt/charming-hideaway.github.io.git'
+  deploy.remote = 'git@github.com:simonrdt/charming-hideaway.git'
   deploy.branch = 'master'
   deploy.build_before = true
 end

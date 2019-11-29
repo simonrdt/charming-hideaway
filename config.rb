@@ -52,7 +52,10 @@ configure :build do
   config[:host] = "http://www.charming-hideways.local"
 end
 
+# Middleman-deploy configuration
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.branch = 'gh-pages'
+  deploy.remote = 'git@github.com:simonrdt/charming-hideaway.github.io.git'
+  deploy.branch = 'master'
+  deploy.build_before = true
 end

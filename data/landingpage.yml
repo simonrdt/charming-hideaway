@@ -2,3 +2,10 @@
 hero:
       -
         image: results
+events:
+      -
+        image: sleeperoo
+        title: Urlaub am Strand
+        description: An der Nord- und Ostseeküste sowie auf Inseln wie Sylt, Rügen oder Fehmarn finden Urlauber mit Hund traumhafte Bedingungen. Stundenlange Strandspaziergänge bieten viel Raum zum Durchatmen und Schnuppern, danach locken Körbchen und Sofa im Ferienhaus zum Erholen. Besonders schön wird der Urlaub mit Hund natürlich in einem der vielen handverlesenen Feriendomizile bei Charming Hideaways z. B. mit Kamin, Sauna, hochwertiger Einrichtung und direktem Blick aufs Meer. 
+
+     

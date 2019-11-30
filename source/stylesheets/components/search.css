@@ -347,6 +347,7 @@ input::placeholder {
 
   .Search--wrapContent {
     flex-wrap: nowrap !important;
+    justify-content: space-around;
   }
 }
 

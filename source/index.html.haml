@@ -1,6 +1,6 @@
 = partial "navigation"
 
-.Hero.Hero--slider.Slider-home.u-mt-6
+.Hero.Hero--slider.Slider-home
   - data.frontpage.hero.each_with_index do | item, index | 
     .Slide
       .Hero-slide.u-flex.u-alignEnd{:style => "background: url(#{image_path "hero/#{item.image}.jpg"}) rgba(0,0,0,0.3); background-size:cover; background-blend-mode: multiply;"}
@@ -39,10 +39,10 @@
                 = "Das Domizil für den perfekten Urlaub im Westerwald mit traumhaften Blick auf den See."
             .Teaser-index
               %img(src="/images/index.svg")
+              .index-info
+                %a{:href => "https://google.com"}
+                  %img.info-icon(src="/images/icons/info.svg")
               .Teaser-wrapPercent
-                .index-info
-                  %a{:href => "https://google.com"}
-                    %img.info-icon(src="/images/icons/info.svg")
                 .index-count.u-ff-didot.u-ta-center
                   = "91,50%"
 

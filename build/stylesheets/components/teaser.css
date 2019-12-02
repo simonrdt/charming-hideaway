@@ -51,6 +51,7 @@
 
 .Teaser-index {
   min-width: 92px;
+  max-height: 110px;
 }
 
 .Teaser-image {

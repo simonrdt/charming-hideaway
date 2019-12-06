@@ -1,3 +1,40 @@
 .about-title {
-  font-size: 20px;
+  font-size: 1.5rem;
+}
+
+.Supporter-image {
+  width: 170px;
+  margin-bottom: 1.5rem;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 7px;
+}
+
+.partner-image {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 100%;
+  margin: 30px;
+}
+
+.slider-supporter .slick-prev {
+  left: -50px;
+}
+
+.slider-supporter .slick-next {
+  right: -50px;
+}
+
+.partner-images {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }

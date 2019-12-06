@@ -91,6 +91,15 @@ $(document).ready(function(){
     arrows: true
   });
 
+  $('.slider-supporter').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: false,
+    arrows: true
+  });
+
   $('.Slider-home').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

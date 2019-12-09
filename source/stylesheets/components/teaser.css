@@ -234,6 +234,10 @@
   background-image: url(../../images/icons/favorite-selected.svg) !important;
 }
 
+.favorite {
+  background-image: url(../images/icons/favorite.svg);
+}
+
 .Teaser--s .Teaser-image {
   height: 23rem;
 }

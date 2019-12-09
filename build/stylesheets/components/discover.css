@@ -44,11 +44,11 @@
 }
 
 .slider-region .slick-next {
-  right: -50px;
+  right: 10px;
 }
 
 .slider-region .slick-prev {
-  left: -50px;
+  left: 10px;
 }
 
 .Discover-region-image {

@@ -206,18 +206,19 @@
     - data.frontpage.discover.each_with_index do | item, index | 
       .Slide.Discover-item.u-width-full.u-m-width1of2
         .Discover-region
-          .Discover-region-image.u-mb-1{:style => "background-image: url(../images/discover/#{item.image}.jpg)"}
-          .Teaser-wrapDescription
-            .Discover-description
-              .Teaser-title.u-ff-didot.u-c-petrol
-                = "#{item.title}"
-              .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up.u-mb-2
-                = "#{item.region}"              
-              .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol.u-mb-2
-                %p
-                  = "#{item.description}"
-              .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
-                = "Mehr zur region"
+          .Region
+            .Discover-region-image.u-mb-1{:style => "background-image: url(../images/discover/#{item.image}.jpg)"}
+            .Teaser-wrapDescription
+              .Discover-description
+                .Teaser-title.u-ff-didot.u-c-petrol
+                  = "#{item.title}"
+                .Teaser-region.u-ff-lato.u-fw-light.u-c-petrol.u-transform-up.u-mb-2
+                  = "#{item.region}"              
+                .Teaser-text.u-ff-lato.u-fw-light.u-c-petrol.u-mb-2
+                  %p
+                    = "#{item.description}"
+                .Button.Button--teaser.u-ff-lato.u-bg-lightGrey.u-ta-center.u-transform-up.u-c-petrol.u-mh-Auto
+                  = "Mehr zur region"
           .Discover-regionHideaway
             .Teaser--m
               .Teaser-wrapContent.u-flex.u-flexWrap--row

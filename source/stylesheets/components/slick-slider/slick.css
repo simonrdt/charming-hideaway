@@ -117,3 +117,22 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.slider-region .slick-track {
+    display: flex;
+}
+
+.slider-region .slick-slide {
+    height: inherit !important;
+}
+
+.Discover-region {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
